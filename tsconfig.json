@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["node", "jest"],
+    "outDir": "dist/",
+    "sourceMap": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "target": "es5",
+    "declaration": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "esModuleInterop": true,
+    "allowJs": true
+  },
+  "include": ["src"],
+  "exclude": ["test"]
+}

@@ -1,0 +1,11 @@
+node_modules
+dist
+npm-debug.log
+coverage
+yarn-error.log
+tmp
+.DS_Store
+
+# User data
+*.sqlite
+*.zip
