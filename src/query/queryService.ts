@@ -9,7 +9,7 @@ export class QueryService {
 
   async initialize() {
     this.sql = await initSqlJs({
-      locateFile: () => "./data/sql-wasm.wasm",
+      locateFile: () => "./node_modules/sql.js/dist/sql-wasm.wasm",
     });
     this.database = new this.sql.Database();
   }
