@@ -5,6 +5,7 @@ coverage
 yarn-error.log
 tmp
 .DS_Store
+.npmrc
 
 # User data
 *.sqlite

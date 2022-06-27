@@ -23,6 +23,7 @@ module.exports = {
     "@typescript-eslint/no-namespace": "off",
     "no-unused-vars": "off",
     "no-console": "off",
+    "no-await-in-loop": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
