@@ -1,6 +1,6 @@
 import config from "../../config/index.js";
 import { ColumnType, toDate } from "../../query/table.js";
-import { HtmlExtractor } from "../htmlExtractor";
+import { HtmlExtractor } from "../htmlExtractor.js";
 
 class AdsClickedHtml extends HtmlExtractor {
   async process() {
