@@ -2,6 +2,7 @@
   "name": "@corsali/userdata-extractor",
   "version": "0.0.1",
   "author": "Vana",
+  "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
     "test": "yarn jest",

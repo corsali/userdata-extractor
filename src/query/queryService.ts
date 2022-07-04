@@ -1,6 +1,6 @@
 import initSqlJs, { Database, QueryExecResult, SqlJsStatic } from "sql.js";
 
-import { ColumnType, Table } from "./table";
+import { ColumnType, Table } from "./table.js";
 
 export class QueryService {
   sql: SqlJsStatic;
@@ -9,7 +9,10 @@ export class QueryService {
 
   async initialize() {
     this.sql = await initSqlJs({
-      locateFile: () => "./node_modules/sql.js/dist/sql-wasm.wasm",
+      locateFile: (file) =>
+        process.env.JEST_WORKER_ID !== undefined
+          ? "./node_modules/sql.js/dist/sql-wasm.wasm"
+          : `https://sql.js.org/dist/${file}`,
     });
     this.database = new this.sql.Database();
   }

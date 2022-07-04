@@ -1,6 +1,6 @@
-import config from "../../config";
-import { ColumnType, toBool, toColumnName, toDate } from "../../query/table";
-import { HtmlExtractor } from "../htmlExtractor";
+import config from "../../config/index.js";
+import { ColumnType, toBool, toColumnName, toDate } from "../../query/table.js";
+import { HtmlExtractor } from "../htmlExtractor.js";
 
 class PersonalInformationHtml extends HtmlExtractor {
   async process() {

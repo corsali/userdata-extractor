@@ -1,6 +1,6 @@
-import config from "../../config";
-import { ColumnType, toDate } from "../../query/table";
-import { HtmlExtractor } from "../htmlExtractor";
+import config from "../../config/index.js";
+import { ColumnType, toDate } from "../../query/table.js";
+import { HtmlExtractor } from "../htmlExtractor.js";
 
 class PostsViewedHtml extends HtmlExtractor {
   async process() {

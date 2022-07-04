@@ -7,4 +7,7 @@ module.exports = {
   testTimeout: 10000,
   moduleFileExtensions: ["ts", "js", "json", "node"],
   transformIgnorePatterns: ["node_modules/(?!(@zip.js/zip.js))"],
+  moduleNameMapper: {
+    "^(\\.{1,2}/.*)\\.js$": "$1",
+  },
 };

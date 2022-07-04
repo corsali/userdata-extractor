@@ -1,7 +1,7 @@
 import * as zip from "@zip.js/zip.js";
 
-import { QueryService } from "../query/queryService";
-import { Table } from "../query/table";
+import { QueryService } from "../query/queryService.js";
+import { Table } from "../query/table.js";
 
 interface FileExtractorEntry {
   filePattern: string;
