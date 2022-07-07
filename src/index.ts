@@ -1,3 +1,11 @@
-import { UserdataExtractor } from "./userdataExtractor.js";
+import { exportZipToSql } from "./services/zipExporter.js";
+import { validateZipAgainstModule } from "./services/zipValidator.js";
+import { loadZipFromFile } from "./utils/loadZipFromFile.js";
+import { stripZipFiles } from "./utils/stripZipFiles.js";
 
-export default UserdataExtractor;
+export {
+  exportZipToSql,
+  loadZipFromFile,
+  stripZipFiles,
+  validateZipAgainstModule,
+};

@@ -1,4 +1,8 @@
+/* eslint-disable no-restricted-syntax */
 import * as zip from "@zip.js/zip.js";
+
+import config from "../config/index.js";
+import { logger } from "./logger.js";
 
 /**
  * Class used for managing Zip files.
@@ -37,7 +41,7 @@ export class ZipFile {
    * @param entry ZipFileEntry
    */
   // eslint-disable-next-line class-methods-use-this
-  getMimeType(entry: zip.ZipFileEntry): string {
+  getMimeType(entry: zip.ZipFileEntry<string, string>): string {
     return zip.getMimeType(entry.name);
   }
 
@@ -63,6 +67,27 @@ export class ZipFile {
     await this.getRoot().importBlob(this.file, options);
   }
 
+  /**
+   * Remove any unwanted files from file system
+   */
+  sanitizeFiles(): void {
+    const entriesToRemove = [];
+    for (const zipEntry of this.fileIterator()) {
+      const mimeType = this.getMimeType(zipEntry);
+      if (
+        zipEntry instanceof zip.fs.ZipFileEntry &&
+        !config.whitelistedFileMimeTypes.includes(mimeType)
+      ) {
+        logger.info(`Removing ${zipEntry.data.filename}`);
+        entriesToRemove.push(zipEntry);
+      }
+    }
+    entriesToRemove.map((entry) => this.remove(entry));
+  }
+
+  /**
+   * Returns an iterator that can be used to loop through all files
+   */
   fileIterator() {
     function* helper(zipEntry: zip.ZipEntry): any {
       if (zipEntry instanceof zip.fs.ZipDirectoryEntry) {

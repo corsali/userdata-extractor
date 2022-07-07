@@ -26,18 +26,20 @@ export class QueryService {
 
     this.database.exec(createTableSql);
 
-    table.rows?.forEach((row) => {
-      const insertRowSql = `INSERT INTO ${table.tableName} VALUES (
-        ${row.values
-          ?.map((rowValue, index) =>
-            table.columns[index].type === ColumnType.text
-              ? `'${rowValue}'`
-              : rowValue
-          )
-          .join(", \n")}
-      );`;
-      this.database.exec(insertRowSql);
-    });
+    if (table.rows?.length > 0) {
+      table.rows?.forEach((row) => {
+        const insertRowSql = `INSERT INTO ${table.tableName} VALUES (
+          ${row.values
+            ?.map((rowValue, index) =>
+              table.columns[index].type === ColumnType.text
+                ? `'${rowValue}'`
+                : rowValue
+            )
+            .join(", \n")}
+        );`;
+        this.database.exec(insertRowSql);
+      });
+    }
   }
 
   exportDatabase(): Uint8Array {

@@ -44,7 +44,7 @@
     "typescript-eslint-parser": "^22.0.0"
   },
   "dependencies": {
-    "@zip.js/zip.js": "^2.4.19",
+    "@zip.js/zip.js": "2.4.21",
     "axios": "^0.27.2",
     "sql.js": "^1.7.0"
   }
