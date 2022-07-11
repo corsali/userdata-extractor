@@ -1,15 +1,14 @@
-import config from "../../config/index.js";
-import { ColumnType, toBool, toColumnName, toDate } from "../../query/table.js";
-import { HtmlExtractor } from "../htmlExtractor.js";
+import config from "../../../config/index.js";
+import {
+  ColumnType,
+  toBool,
+  toColumnName,
+  toDate,
+} from "../../../query/table.js";
+import { HtmlExtractor } from "../../htmlExtractor.js";
 
 class AccountInformationHtml extends HtmlExtractor {
   async process() {
-    this.table = {
-      tableName: "account_information",
-      columns: [],
-      rows: [{ values: [] }],
-    };
-
     this.htmlDocument
       .querySelector('div[role="main"] table')
       .querySelectorAll("tr")
@@ -35,10 +34,7 @@ class AccountInformationHtml extends HtmlExtractor {
             break;
         }
 
-        this.table.columns.push({
-          name: columnName,
-          type: columnType,
-        });
+        this.table.addColumn(columnName, columnType);
         this.table.rows[0].values.push(columnValue);
       });
   }
@@ -46,5 +42,6 @@ class AccountInformationHtml extends HtmlExtractor {
 
 export const accountInformationHtml = new AccountInformationHtml(
   config.SERVICE_INSTAGRAM,
-  "account_information/account_information.html"
+  "account_information/account_information.html",
+  "account_information"
 );

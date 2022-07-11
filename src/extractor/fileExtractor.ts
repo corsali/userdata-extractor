@@ -24,8 +24,10 @@ export class FileExtractor {
 
   table: Table;
 
-  constructor(serviceName: string, filePattern: string) {
+  constructor(serviceName: string, filePattern: string, tableName: string) {
     this.serviceName = serviceName;
+
+    // Register the extractor
     if (!FileExtractor.registeredExtractors[serviceName]) {
       FileExtractor.registeredExtractors[serviceName] = [];
     }
@@ -33,8 +35,17 @@ export class FileExtractor {
       filePattern,
       extractor: this,
     });
+
+    // Instantiate the table belonging to this file extractor
+    this.table = new Table(tableName);
   }
 
+  /**
+   * Find a matching extractor given a file path
+   * @param serviceName User data service name
+   * @param filePath Path of a single file in a user data zip file
+   * @returns
+   */
   static getExtractor(serviceName: string, filePath: string): FileExtractor {
     if (FileExtractor.registeredExtractors[serviceName]) {
       const fileExtractorEntry = FileExtractor.registeredExtractors[
@@ -48,6 +59,10 @@ export class FileExtractor {
     throw new Error(`No file extractors found for service ${serviceName}`);
   }
 
+  /**
+   * Reads a zipEntry as text and sets fileContents
+   * @param zipEntry
+   */
   async loadFileContents(zipEntry: zip.ZipEntry) {
     this.zipEntry = zipEntry;
     this.mimeType = zip.getMimeType(zipEntry.name);

@@ -18,15 +18,16 @@ export class QueryService {
   }
 
   createTable(table: Table) {
-    const createTableSql = `CREATE TABLE IF NOT EXISTS ${table.tableName} (
+    if (table.columns?.length > 0) {
+      const createTableSql = `CREATE TABLE IF NOT EXISTS ${table.tableName} (
         ${table.columns
           ?.map((column) => `${column.name} ${column.type}`)
           .join(", \n")}
-    );`;
+      );`;
+      this.database.exec(createTableSql);
+    }
 
-    this.database.exec(createTableSql);
-
-    if (table.rows?.length > 0) {
+    if (table.rows?.length > 0 && table.rows[0].values.length > 0) {
       table.rows?.forEach((row) => {
         const insertRowSql = `INSERT INTO ${table.tableName} VALUES (
           ${row.values

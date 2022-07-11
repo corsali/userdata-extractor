@@ -1,15 +1,14 @@
-import config from "../../config/index.js";
-import { ColumnType, toBool, toColumnName, toDate } from "../../query/table.js";
-import { HtmlExtractor } from "../htmlExtractor.js";
+import config from "../../../config/index.js";
+import {
+  ColumnType,
+  toBool,
+  toColumnName,
+  toDate,
+} from "../../../query/table.js";
+import { HtmlExtractor } from "../../htmlExtractor.js";
 
 class PersonalInformationHtml extends HtmlExtractor {
   async process() {
-    this.table = {
-      tableName: "personal_information",
-      columns: [],
-      rows: [{ values: [] }],
-    };
-
     this.htmlDocument
       .querySelector('div[role="main"] table:nth-child(2)')
       .querySelectorAll("tr")
@@ -33,10 +32,7 @@ class PersonalInformationHtml extends HtmlExtractor {
             break;
         }
 
-        this.table.columns.push({
-          name: columnName,
-          type: columnType,
-        });
+        this.table.addColumn(columnName, columnType);
         this.table.rows[0].values.push(columnValue);
       });
   }
@@ -44,5 +40,6 @@ class PersonalInformationHtml extends HtmlExtractor {
 
 export const personalInformationHtml = new PersonalInformationHtml(
   config.SERVICE_INSTAGRAM,
-  "account_information/personal_information.html"
+  "account_information/personal_information.html",
+  "personal_information"
 );

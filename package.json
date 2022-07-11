@@ -21,6 +21,7 @@
     "@corsali/eslint-config": "^1.4.0",
     "@corsali/prettier-config": "^1.0.0",
     "@types/jest": "^27.0.2",
+    "@types/jsonpath": "^0.2.0",
     "@types/node": "^16.11.6",
     "@types/sql.js": "^1.4.3",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
@@ -46,6 +47,7 @@
   "dependencies": {
     "@zip.js/zip.js": "2.4.21",
     "axios": "^0.27.2",
+    "jsonpath": "^1.1.1",
     "sql.js": "^1.7.0"
   }
 }
