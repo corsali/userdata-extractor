@@ -1,6 +1,6 @@
+import { SQLiteExporter } from "../exporter/sqliteExporter.js";
 import { FileExtractor } from "../extractor/fileExtractor.js";
 import * as Mappers from "../extractor/index.js";
-import { QueryService } from "../query/queryService.js";
 import { loadZipFromFile } from "../utils/loadZipFromFile.js";
 
 Mappers.register();
@@ -16,8 +16,8 @@ const exportZipToSql = async (
   file: File
 ): Promise<Uint8Array> => {
   const zipFile = await loadZipFromFile(file);
-  const queryService = new QueryService();
-  await queryService.initialize();
+  const exporter = new SQLiteExporter();
+  await exporter.initialize();
 
   // eslint-disable-next-line no-restricted-syntax
   for (const zipEntry of zipFile.fileIterator()) {
@@ -28,11 +28,11 @@ const exportZipToSql = async (
     if (mapper) {
       await mapper.loadFileContents(zipEntry);
       await mapper.process();
-      mapper.createTable(queryService);
+      mapper.createTable(exporter);
     }
   }
 
-  return queryService.exportDatabase();
+  return exporter.exportDatabase();
 };
 
 export { exportZipToSql };

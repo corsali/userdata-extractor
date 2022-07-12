@@ -1,20 +1,15 @@
 import config from "../../../config/index.js";
-import { ColumnType, toDate } from "../../../query/table.js";
 import { HtmlExtractor } from "../../htmlExtractor.js";
+import { PostsViewed } from "../models/postsViewed.js";
 
 class PostsViewedHtml extends HtmlExtractor {
   async process() {
-    this.table.addColumn("post_author");
-    this.table.addColumn("date_viewed", ColumnType.date);
-
     this.htmlDocument
       .querySelectorAll('div[role="main"] table')
-      .forEach((node, index) => {
+      .forEach((node) => {
         const postAuthor = node.querySelectorAll("td")[1].textContent;
         const dateViewed = node.querySelectorAll("td")[3].textContent;
-        this.table.rows[index] = {
-          values: [postAuthor, toDate(dateViewed)],
-        };
+        this.table.rows.push(new PostsViewed(postAuthor, dateViewed));
       });
   }
 }

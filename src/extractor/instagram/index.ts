@@ -6,5 +6,6 @@ export * from "./html/postsViewedHtml.js";
 export * from "./html/suggestedAccountsViewedHtml.js";
 export * from "./html/videosWatchedHtml.js";
 export * from "./json/accountInformationJson.js";
+export * from "./json/suggestedAccountsViewedJson.js";
 
 export const initialize = () => {};

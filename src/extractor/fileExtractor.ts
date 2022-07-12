@@ -1,7 +1,7 @@
 import * as zip from "@zip.js/zip.js";
 
-import { QueryService } from "../query/queryService.js";
-import { Table } from "../query/table.js";
+import { Exporter } from "../exporter/exporter.js";
+import { Table } from "../models/table/table.js";
 
 interface FileExtractorEntry {
   filePattern: string;
@@ -76,9 +76,9 @@ export class FileExtractor {
     throw new Error("FileExtractor.process() not implemented");
   }
 
-  createTable(queryService: QueryService) {
+  createTable(exporter: Exporter) {
     if (this.table) {
-      queryService.createTable(this.table);
+      exporter.createTable(this.table);
     }
   }
 }

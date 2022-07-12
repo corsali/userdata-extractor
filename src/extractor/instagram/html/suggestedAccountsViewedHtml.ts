@@ -1,20 +1,17 @@
 import config from "../../../config/index.js";
-import { ColumnType, toDate } from "../../../query/table.js";
 import { HtmlExtractor } from "../../htmlExtractor.js";
+import { SuggestedAccountsViewed } from "../models/suggestedAccountsViewed.js";
 
 class SuggestedAccountsViewedHtml extends HtmlExtractor {
   async process() {
-    this.table.addColumn("account_suggested");
-    this.table.addColumn("date_suggested", ColumnType.date);
-
     this.htmlDocument
       .querySelectorAll('div[role="main"] table')
-      .forEach((node, index) => {
+      .forEach((node) => {
         const accountSuggested = node.querySelectorAll("td")[1].textContent;
         const dateSuggested = node.querySelectorAll("td")[3].textContent;
-        this.table.rows[index] = {
-          values: [accountSuggested, toDate(dateSuggested)],
-        };
+        this.table.rows.push(
+          new SuggestedAccountsViewed(accountSuggested, dateSuggested)
+        );
       });
   }
 }
