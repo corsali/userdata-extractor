@@ -36,4 +36,4 @@ const zipToSQLiteInstance = async (
   return database;
 };
 
-export { zipToSQLiteInstance as exportZipToSql };
+export { zipToSQLiteInstance };
