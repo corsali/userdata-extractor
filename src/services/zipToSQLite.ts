@@ -1,3 +1,4 @@
+import { Database } from "../database/database.js";
 import { SQLiteDatabase } from "../database/sqliteDatabase.js";
 import { FileExtractor } from "../extractor/fileExtractor.js";
 import * as Extractors from "../extractor/index.js";
@@ -14,7 +15,7 @@ Extractors.register();
 const zipToSQLiteInstance = async (
   serviceName: string,
   file: File
-): Promise<Uint8Array> => {
+): Promise<Database> => {
   const zipFile = await loadZipFile(file);
   const database = new SQLiteDatabase();
   await database.initialize();
@@ -32,7 +33,7 @@ const zipToSQLiteInstance = async (
     }
   }
 
-  return database.exportDatabase();
+  return database;
 };
 
 export { zipToSQLiteInstance as exportZipToSql };

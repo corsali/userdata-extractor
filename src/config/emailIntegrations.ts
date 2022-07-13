@@ -1,13 +1,11 @@
 export type EmailIntegrationConfig = {
   name: string;
-  id: string;
   files: string[];
 };
 
 export const EMAIL_INTEGRATION_CONFIG = [
   {
     name: "Facebook",
-    id: "e2f01718-6f5c-48f9-89ee-448ebb3e8290",
     files: [
       "activity_messages",
       "ads_information",
@@ -61,7 +59,6 @@ export const EMAIL_INTEGRATION_CONFIG = [
   },
   {
     name: "Google",
-    id: "ff35e1e3-0cfa-49e8-813a-f711e78ccc86",
     files: [
       "Takeout/Access Log Activity/",
       "Takeout/Android Device Configuration Service/",
@@ -92,12 +89,10 @@ export const EMAIL_INTEGRATION_CONFIG = [
   },
   {
     name: "Netflix",
-    id: "ed93049c-dd2d-4789-a768-9782275b99a6",
     files: [],
   },
   {
     name: "Instagram",
-    id: "bfe8897d-9eaf-4150-8ece-9dbd1274fbad",
     files: [
       "account_information/",
       "ads_and_businesses/",
@@ -132,7 +127,6 @@ export const EMAIL_INTEGRATION_CONFIG = [
   },
   {
     name: "Twitter",
-    id: "a09efb8a-5d57-4c96-bf76-0206c5bbc138",
     files: [
       "assets/images/",
       "assets/js/",
@@ -209,7 +203,6 @@ export const EMAIL_INTEGRATION_CONFIG = [
   },
   {
     name: "Linkedin",
-    id: "7c68ab11-e3dc-4ebb-a753-3517c2e2c0ce",
     files: [
       "Account Status History.csv",
       "Ad_Targeting.csv",

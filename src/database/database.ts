@@ -5,7 +5,9 @@ export interface Database {
 
   createTable(table: Table): void;
 
-  exportDatabase(): any;
+  getDatabase(): any;
+
+  exportDatabase(): Uint8Array;
 
   runQuery(query: string): any;
 }

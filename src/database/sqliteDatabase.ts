@@ -26,27 +26,35 @@ export class SQLiteDatabase implements Database {
   createTable(table: Table) {
     if (table.rows?.length > 0) {
       const createTableSql = `CREATE TABLE IF NOT EXISTS ${table.tableName} (
-        ${this.getColumnTypes(table.rows[0]).join(", \n")}
+        ${this.getColumnTypes(table.rows[0]).join(", ")}
       );`;
-      this.database.exec(createTableSql);
+      this.database.run(createTableSql);
     }
 
     if (table.rows?.length > 0 && Object.keys(table.rows[0]).length > 0) {
       table.rows?.forEach((row) => {
         const insertRowSql = `INSERT INTO ${table.tableName} VALUES (
           ${Object.keys(row)
-            .map((columnName) =>
-              row[columnName].type === "text"
-                ? `'${row[columnName].value}'`
-                : row[columnName].value
-            )
-            .join(", \n")}
+            .map((columnName) => `:${columnName}`)
+            .join(", ")}
         );`;
-        this.database.exec(insertRowSql);
+        const bindParams = Object.keys(row).reduce(
+          (acc, columnName) => ({
+            ...acc,
+            [`:${columnName}`]: row[columnName].value,
+          }),
+          {}
+        );
+        this.database.exec(insertRowSql, bindParams);
       });
     }
   }
 
+  /**
+   * Maps types of TableRow into allowed types in SQLite, used for creating a table schema
+   * @param row row.type contains the type of column it is
+   * @returns array of row name and type, ex ["number_of_likes integer", "username text"]
+   */
   // eslint-disable-next-line class-methods-use-this
   private getColumnTypes(row: TableRow): string[] {
     const columnNameType: string[] = [];
@@ -65,6 +73,10 @@ export class SQLiteDatabase implements Database {
       }
     });
     return columnNameType;
+  }
+
+  getDatabase(): SqlDatabase {
+    return this.database;
   }
 
   exportDatabase(): Uint8Array {
