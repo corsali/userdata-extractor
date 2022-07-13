@@ -1,6 +1,6 @@
 import config from "../config/index.js";
-import { getModuleConfig } from "../utils/getModuleConfig.js";
-import { validateZipContent } from "../utils/validateZipContent.js";
+import { getEmailIntegrationConfig } from "../utils/getEmailIntegrationConfig.js";
+import { validateEmailIntegrationFolders } from "../utils/validateEmailIntegrationFolders.js";
 import { ZipFile } from "../utils/zipFile.js";
 
 /**
@@ -9,14 +9,15 @@ import { ZipFile } from "../utils/zipFile.js";
  * @param moduleConfig A module config defined in src/config/modules
  * @returns isValid, validationReason
  */
-const validateZipAgainstModule = async (
+const validateEmailIntegrationZip = async (
   zipFile: ZipFile,
-  moduleName: string
+  emailIntegrationName: string
 ) => {
-  const moduleConfig = getModuleConfig(moduleName);
+  const emailIntegrationConfig =
+    getEmailIntegrationConfig(emailIntegrationName);
 
   let isValid = true;
-  let validationReason = `Successfully validated zip file as ${moduleConfig.name}`;
+  let validationReason = `Successfully validated zip file as ${emailIntegrationConfig.name}`;
 
   if (zipFile.file.size < config.minFileSizeInBytes) {
     isValid = false;
@@ -25,12 +26,15 @@ const validateZipAgainstModule = async (
 
   if (isValid) {
     const mimetype = zipFile.file.type;
-    const validZipContents = validateZipContent(zipFile, moduleConfig);
+    const validZipContents = validateEmailIntegrationFolders(
+      zipFile,
+      emailIntegrationConfig
+    );
     switch (mimetype) {
       case "application/zip":
         if (!validZipContents) {
           isValid = false;
-          validationReason = `Invalid zip content for ${moduleConfig.name} data`;
+          validationReason = `Invalid zip content for ${emailIntegrationConfig.name} data`;
         }
         break;
       default:
@@ -45,4 +49,4 @@ const validateZipAgainstModule = async (
   };
 };
 
-export { validateZipAgainstModule };
+export { validateEmailIntegrationZip };

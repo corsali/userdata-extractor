@@ -1,11 +1,11 @@
-import { exportZipToSql } from "./services/zipExporter.js";
-import { validateZipAgainstModule } from "./services/zipValidator.js";
-import { loadZipFromFile } from "./utils/loadZipFromFile.js";
+import { exportZipToSql } from "./services/zipToSQLite.js";
+import { validateEmailIntegrationZip } from "./services/zipValidator.js";
+import { loadZipFile } from "./utils/loadZipFile.js";
 import { stripZipFiles } from "./utils/stripZipFiles.js";
 
 export {
   exportZipToSql,
-  loadZipFromFile,
+  loadZipFile,
   stripZipFiles,
-  validateZipAgainstModule,
+  validateEmailIntegrationZip,
 };

@@ -1,6 +1,6 @@
-import { ColumnItem } from "./columnItem.js";
+import { ColumnTableValue } from "./columnTableValue.js";
 
-export class FloatItem extends ColumnItem {
+export class FloatTableValue extends ColumnTableValue {
   constructor(value: string) {
     super(value);
     this.type = "float";

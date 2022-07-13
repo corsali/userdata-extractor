@@ -1,4 +1,4 @@
-import { loadZipFromFile } from "./loadZipFromFile.js";
+import { loadZipFile } from "./loadZipFile.js";
 import { logger } from "./logger.js";
 
 /**
@@ -9,7 +9,7 @@ const stripZipFiles = async (files: Array<File>): Promise<Array<File>> => {
   const sanitizedFiles: Array<File> = [];
   for (let i = 0; i < files.length; i++) {
     logger.info(`Stripping unsupported files for ${files[i].name}`);
-    const zipFile = await loadZipFromFile(files[i]);
+    const zipFile = await loadZipFile(files[i]);
     zipFile.sanitizeFiles();
     const strippedFile = await zipFile.exportAsFile({ bufferedWrite: true });
     sanitizedFiles.push(strippedFile);

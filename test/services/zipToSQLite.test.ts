@@ -1,6 +1,6 @@
 import * as zip from "@zip.js/zip.js";
 
-import { exportZipToSql } from "../../src/services/zipExporter.js";
+import { exportZipToSql } from "../../src/services/zipToSQLite";
 import {
   deleteFile,
   fileExists,

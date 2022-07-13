@@ -1,5 +1,5 @@
-import { ColumnItem } from "./index.js";
+import { ColumnTableValue } from "./index.js";
 
 export class TableRow {
-  [key: string]: ColumnItem;
+  [key: string]: ColumnTableValue;
 }

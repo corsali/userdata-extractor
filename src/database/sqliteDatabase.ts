@@ -1,16 +1,21 @@
-import initSqlJs, { Database, QueryExecResult, SqlJsStatic } from "sql.js";
+import initSqlJs, {
+  Database as SqlDatabase,
+  QueryExecResult,
+  SqlJsStatic,
+} from "sql.js";
 
 import { Table, TableRow } from "../models/table/index.js";
-import { Exporter } from "./exporter.js";
+import { Database } from "./database.js";
 
-export class SQLiteExporter implements Exporter {
+export class SQLiteDatabase implements Database {
   sql: SqlJsStatic;
 
-  database: Database;
+  database: SqlDatabase;
 
   async initialize() {
     this.sql = await initSqlJs({
       locateFile: (file) =>
+        // When running in Jest, sql.js is unable to resolve the sql-wasm package from the CDN
         process.env.JEST_WORKER_ID !== undefined
           ? "./node_modules/sql.js/dist/sql-wasm.wasm"
           : `https://sql.js.org/dist/${file}`,

@@ -1,6 +1,6 @@
-import { ColumnItem } from "./columnItem.js";
+import { ColumnTableValue } from "./columnTableValue.js";
 
-export class IntegerItem extends ColumnItem {
+export class IntegerTableValue extends ColumnTableValue {
   constructor(value: string) {
     super(value);
     this.type = "integer";

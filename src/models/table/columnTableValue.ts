@@ -1,4 +1,4 @@
-export class ColumnItem {
+export class ColumnTableValue {
   name: string;
 
   type: string;

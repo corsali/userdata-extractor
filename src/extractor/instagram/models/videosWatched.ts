@@ -1,14 +1,14 @@
-import { DateItem, TextItem } from "../../../models/table/index.js";
+import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class VideosWatched extends InstagramBaseModel {
-  video_author?: TextItem;
+  video_author?: TextTableValue;
 
-  date_viewed?: DateItem;
+  date_viewed?: DateTableValue;
 
   constructor(videoAuthor: string, dateViewed: string) {
     super();
-    this.video_author = new TextItem(videoAuthor);
-    this.date_viewed = new DateItem(dateViewed);
+    this.video_author = new TextTableValue(videoAuthor);
+    this.date_viewed = new DateTableValue(dateViewed);
   }
 }

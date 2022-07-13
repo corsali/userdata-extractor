@@ -1,14 +1,14 @@
-import { DateItem, TextItem } from "../../../models/table/index.js";
+import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class SuggestedAccountsViewed extends InstagramBaseModel {
-  account_suggested?: TextItem;
+  account_suggested?: TextTableValue;
 
-  date_suggested?: DateItem;
+  date_suggested?: DateTableValue;
 
   constructor(accountSuggested: string, dateSuggested: string) {
     super();
-    this.account_suggested = new TextItem(accountSuggested);
-    this.date_suggested = new DateItem(dateSuggested);
+    this.account_suggested = new TextTableValue(accountSuggested);
+    this.date_suggested = new DateTableValue(dateSuggested);
   }
 }

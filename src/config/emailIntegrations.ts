@@ -1,10 +1,10 @@
-export type ModuleConfig = {
+export type EmailIntegrationConfig = {
   name: string;
   id: string;
   files: string[];
 };
 
-export const MODULE_CONFIG = [
+export const EMAIL_INTEGRATION_CONFIG = [
   {
     name: "Facebook",
     id: "e2f01718-6f5c-48f9-89ee-448ebb3e8290",

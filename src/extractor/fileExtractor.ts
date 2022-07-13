@@ -1,6 +1,6 @@
 import * as zip from "@zip.js/zip.js";
 
-import { Exporter } from "../exporter/exporter.js";
+import { Database } from "../database/database.js";
 import { Table } from "../models/table/table.js";
 
 interface FileExtractorEntry {
@@ -24,6 +24,12 @@ export class FileExtractor {
 
   table: Table;
 
+  /**
+   * Initializes and registers an individual file extractor
+   * @param serviceName Name of email integration, ex: Instagram
+   * @param filePattern File path pattern that this extractor can handle, ex: /messages/*./message_1.html
+   * @param tableName The name of the table this extractor should build, ex: personal_messages
+   */
   constructor(serviceName: string, filePattern: string, tableName: string) {
     this.serviceName = serviceName;
 
@@ -76,9 +82,9 @@ export class FileExtractor {
     throw new Error("FileExtractor.process() not implemented");
   }
 
-  createTable(exporter: Exporter) {
+  createTable(database: Database) {
     if (this.table) {
-      exporter.createTable(this.table);
+      database.createTable(this.table);
     }
   }
 }
