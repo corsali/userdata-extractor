@@ -1,38 +1,44 @@
-import { BoolItem, DateItem, TextItem } from "../../../models/table/index.js";
+import {
+  BoolTableValue,
+  DateTableValue,
+  TextTableValue,
+} from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class PersonalInformation extends InstagramBaseModel {
-  email?: TextItem;
+  email?: TextTableValue;
 
-  phone_confirmed?: BoolItem;
+  phone_confirmed?: BoolTableValue;
 
-  has_shared_live_video?: BoolItem;
+  has_shared_live_video?: BoolTableValue;
 
-  username?: TextItem;
+  username?: TextTableValue;
 
-  name?: TextItem;
+  name?: TextTableValue;
 
-  bio?: TextItem;
+  bio?: TextTableValue;
 
-  gender?: TextItem;
+  gender?: TextTableValue;
 
-  website?: TextItem;
+  website?: TextTableValue;
 
-  private_account?: BoolItem;
+  private_account?: BoolTableValue;
 
-  date_of_birth?: DateItem;
+  date_of_birth?: DateTableValue;
 
   constructor(valueMap: { [key: string]: string }) {
     super();
-    this.email = new TextItem(valueMap.email);
-    this.phone_confirmed = new BoolItem(valueMap.phone_confirmed);
-    this.has_shared_live_video = new BoolItem(valueMap.has_shared_live_video);
-    this.username = new TextItem(valueMap.username);
-    this.name = new TextItem(valueMap.name);
-    this.bio = new TextItem(valueMap.bio);
-    this.gender = new TextItem(valueMap.gender);
-    this.website = new TextItem(valueMap.website);
-    this.private_account = new BoolItem(valueMap.private_account);
-    this.date_of_birth = new DateItem(valueMap.date_of_birth);
+    this.email = new TextTableValue(valueMap.email);
+    this.phone_confirmed = new BoolTableValue(valueMap.phone_confirmed);
+    this.has_shared_live_video = new BoolTableValue(
+      valueMap.has_shared_live_video
+    );
+    this.username = new TextTableValue(valueMap.username);
+    this.name = new TextTableValue(valueMap.name);
+    this.bio = new TextTableValue(valueMap.bio);
+    this.gender = new TextTableValue(valueMap.gender);
+    this.website = new TextTableValue(valueMap.website);
+    this.private_account = new BoolTableValue(valueMap.private_account);
+    this.date_of_birth = new DateTableValue(valueMap.date_of_birth);
   }
 }

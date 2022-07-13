@@ -1,6 +1,6 @@
-import { ColumnItem } from "./columnItem.js";
+import { ColumnTableValue } from "./columnTableValue.js";
 
-export class DateItem extends ColumnItem {
+export class DateTableValue extends ColumnTableValue {
   constructor(value: string) {
     super(value);
     this.type = "date";

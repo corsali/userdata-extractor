@@ -1,11 +1,13 @@
 import { Table } from "../models/table/index.js";
 
-export interface Exporter {
+export interface Database {
   initialize(): void;
 
   createTable(table: Table): void;
 
-  exportDatabase(): any;
+  getDatabase(): any;
+
+  exportDatabase(): Uint8Array;
 
   runQuery(query: string): any;
 }

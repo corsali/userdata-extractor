@@ -1,6 +1,6 @@
 import * as zip from "@zip.js/zip.js";
 
-import { loadZipFromFile } from "../../src/utils/loadZipFromFile.js";
+import { loadZipFile } from "../../src/utils/loadZipFile.js";
 import { loadTestFile } from "../helper.js";
 
 describe("utils/loadZipFromFile", () => {
@@ -12,7 +12,7 @@ describe("utils/loadZipFromFile", () => {
 
   it("loadZipFromFile() returns a ZipFile", async () => {
     const file = loadTestFile("instagram_html_1.zip");
-    const zipFile = await loadZipFromFile(file);
+    const zipFile = await loadZipFile(file);
     expect(zipFile.getRoot().children?.length).toBeGreaterThan(0);
   });
 });

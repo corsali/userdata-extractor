@@ -1,6 +1,6 @@
-import { ColumnItem } from "./columnItem.js";
+import { ColumnTableValue } from "./columnTableValue.js";
 
-export class BoolItem extends ColumnItem {
+export class BoolTableValue extends ColumnTableValue {
   constructor(value: string) {
     super(value);
     this.type = "bool";
