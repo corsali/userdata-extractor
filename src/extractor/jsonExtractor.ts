@@ -4,11 +4,19 @@ import jp from "jsonpath";
 import { FileExtractor } from "./fileExtractor.js";
 
 export class JsonExtractor extends FileExtractor {
-  jsonDocument: any;
+  jsonDocument: object;
 
   async loadFileContents(zipEntry: zip.ZipEntry) {
     await super.loadFileContents(zipEntry);
     this.jsonDocument = JSON.parse(this.fileContents);
+  }
+
+  /**
+   * Used mainly for testing to directly set the json document
+   * @param file
+   */
+  async loadJson(json: object) {
+    this.jsonDocument = json;
   }
 
   query(jsonPath: string) {

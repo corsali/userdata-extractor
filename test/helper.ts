@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import { readFile } from "fs/promises"; // Use newer fs api
 import * as path from "path";
 
 /**
@@ -6,9 +7,19 @@ import * as path from "path";
  * @param fileName
  * @returns
  */
-const loadTestFile = (fileName: string): File => {
-  const data = fs.readFileSync(getFilePath(fileName));
+const loadTestFile = async (fileName: string): Promise<File> => {
+  const data = await readFile(getFilePath(fileName));
   return new File([data], fileName);
+};
+
+/**
+ * Loads a test file into a json object
+ * @param fileName Name of the file from the /test/data/. directory
+ * @returns
+ */
+const loadTestFileAsJson = async (fileName: string): Promise<object> => {
+  const file = await readFile(getFilePath(fileName), "utf8");
+  return JSON.parse(file);
 };
 
 const saveSqliteDump = (data: Uint8Array, outputFileName: string) => {
@@ -24,11 +35,17 @@ const deleteFile = (fileName: string) => {
   }
 };
 
-const fileExists = (fileName: string) => {
+const fileExists = (fileName: string): boolean => {
   return fs.existsSync(getFilePath(fileName));
 };
 
 const getFilePath = (fileName: string) =>
   path.join(__dirname, "./data", fileName);
 
-export { deleteFile, fileExists, loadTestFile, saveSqliteDump };
+export {
+  deleteFile,
+  fileExists,
+  loadTestFile,
+  loadTestFileAsJson,
+  saveSqliteDump,
+};

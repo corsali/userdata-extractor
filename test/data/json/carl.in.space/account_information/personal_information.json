@@ -1,0 +1,66 @@
+{
+  "profile_user": [
+    {
+      "title": "User Information",
+      "media_map_data": {
+        "Profile Photo": {
+          "uri": "media/other/288847725_1197478894341092_4022983763631844924_n_17960399146761376.jpg",
+          "creation_timestamp": 1655685392,
+          "title": ""
+        }
+      },
+      "string_map_data": {
+        "Email": {
+          "href": "",
+          "value": "carl@vana.org",
+          "timestamp": 0
+        },
+        "Phone Number": {
+          "href": "",
+          "value": "+13105552368",
+          "timestamp": 0
+        },
+        "Phone Confirmed": {
+          "href": "",
+          "value": "True",
+          "timestamp": 0
+        },
+        "Phone Confirmation Method": {
+          "href": "",
+          "value": "Unknown",
+          "timestamp": 0
+        },
+        "Username": {
+          "href": "",
+          "value": "carl.in.space",
+          "timestamp": 0
+        },
+        "Name": {
+          "href": "",
+          "value": "Carl Sagan",
+          "timestamp": 0
+        },
+        "Bio": {
+          "href": "",
+          "value": "Just teaching the world how to think at a galatic level.",
+          "timestamp": 0
+        },
+        "Gender": {
+          "href": "",
+          "value": "unspecified",
+          "timestamp": 0
+        },
+        "Date of birth": {
+          "href": "",
+          "value": "1934-11-09",
+          "timestamp": 0
+        },
+        "Private Account": {
+          "href": "",
+          "value": "False",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}

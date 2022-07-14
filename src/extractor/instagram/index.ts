@@ -1,11 +1,11 @@
-export * from "./html/accountInformationHtml.js";
-export * from "./html/adsClickedHtml.js";
-export * from "./html/adsViewedHtml.js";
-export * from "./html/personalInformationHtml.js";
-export * from "./html/postsViewedHtml.js";
-export * from "./html/suggestedAccountsViewedHtml.js";
-export * from "./html/videosWatchedHtml.js";
-export * from "./json/accountInformationJson.js";
-export * from "./json/suggestedAccountsViewedJson.js";
+export * from "./html/accountInformationHtml";
+export * from "./html/adsClickedHtml";
+export * from "./html/adsViewedHtml";
+export * from "./html/personalInformationHtml";
+export * from "./html/postsViewedHtml";
+export * from "./html/suggestedAccountsViewedHtml";
+export * from "./html/videosWatchedHtml";
+export * from "./json/accountInformationJson";
+export * from "./json/suggestedAccountsViewedJson";
 
 export const initialize = () => {};
