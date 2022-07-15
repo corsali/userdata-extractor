@@ -1,5 +1,5 @@
-import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
-import { InstagramBaseModel } from "./instagramBaseModel.js";
+import { DateTableValue, TextTableValue } from "../../../models/table";
+import { InstagramBaseModel } from "./instagramBaseModel";
 
 export class VideosWatched extends InstagramBaseModel {
   video_author?: TextTableValue;

@@ -2,8 +2,8 @@ import {
   BoolTableValue,
   DateTableValue,
   TextTableValue,
-} from "../../../models/table/index.js";
-import { InstagramBaseModel } from "./instagramBaseModel.js";
+} from "../../../models/table";
+import { InstagramBaseModel } from "./instagramBaseModel";
 
 export class AccountInformation extends InstagramBaseModel {
   /**

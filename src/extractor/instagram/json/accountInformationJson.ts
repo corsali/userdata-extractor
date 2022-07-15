@@ -1,7 +1,7 @@
-import config from "../../../config/index.js";
-import { Table } from "../../../models/table/index.js";
-import { JsonExtractor } from "../../jsonExtractor.js";
-import { AccountInformation } from "../models/accountInformation.js";
+import config from "../../../config";
+import { Table } from "../../../models/table";
+import { JsonExtractor } from "../../jsonExtractor";
+import { AccountInformation } from "../models/accountInformation";
 
 class AccountInformationJson extends JsonExtractor {
   async process() {

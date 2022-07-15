@@ -1,6 +1,6 @@
-import config from "../../../config/index.js";
-import { JsonExtractor } from "../../jsonExtractor.js";
-import { SuggestedAccountsViewed } from "../models/suggestedAccountsViewed.js";
+import config from "../../../config";
+import { JsonExtractor } from "../../jsonExtractor";
+import { SuggestedAccountsViewed } from "../models/suggestedAccountsViewed";
 
 class SuggestedAccountsViewedJson extends JsonExtractor {
   async process() {

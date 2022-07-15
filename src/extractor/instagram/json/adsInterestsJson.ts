@@ -1,5 +1,4 @@
 import config from "../../../config";
-import { Table } from "../../../models/table";
 import { JsonExtractor } from "../../jsonExtractor";
 import { AdsInterests } from "../models/adsInterestsJson";
 

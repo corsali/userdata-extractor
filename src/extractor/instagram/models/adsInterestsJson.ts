@@ -1,5 +1,5 @@
-import { TextTableValue } from "../../../models/table/index.js";
-import { InstagramBaseModel } from "./instagramBaseModel.js";
+import { TextTableValue } from "../../../models/table";
+import { InstagramBaseModel } from "./instagramBaseModel";
 
 export class AdsInterests extends InstagramBaseModel {
   /**

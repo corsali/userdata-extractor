@@ -1,6 +1,6 @@
-import config from "../../../config/index.js";
-import { JsonExtractor } from "../../jsonExtractor.js";
-import { ProfessionalInformation } from "../models/professionalInformation.js";
+import config from "../../../config";
+import { JsonExtractor } from "../../jsonExtractor";
+import { ProfessionalInformation } from "../models/professionalInformation";
 
 class ProfessionalInformationJson extends JsonExtractor {
   async process() {
