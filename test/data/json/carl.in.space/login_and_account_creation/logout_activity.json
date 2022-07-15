@@ -1,0 +1,37 @@
+{
+    "account_history_logout_history": [
+      {
+        "title": "2022-05-05T04:01:22+00:00",
+        "media_map_data": {
+          
+        },
+        "string_map_data": {
+          "Cookie Name": {
+            "href": "",
+            "value": "*************************HAL",
+            "timestamp": 0
+          },
+          "IP Address": {
+            "href": "",
+            "value": "1.1.1.1",
+            "timestamp": 0
+          },
+          "Language Code": {
+            "href": "",
+            "value": "en",
+            "timestamp": 0
+          },
+          "Time": {
+            "href": "",
+            "value": "",
+            "timestamp": 1651723282
+          },
+          "User Agent": {
+            "href": "",
+            "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+            "timestamp": 0
+          }
+        }
+      }
+    ]
+  }

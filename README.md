@@ -83,7 +83,7 @@ yarn test
 │   └── liked_posts.json
 ├── login_and_account_creation
 │   ├── login_activity.json   ✅
-│   ├── logout_activity.json
+│   ├── logout_activity.json  ✅
 │   ├── password_change_activity.json
 │   └── signup_information.json
 ├── loyalty_accounts
