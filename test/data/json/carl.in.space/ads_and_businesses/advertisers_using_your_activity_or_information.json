@@ -1,0 +1,40 @@
+{
+    "ig_custom_audiences_all_types": [
+      {
+        "advertiser_name": "Google",
+        "has_data_file_custom_audience": true,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Facebook",
+        "has_data_file_custom_audience": false,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Apple",
+        "has_data_file_custom_audience": false,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": true
+      },
+      {
+        "advertiser_name": "IKEA",
+        "has_data_file_custom_audience": false,
+        "has_remarketing_custom_audience": false,
+        "has_in_person_store_visit": true
+      },
+      {
+        "advertiser_name": "Costco",
+        "has_data_file_custom_audience": false,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": false
+      },
+      {
+        "advertiser_name": "Uniqlo",
+        "has_data_file_custom_audience": false,
+        "has_remarketing_custom_audience": true,
+        "has_in_person_store_visit": true
+      }
+    ]
+  }

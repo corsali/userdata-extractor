@@ -33,7 +33,7 @@ yarn test
 │   ├── professional_information.json ❌ (no data example)
 │   └── profile_changes.json          ✅
 ├── ads_and_businesses
-│   └── advertisers_using_your_activity_or_information.json
+│   └── advertisers_using_your_activity_or_information.json  ✅
 ├── ads_and_topics
 │   ├── accounts_you're_not_interested_in.json
 │   ├── ads_clicked.json
