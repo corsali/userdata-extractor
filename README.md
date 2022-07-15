@@ -82,13 +82,13 @@ yarn test
 │   ├── liked_comments.json
 │   └── liked_posts.json
 ├── login_and_account_creation
-│   ├── login_activity.json
+│   ├── login_activity.json   ✅
 │   ├── logout_activity.json
 │   ├── password_change_activity.json
 │   └── signup_information.json
 ├── loyalty_accounts
 │   └── no-data.txt
-├── media 🚫
+├── media ❌ (skipping non-text formats)
 ├── messages
 │   ├── inbox
 │   │   ├── instagram-username_u2df5hj
