@@ -1,12 +1,9 @@
 import { accountInformationJson } from "../../../../src/extractor/instagram/json/accountInformationJson";
 import {
-    BoolTableValue,
-    DateTableValue,
-    EmailTableValue,
-    PhoneNumberValue,
-    TextTableValue,
-    UrlTableValue,
-  } from "../../../../src/models/table";
+  BoolTableValue,
+  DateTableValue,
+  TextTableValue,
+} from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Account Information (JSON)", () => {
