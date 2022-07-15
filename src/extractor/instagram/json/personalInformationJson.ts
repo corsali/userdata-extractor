@@ -29,8 +29,6 @@ class PersonalInformationJson extends JsonExtractor {
       ...processedMediaData,
     };
 
-    console.log(data);
-
     this.table.rows.push(new PersonalInformation(data));
   }
 }

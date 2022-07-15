@@ -1,6 +1,7 @@
 export * from "./boolTableValue";
 export * from "./columnTableValue";
 export * from "./dateTableValue";
+export * from "./emailTableValue";
 export * from "./floatTableValue";
 export * from "./integerTableValue";
 export * from "./phoneNumberValue";

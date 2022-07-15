@@ -2,6 +2,7 @@ import { personalInformationJson } from "../../../../src/extractor/instagram/jso
 import {
   BoolTableValue,
   DateTableValue,
+  EmailTableValue,
   PhoneNumberValue,
   TextTableValue,
   UrlTableValue,
@@ -19,15 +20,13 @@ describe("Personal Information (JSON)", () => {
 
     const row = personalInformationJson.table.rows[0];
 
-    console.log(row);
-
     expect(row.bio).toEqual(
       new TextTableValue(
         "Just teaching the world how to think at a galatic level."
       )
     );
     expect(row.date_of_birth).toEqual(new DateTableValue("1934-11-09"));
-    expect(row.email).toEqual(new TextTableValue("carl@vana.org"));
+    expect(row.email).toEqual(new EmailTableValue("carl@vana.org"));
     expect(row.gender).toEqual(new TextTableValue("unspecified"));
     expect(row.has_shared_live_video).toEqual(new BoolTableValue("false"));
     expect(row.name).toEqual(new TextTableValue("Carl Sagan"));
