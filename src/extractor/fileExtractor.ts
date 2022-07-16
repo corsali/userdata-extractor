@@ -1,7 +1,7 @@
 import * as zip from "@zip.js/zip.js";
 
-import { Database } from "../database/database.js";
-import { Table } from "../models/table/table.js";
+import { Database } from "../database/database";
+import { Table } from "../models/table/table";
 
 interface FileExtractorEntry {
   filePattern: string;

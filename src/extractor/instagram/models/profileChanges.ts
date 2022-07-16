@@ -4,6 +4,7 @@ import {
   EmailTableValue,
   PhoneNumberValue,
   TextTableValue,
+  UrlTableValue,
 } from "../../../models/table";
 import { InstagramBaseModel } from "./instagramBaseModel";
 
@@ -41,9 +42,12 @@ export class ProfileChanges extends InstagramBaseModel {
       // Phone
       case "Phone Number":
         return new PhoneNumberValue(value);
+      // URL
+      case "Profile Bio Link":
+        return new UrlTableValue(value);
       // Fallback
       default:
-        console.log(`Unknown key: ${key}`);
+        console.warn(`Unknown key: ${key} -- value: ${value}`);
         return new ColumnTableValue(value);
     }
   }

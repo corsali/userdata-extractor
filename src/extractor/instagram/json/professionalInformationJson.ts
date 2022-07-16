@@ -8,7 +8,7 @@ class ProfessionalInformationJson extends JsonExtractor {
      * TODO: Actually parse data
      */
 
-    this.table.rows.push(new ProfessionalInformation());
+    this.table.rows.push(new ProfessionalInformation("dummy"));
   }
 }
 

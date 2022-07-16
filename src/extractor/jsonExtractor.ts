@@ -1,7 +1,7 @@
 import * as zip from "@zip.js/zip.js";
 import jp from "jsonpath";
 
-import { FileExtractor } from "./fileExtractor.js";
+import { FileExtractor } from "./fileExtractor";
 
 export class JsonExtractor extends FileExtractor {
   jsonDocument: object;

@@ -32,6 +32,7 @@ const deleteFile = (fileName: string) => {
     fs.unlinkSync(getFilePath(fileName));
   } catch (e) {
     console.warn(`Unable to delete file ${fileName}`);
+    console.error(e);
   }
 };
 

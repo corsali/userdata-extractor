@@ -1,4 +1,4 @@
-import { yourReelsSentimentsJson } from "../../../../src/extractor/instagram/json/yourReelsSentiments";
+import { yourReelsSentimentsJson } from "../../../../src/extractor/instagram/json/yourReelsSentimentsJson";
 import { TextTableValue } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
