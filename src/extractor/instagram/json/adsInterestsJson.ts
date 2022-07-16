@@ -18,6 +18,6 @@ class AdInterestsJson extends JsonExtractor {
 
 export const adInterestsJson = new AdInterestsJson(
   config.SERVICE_INSTAGRAM,
-  "information_about_you/ad_interests.json",
-  "ad_interests"
+  "information_about_you/ads_interests.json",
+  "ads_interests"
 );
