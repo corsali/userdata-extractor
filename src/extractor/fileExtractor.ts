@@ -60,7 +60,6 @@ export class FileExtractor {
         const regex = new RegExp(extractorEntry.filePattern, "g");
         return regex.test(filePath);
       });
-      console.log(fileExtractorEntry);
       return fileExtractorEntry?.extractor ?? null;
     }
     throw new Error(`No file extractors found for service ${serviceName}`);
