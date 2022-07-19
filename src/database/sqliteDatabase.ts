@@ -63,13 +63,11 @@ export class SQLiteDatabase implements Database {
       const columnType = row[columnName].type;
       switch (columnType) {
         case "bool":
+        case "integer":
           columnNameType.push(`${columnName} integer`);
           break;
         case "float":
           columnNameType.push(`${columnName} real`);
-          break;
-        case "integer":
-          columnNameType.push(`${columnName} integer`);
           break;
         case "date":
           columnNameType.push(`${columnName} date`);
