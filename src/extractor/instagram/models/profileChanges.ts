@@ -6,6 +6,7 @@ import {
   TextTableValue,
   UrlTableValue,
 } from "../../../models/table/index.js";
+import { logger } from "../../../utils/logger.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class ProfileChanges extends InstagramBaseModel {
@@ -47,7 +48,9 @@ export class ProfileChanges extends InstagramBaseModel {
         return new UrlTableValue(value);
       // Fallback
       default:
-        console.warn(`Unknown key: ${key} -- value: ${value}`);
+        logger.warn(
+          `Profile Changes -- Unknown key "${key}" with value "${value}"`
+        );
         return new ColumnTableValue(value);
     }
   }
