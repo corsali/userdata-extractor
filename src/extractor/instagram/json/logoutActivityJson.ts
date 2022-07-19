@@ -14,13 +14,7 @@ class LogoutActivityJson extends JsonExtractor {
       return Object.entries(logout).reduce(
         (acc: { [key: string]: string }, [k, v]: [string, any]) => {
           const columnName = Table.toPropertyName(k);
-          /**
-           * Complicated logic here but:
-           * 1) Attempt to extract the value key
-           * 2) If the value is an EMPTY string ("") then fallback to the "timestamp" key
-           * 3) If all else fails, return an empty string
-           */
-          acc[columnName] = (v && v.value !== "" ? v.value : v.timestamp) ?? "";
+          acc[columnName] = v?.value || v?.timestamp;
           return acc;
         },
         {}
