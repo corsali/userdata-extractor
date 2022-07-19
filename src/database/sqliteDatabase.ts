@@ -68,6 +68,12 @@ export class SQLiteDatabase implements Database {
         case "float":
           columnNameType.push(`${columnName} real`);
           break;
+        case "integer":
+          columnNameType.push(`${columnName} integer`);
+          break;
+        case "date":
+          columnNameType.push(`${columnName} date`);
+          break;
         default:
           columnNameType.push(`${columnName} text`);
           break;
