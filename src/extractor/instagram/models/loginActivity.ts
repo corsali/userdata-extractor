@@ -1,5 +1,5 @@
-import { DateTableValue, TextTableValue } from "../../../models/table";
-import { InstagramBaseModel } from "./instagramBaseModel";
+import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
+import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class LoginActivity extends InstagramBaseModel {
   /**

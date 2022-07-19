@@ -1,7 +1,7 @@
-import config from "../../../config";
-import { Table } from "../../../models/table";
-import { JsonExtractor } from "../../jsonExtractor";
-import { LogoutActivity } from "../models/logoutActivity";
+import config from "../../../config/index.js";
+import { Table } from "../../../models/table/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { LogoutActivity } from "../models/logoutActivity.js";
 
 class LogoutActivityJson extends JsonExtractor {
   async process() {

@@ -1,4 +1,4 @@
-import { TextTableValue } from "./textTableValue";
+import { TextTableValue } from "./textTableValue.js";
 
 export class EmailTableValue extends TextTableValue {
   constructor(value: string) {

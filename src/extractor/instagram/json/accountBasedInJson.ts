@@ -1,6 +1,6 @@
-import config from "../../../config";
-import { JsonExtractor } from "../../jsonExtractor";
-import { AccountBasedIn } from "../models/accountBasedIn";
+import config from "../../../config/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { AccountBasedIn } from "../models/accountBasedIn.js";
 
 class AccountBasedInJson extends JsonExtractor {
   async process() {

@@ -1,6 +1,6 @@
-import config from "../../../config";
-import { JsonExtractor } from "../../jsonExtractor";
-import { YourReelsTopics } from "../models/yourReelsTopics";
+import config from "../../../config/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { YourReelsTopics } from "../models/yourReelsTopics.js";
 
 class YourReelsTopicsJson extends JsonExtractor {
   async process() {

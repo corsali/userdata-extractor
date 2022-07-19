@@ -1,6 +1,6 @@
-import config from "../../../config";
-import { JsonExtractor } from "../../jsonExtractor";
-import { AdsInterests } from "../models/adsInterestsJson";
+import config from "../../../config/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { AdsInterests } from "../models/adsInterestsJson.js";
 
 class AdInterestsJson extends JsonExtractor {
   async process() {

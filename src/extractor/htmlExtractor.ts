@@ -1,6 +1,6 @@
 import * as zip from "@zip.js/zip.js";
 
-import { FileExtractor } from "./fileExtractor";
+import { FileExtractor } from "./fileExtractor.js";
 
 export class HtmlExtractor extends FileExtractor {
   htmlDocument: Document;

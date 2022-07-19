@@ -1,7 +1,7 @@
-import config from "../../../config";
-import { Table } from "../../../models/table";
-import { JsonExtractor } from "../../jsonExtractor";
-import { PersonalInformation } from "../models/personalInformation";
+import config from "../../../config/index.js";
+import { Table } from "../../../models/table/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { PersonalInformation } from "../models/personalInformation.js";
 
 class PersonalInformationJson extends JsonExtractor {
   async process() {

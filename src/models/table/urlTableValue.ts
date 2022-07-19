@@ -1,4 +1,4 @@
-import { TextTableValue } from "./textTableValue";
+import { TextTableValue } from "./textTableValue.js";
 
 export class UrlTableValue extends TextTableValue {
   constructor(value: string) {

@@ -1,5 +1,5 @@
-import { TextTableValue } from "../../../models/table";
-import { InstagramBaseModel } from "./instagramBaseModel";
+import { TextTableValue } from "../../../models/table/index.js";
+import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class AccountBasedIn extends InstagramBaseModel {
   primary_location?: TextTableValue;

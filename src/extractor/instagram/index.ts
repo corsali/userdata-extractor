@@ -1,28 +1,28 @@
 /**
  * HTML Extractors
  */
-export * from "./html/accountInformationHtml";
-export * from "./html/adsClickedHtml";
-export * from "./html/adsViewedHtml";
-export * from "./html/personalInformationHtml";
-export * from "./html/postsViewedHtml";
-export * from "./html/suggestedAccountsViewedHtml";
-export * from "./html/videosWatchedHtml";
+export * from "./html/accountInformationHtml.js";
+export * from "./html/adsClickedHtml.js";
+export * from "./html/adsViewedHtml.js";
+export * from "./html/personalInformationHtml.js";
+export * from "./html/postsViewedHtml.js";
+export * from "./html/suggestedAccountsViewedHtml.js";
+export * from "./html/videosWatchedHtml.js";
 
 /**
  * JSON Extractors
  */
-export * from "./json/accountBasedInJson";
-export * from "./json/accountInformationJson";
-export * from "./json/adsInterestsJson";
-export * from "./json/advertisersUsingYourActivityOrInformationJson";
-export * from "./json/loginActivityJson";
-export * from "./json/logoutActivityJson";
-export * from "./json/personalInformationJson";
-export * from "./json/professionalInformationJson";
-export * from "./json/profileChangesJson";
-export * from "./json/suggestedAccountsViewedJson";
-export * from "./json/yourReelsSentimentsJson";
-export * from "./json/yourReelsTopicsJson";
+export * from "./json/accountBasedInJson.js";
+export * from "./json/accountInformationJson.js";
+export * from "./json/adsInterestsJson.js";
+export * from "./json/advertisersUsingYourActivityOrInformationJson.js";
+export * from "./json/loginActivityJson.js";
+export * from "./json/logoutActivityJson.js";
+export * from "./json/personalInformationJson.js";
+export * from "./json/professionalInformationJson.js";
+export * from "./json/profileChangesJson.js";
+export * from "./json/suggestedAccountsViewedJson.js";
+export * from "./json/yourReelsSentimentsJson.js";
+export * from "./json/yourReelsTopicsJson.js";
 
 export const initialize = () => {};

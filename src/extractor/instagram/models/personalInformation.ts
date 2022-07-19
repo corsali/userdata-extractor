@@ -5,8 +5,8 @@ import {
   PhoneNumberValue,
   TextTableValue,
   UrlTableValue,
-} from "../../../models/table";
-import { InstagramBaseModel } from "./instagramBaseModel";
+} from "../../../models/table/index.js";
+import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class PersonalInformation extends InstagramBaseModel {
   /**

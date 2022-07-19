@@ -1,6 +1,6 @@
-import config from "../../../config";
-import { JsonExtractor } from "../../jsonExtractor";
-import { YourReelsSentiments } from "../models/yourReelsSentiments";
+import config from "../../../config/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { YourReelsSentiments } from "../models/yourReelsSentiments.js";
 
 class YourReelsSentimentsJson extends JsonExtractor {
   async process() {

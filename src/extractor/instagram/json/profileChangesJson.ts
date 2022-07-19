@@ -1,6 +1,6 @@
-import config from "../../../config";
-import { JsonExtractor } from "../../jsonExtractor";
-import { ProfileChanges } from "../models/profileChanges";
+import config from "../../../config/index.js";
+import { JsonExtractor } from "../../jsonExtractor.js";
+import { ProfileChanges } from "../models/profileChanges.js";
 
 class ProfileChangesJson extends JsonExtractor {
   async process() {

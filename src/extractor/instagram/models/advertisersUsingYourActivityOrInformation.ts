@@ -1,5 +1,5 @@
-import { BoolTableValue, TextTableValue } from "../../../models/table";
-import { InstagramBaseModel } from "./instagramBaseModel";
+import { BoolTableValue, TextTableValue } from "../../../models/table/index.js";
+import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class AdvertisersUsingYourActivityOrInformation extends InstagramBaseModel {
   /**
