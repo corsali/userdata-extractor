@@ -12,7 +12,7 @@ describe("Account Information (JSON)", () => {
       "/json/carl.in.space/account_information/account_information.json"
     );
 
-    accountInformationJson.loadJson(data);
+    accountInformationJson.setJsonDocument(data);
     accountInformationJson.process();
 
     const { rows } = accountInformationJson.table;

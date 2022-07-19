@@ -8,7 +8,7 @@ describe("Ad Interests (JSON)", () => {
       "/json/carl.in.space/information_about_you/ads_interests.json"
     );
 
-    adInterestsJson.loadJson(data);
+    adInterestsJson.setJsonDocument(data);
     adInterestsJson.process();
 
     const { rows } = adInterestsJson.table;

@@ -15,7 +15,7 @@ describe("Personal Information (JSON)", () => {
       "/json/carl.in.space/account_information/personal_information.json"
     );
 
-    personalInformationJson.loadJson(data);
+    personalInformationJson.setJsonDocument(data);
     personalInformationJson.process();
 
     const row = personalInformationJson.table.rows[0];

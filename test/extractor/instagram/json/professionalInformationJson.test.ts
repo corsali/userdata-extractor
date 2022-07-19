@@ -8,7 +8,7 @@ describe("Professional Information (JSON)", () => {
       "/json/carl.in.space/account_information/professional_information.json"
     );
 
-    professionalInformationJson.loadJson(data);
+    professionalInformationJson.setJsonDocument(data);
     professionalInformationJson.process();
 
     const { rows } = professionalInformationJson.table;

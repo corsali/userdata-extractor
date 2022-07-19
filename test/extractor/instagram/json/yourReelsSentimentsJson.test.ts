@@ -8,7 +8,7 @@ describe("Your Reels Sentiments (JSON)", () => {
       "/json/carl.in.space/your_topics/your_reels_sentiments.json"
     );
 
-    yourReelsSentimentsJson.loadJson(data);
+    yourReelsSentimentsJson.setJsonDocument(data);
     yourReelsSentimentsJson.process();
 
     const { rows } = yourReelsSentimentsJson.table;

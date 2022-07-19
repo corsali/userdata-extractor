@@ -16,7 +16,7 @@ describe("Profile Changes (JSON)", () => {
       "/json/carl.in.space/account_information/profile_changes.json"
     );
 
-    profileChangesJson.loadJson(data);
+    profileChangesJson.setJsonDocument(data);
     profileChangesJson.process();
 
     const { rows } = profileChangesJson.table;

@@ -8,7 +8,7 @@ describe("Login Activity (JSON)", () => {
       "/json/carl.in.space/login_and_account_creation/login_activity.json"
     );
 
-    loginActivityJson.loadJson(data);
+    loginActivityJson.setJsonDocument(data);
     loginActivityJson.process();
 
     const { rows } = loginActivityJson.table;

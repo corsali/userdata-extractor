@@ -8,7 +8,7 @@ describe("Account Based In (JSON)", () => {
       "/json/carl.in.space/information_about_you/account_based_in.json"
     );
 
-    accountBasedInJson.loadJson(data);
+    accountBasedInJson.setJsonDocument(data);
     accountBasedInJson.process();
 
     const { rows } = accountBasedInJson.table;

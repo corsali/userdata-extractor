@@ -15,7 +15,7 @@ export class JsonExtractor extends FileExtractor {
    * Used mainly for testing to directly set the json document
    * @param file
    */
-  async loadJson(json: object) {
+  public async setJsonDocument(json: object) {
     this.jsonDocument = json;
   }
 

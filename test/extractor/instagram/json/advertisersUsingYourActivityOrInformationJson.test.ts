@@ -8,7 +8,7 @@ describe("Advertisers Using Your Activity Or Information (JSON)", () => {
       "/json/carl.in.space/ads_and_businesses/advertisers_using_your_activity_or_information.json"
     );
 
-    advertisersUsingYourActivityOrInformationJson.loadJson(data);
+    advertisersUsingYourActivityOrInformationJson.setJsonDocument(data);
     advertisersUsingYourActivityOrInformationJson.process();
 
     const {
