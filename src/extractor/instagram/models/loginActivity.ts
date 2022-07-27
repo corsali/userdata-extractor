@@ -2,29 +2,14 @@ import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class LoginActivity extends InstagramBaseModel {
-  /**
-   * Exists: JSON
-   */
   cookie_name?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   ip_address?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   language_code?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   time?: DateTableValue;
 
-  /**
-   * Exists: JSON
-   */
   user_agent?: TextTableValue;
 
   constructor(values: { [key: string]: string }) {

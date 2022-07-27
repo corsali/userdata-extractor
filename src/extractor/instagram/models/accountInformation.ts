@@ -6,45 +6,20 @@ import {
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class AccountInformation extends InstagramBaseModel {
-  /**
-   * Exists: JSON
-   */
   contact_syncing?: BoolTableValue;
 
-  /**
-   * Exists: JSON
-   */
   first_close_friends_story_time?: DateTableValue;
-
-  /**
-   * Exists: JSON
-   */
 
   first_country_code?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   first_story_time?: DateTableValue;
 
-  /**
-   * Exists: JSON
-   */
   has_shared_live_video?: BoolTableValue;
 
-  /**
-   * Exists: JSON
-   */
   last_login?: DateTableValue;
 
-  /**
-   * Exists: JSON
-   */
   last_logout?: DateTableValue;
 
-  /**
-   * Exists: JSON
-   */
   last_story_time?: DateTableValue;
 
   constructor(valueMap: { [key: string]: string }) {

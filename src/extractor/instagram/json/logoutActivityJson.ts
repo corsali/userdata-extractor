@@ -9,7 +9,7 @@ class LogoutActivityJson extends JsonExtractor {
       `$.account_history_logout_history[*].string_map_data`
     );
 
-    // Turn data into a list of flat object inorder to contruct new LogoutActivity objs
+    // Turn data into a list of flat object in order to construct new LogoutActivity objs
     const flattenedLogoutData = logoutData.map((logout) => {
       return Object.entries(logout).reduce(
         (acc: { [key: string]: string }, [k, v]: [string, any]) => {

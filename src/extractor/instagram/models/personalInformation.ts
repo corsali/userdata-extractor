@@ -9,69 +9,30 @@ import {
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class PersonalInformation extends InstagramBaseModel {
-  /**
-   * Exists: JSON, HTML
-   */
   bio?: TextTableValue;
 
-  /**
-   * Exists: JSON, HTML
-   */
   date_of_birth?: DateTableValue;
 
-  /**
-   * Exists: JSON
-   */
   email?: TextTableValue;
 
-  /**
-   * Exists: JSON, HTML
-   */
   gender?: TextTableValue;
 
-  /**
-   * Exists: HTML
-   */
   has_shared_live_video?: BoolTableValue;
 
-  /**
-   * Exists: JSON, HTML
-   */
   name?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   phone_confirmation_method?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   phone_confirmed?: BoolTableValue;
 
-  /**
-   * Exists: JSON
-   */
   phone_number?: PhoneNumberValue;
 
-  /**
-   * Exists: JSON, HTML
-   */
   private_account?: BoolTableValue;
 
-  /**
-   * Exists: JSON
-   */
   profile_photo?: UrlTableValue;
 
-  /**
-   * Exists: JSON, HTML
-   */
   username?: TextTableValue;
 
-  /**
-   * Exists: HTML
-   */
   website?: TextTableValue;
 
   constructor(valueMap: { [key: string]: string }) {

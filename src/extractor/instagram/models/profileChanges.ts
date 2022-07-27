@@ -1,59 +1,14 @@
-import {
-  ColumnTableValue,
-  DateTableValue,
-  EmailTableValue,
-  PhoneNumberValue,
-  TextTableValue,
-  UrlTableValue,
-} from "../../../models/table/index.js";
-import { logger } from "../../../utils/logger.js";
+import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class ProfileChanges extends InstagramBaseModel {
-  /**
-   * Exists: JSON
-   */
-  changed?: ColumnTableValue;
+  changed?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
-  previous_value?: ColumnTableValue;
+  previous_value?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
-  new_value?: ColumnTableValue;
+  new_value?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   change_date?: DateTableValue;
-
-  static selectValueTypeFromKey(key: string, value: any) {
-    switch (key) {
-      // Text values
-      case "Profile Bio Text":
-      case "Profile Name":
-      case "Username":
-        return new TextTableValue(value);
-      // Email
-      case "Email":
-        return new EmailTableValue(value);
-      // Phone
-      case "Phone Number":
-        return new PhoneNumberValue(value);
-      // URL
-      case "Profile Bio Link":
-        return new UrlTableValue(value);
-      // Fallback
-      default:
-        logger.warn(
-          `Profile Changes -- Unknown key "${key}" with value "${value}"`
-        );
-        return new ColumnTableValue(value);
-    }
-  }
 
   constructor(valueMap: {
     changed: string;
@@ -63,14 +18,8 @@ export class ProfileChanges extends InstagramBaseModel {
   }) {
     super();
     this.changed = new TextTableValue(valueMap.changed);
-    this.previous_value = ProfileChanges.selectValueTypeFromKey(
-      valueMap.changed,
-      valueMap.previous_value
-    );
-    this.new_value = ProfileChanges.selectValueTypeFromKey(
-      valueMap.changed,
-      valueMap.new_value
-    );
+    this.previous_value = new TextTableValue(valueMap.previous_value);
+    this.new_value = new TextTableValue(valueMap.new_value);
     this.change_date = new DateTableValue(valueMap.change_date);
   }
 }

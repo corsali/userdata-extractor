@@ -2,24 +2,12 @@ import { BoolTableValue, TextTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class AdvertisersUsingYourActivityOrInformation extends InstagramBaseModel {
-  /**
-   * Exists: JSON
-   */
   advertiser_name?: TextTableValue;
 
-  /**
-   * Exists: JSON
-   */
   has_data_file_custom_audience?: BoolTableValue;
 
-  /**
-   * Exists: JSON
-   */
   has_in_person_store_visit?: BoolTableValue;
 
-  /**
-   * Exists: JSON
-   */
   has_remarketing_custom_audience?: BoolTableValue;
 
   constructor(valueMap: { [key: string]: string | boolean }) {

@@ -1,14 +1,21 @@
 import config from "../../../config/index.js";
+import { Table } from "../../../models/table/table.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
 import { ProfessionalInformation } from "../models/professionalInformation.js";
 
 class ProfessionalInformationJson extends JsonExtractor {
   async process() {
-    /**
-     * TODO: Actually parse data
-     */
+    const values = this.query("$.profile_business[*].string_map_data");
+    const valueMap: { [key: string]: string } = {};
 
-    this.table.rows.push(new ProfessionalInformation("dummy"));
+    values.forEach((value) => {
+      Object.keys(value).forEach((key) => {
+        const columnName = Table.toPropertyName(key);
+        valueMap[columnName] = value[key].value || value[key].timestamp;
+      });
+    });
+
+    this.table.rows.push(new ProfessionalInformation(valueMap));
   }
 }
 

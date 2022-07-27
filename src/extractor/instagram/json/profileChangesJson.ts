@@ -7,17 +7,21 @@ class ProfileChangesJson extends JsonExtractor {
     const changes =
       this.query(`$.profile_profile_change[*].string_map_data`) ?? [];
 
-    /* eslint-disable camelcase */
     const processedChanges = changes
       .map((change) => {
         const {
-          Changed: { value: changed },
-          "Previous Value": { value: previous_value },
-          "New Value": { value: new_value },
-          "Change Date": { timestamp: change_date },
+          Changed: { href: changedHref, value: changedValue },
+          "Previous Value": { href: prevHref, value: prevValue },
+          "New Value": { href: newHref, value: newValue },
+          "Change Date": { timestamp: changeDate },
         } = change;
 
-        return { changed, previous_value, new_value, change_date };
+        return {
+          changed: changedHref || changedValue,
+          previous_value: prevHref || prevValue,
+          new_value: newHref || newValue,
+          change_date: changeDate,
+        };
       })
       .map((change) => new ProfileChanges(change));
 

@@ -1,13 +1,5 @@
 /* eslint-disable no-restricted-syntax */
 import { profileChangesJson } from "../../../../src/extractor/instagram/json/profileChangesJson";
-import {
-  BoolTableValue,
-  DateTableValue,
-  EmailTableValue,
-  PhoneNumberValue,
-  TextTableValue,
-  UrlTableValue,
-} from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Profile Changes (JSON)", () => {
