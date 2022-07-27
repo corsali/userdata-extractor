@@ -1,8 +1,8 @@
 import { ColumnTableValue } from "./columnTableValue.js";
 
 export class DateTableValue extends ColumnTableValue {
-  constructor(value: string) {
-    super(value);
+  constructor(value: string | number) {
+    super(`${value}`);
     this.type = "date";
     this.value = this.toDate(value);
   }

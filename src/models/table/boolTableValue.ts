@@ -1,9 +1,10 @@
 import { ColumnTableValue } from "./columnTableValue.js";
 
 export class BoolTableValue extends ColumnTableValue {
-  constructor(value: string) {
-    super(value);
+  constructor(value: string | boolean) {
+    super(`${value}`);
     this.type = "bool";
-    this.value = value?.toLowerCase() === "true";
+    this.value =
+      typeof value === "boolean" ? value : value?.toLowerCase() === "true";
   }
 }

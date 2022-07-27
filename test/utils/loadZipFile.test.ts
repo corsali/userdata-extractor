@@ -11,7 +11,7 @@ describe("utils/loadZipFromFile", () => {
   });
 
   it("loadZipFromFile() returns a ZipFile", async () => {
-    const file = loadTestFile("instagram_html_1.zip");
+    const file = await loadTestFile("instagram_html_1.zip");
     const zipFile = await loadZipFile(file);
     expect(zipFile.getRoot().children?.length).toBeGreaterThan(0);
   });

@@ -23,21 +23,22 @@ export class SQLiteDatabase implements Database {
     this.database = new this.sql.Database();
   }
 
-  createTable(table: Table) {
-    if (table.rows?.length > 0) {
-      const createTableSql = `CREATE TABLE IF NOT EXISTS ${table.tableName} (
-        ${this.getColumnTypes(table.rows[0]).join(", ")}
-      );`;
+  async createTable(table: Table) {
+    if (table?.rows?.length > 0) {
+      const columnTypes = this.getColumnTypes(table.rows[0]).join(", ");
+      const createTableSql = `CREATE TABLE IF NOT EXISTS ${table.tableName} (${columnTypes});`;
       this.database.run(createTableSql);
     }
 
-    if (table.rows?.length > 0 && Object.keys(table.rows[0]).length > 0) {
-      table.rows?.forEach((row) => {
-        const insertRowSql = `INSERT INTO ${table.tableName} VALUES (
-          ${Object.keys(row)
-            .map((columnName) => `:${columnName}`)
-            .join(", ")}
-        );`;
+    if (table?.rows?.length > 0 && Object.keys(table.rows[0]).length > 0) {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const row of table.rows) {
+        const columnValues = Object.keys(row)
+          .map((columnName) => `:${columnName}`)
+          .join(", ");
+
+        const insertRowSql = `INSERT INTO ${table.tableName} VALUES (${columnValues});`;
+
         const bindParams = Object.keys(row).reduce(
           (acc, columnName) => ({
             ...acc,
@@ -46,7 +47,7 @@ export class SQLiteDatabase implements Database {
           {}
         );
         this.database.exec(insertRowSql, bindParams);
-      });
+      }
     }
   }
 
@@ -62,13 +63,17 @@ export class SQLiteDatabase implements Database {
       const columnType = row[columnName].type;
       switch (columnType) {
         case "bool":
+        case "integer":
           columnNameType.push(`${columnName} integer`);
           break;
         case "float":
           columnNameType.push(`${columnName} real`);
           break;
+        case "date":
+          columnNameType.push(`${columnName} date`);
+          break;
         default:
-          columnNameType.push(`${columnName} ${columnType}`);
+          columnNameType.push(`${columnName} text`);
           break;
       }
     });

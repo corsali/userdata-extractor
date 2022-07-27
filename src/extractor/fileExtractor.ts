@@ -53,9 +53,9 @@ export class FileExtractor {
    * @returns
    */
   static getExtractor(serviceName: string, filePath: string): FileExtractor {
-    if (FileExtractor.registeredExtractors[serviceName]) {
+    if (FileExtractor.registeredExtractors[serviceName?.toLowerCase()]) {
       const fileExtractorEntry = FileExtractor.registeredExtractors[
-        serviceName
+        serviceName?.toLowerCase()
       ].find((extractorEntry: FileExtractorEntry) => {
         const regex = new RegExp(extractorEntry.filePattern, "g");
         return regex.test(filePath);
