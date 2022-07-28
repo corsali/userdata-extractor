@@ -1,11 +1,7 @@
-import initSqlJs, {
-  Database as SqlDatabase,
-  QueryExecResult,
-  SqlJsStatic,
-} from "sql.js";
+import initSqlJs, { Database as SqlDatabase, SqlJsStatic } from "sql.js";
 
 import { Table, TableRow } from "../models/table/index.js";
-import { Database } from "./database.js";
+import { Database, QueryResult } from "./database.js";
 
 export class SQLiteDatabase implements Database {
   sql: SqlJsStatic;
@@ -23,6 +19,10 @@ export class SQLiteDatabase implements Database {
     this.database = new this.sql.Database();
   }
 
+  /**
+   * Creates an SQLite table from a Table object
+   * @param table Table object to create the table from
+   */
   async createTable(table: Table) {
     if (table?.rows?.length > 0) {
       const columnTypes = this.getColumnTypes(table.rows[0]).join(", ");
@@ -88,7 +88,36 @@ export class SQLiteDatabase implements Database {
     return this.database.export();
   }
 
-  runQuery(query: string): QueryExecResult[] {
-    return this.database.exec(query);
+  /**
+   * Run an SQL query against the current database
+   * @param query Raw SQL query string
+   * @returns an array of query results
+   */
+  runQuery(query: string): QueryResult[] {
+    const queryResults: QueryResult[] = [];
+    try {
+      const queryIterator = this.database.iterateStatements(query);
+
+      // Iterate through the query which possibly has multiple SQL statements
+      // eslint-disable-next-line no-restricted-syntax
+      for (const statement of queryIterator) {
+        const queryResult: QueryResult = {};
+        try {
+          queryResult.queryString = statement.getNormalizedSQL();
+          queryResult.queryResult = this.database.exec(queryResult.queryString);
+        } catch (singleQueryError) {
+          queryResult.queryString = queryIterator.getRemainingSql();
+          queryResult.error = singleQueryError.toString();
+        } finally {
+          queryResults.push(queryResult);
+        }
+      }
+    } catch (entireQueryError) {
+      queryResults.push({
+        error: entireQueryError.toString(),
+      });
+    }
+
+    return queryResults;
   }
 }
