@@ -9,3 +9,6 @@ tmp
 
 # User data
 *.sqlite
+
+# IDE
+/.idea

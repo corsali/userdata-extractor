@@ -9,5 +9,11 @@ export interface Database {
 
   exportDatabase(): Uint8Array;
 
-  runQuery(query: string): any;
+  runQuery(query: string): QueryResult[];
+}
+
+export interface QueryResult {
+  queryString?: string;
+  queryResult?: any;
+  error?: string;
 }
