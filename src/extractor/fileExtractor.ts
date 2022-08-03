@@ -70,6 +70,10 @@ export class FileExtractor {
    * @param zipEntry
    */
   async loadFileContents(zipEntry: zip.ZipEntry) {
+    // TODO: Remove later
+    zip.configure({
+      useWebWorkers: false,
+    });
     this.zipEntry = zipEntry;
     this.mimeType = zip.getMimeType(zipEntry.name);
     this.fileContents = await this.zipEntry.data.getData(

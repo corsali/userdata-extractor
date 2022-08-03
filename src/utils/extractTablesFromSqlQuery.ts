@@ -6,7 +6,8 @@
 const extractTablesFromSqlQuery = (query: string): Set<string> => {
   const tableNames = query
     .toLowerCase()
-    .match(/(?<= (from|join) \s*)([a-z0-9-_]+)/gm);
+    .match(/(?: (from|join) \s*)([a-z0-9-_]+)/gm)
+    .map((match) => match.replace(" from ", "").replace(" join ", ""));
   return new Set<string>(tableNames);
 };
 
