@@ -14,9 +14,10 @@ Extractors.register();
  */
 const zipToSQLiteInstance = async (
   serviceName: string,
-  file: File
+  file: File,
+  useWebWorkers = true
 ): Promise<Database> => {
-  const zipFile = await loadZipFile(file);
+  const zipFile = await loadZipFile(file, useWebWorkers);
   const database = new SQLiteDatabase();
   await database.initialize();
 
