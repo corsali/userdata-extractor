@@ -20,6 +20,6 @@ class SuggestedAccountsViewedJson extends JsonExtractor {
 
 export const suggestedAccountsViewedJson = new SuggestedAccountsViewedJson(
   config.SERVICE_INSTAGRAM,
-  "ads_and_topics/suggested_accounts_viewed.json",
+  ".*/suggested_accounts_viewed.json",
   "suggested_accounts_viewed"
 );

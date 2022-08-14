@@ -21,6 +21,6 @@ class ProfessionalInformationJson extends JsonExtractor {
 
 export const professionalInformationJson = new ProfessionalInformationJson(
   config.SERVICE_INSTAGRAM,
-  "account_information/professional_information.json",
+  ".*/professional_information.json",
   "professional_information"
 );

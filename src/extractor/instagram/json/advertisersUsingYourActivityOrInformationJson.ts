@@ -18,6 +18,6 @@ class AdvertisersUsingYourActivityOrInformationJson extends JsonExtractor {
 export const advertisersUsingYourActivityOrInformationJson =
   new AdvertisersUsingYourActivityOrInformationJson(
     config.SERVICE_INSTAGRAM,
-    "ads_and_businesses/advertisers_using_your_activity_or_information.json",
+    ".*/advertisers_using_your_activity_or_information.json",
     "advertisers_using_your_activity_or_information"
   );

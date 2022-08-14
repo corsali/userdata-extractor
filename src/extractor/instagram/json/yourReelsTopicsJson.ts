@@ -18,6 +18,6 @@ class YourReelsTopicsJson extends JsonExtractor {
 
 export const yourReelsTopicsJson = new YourReelsTopicsJson(
   config.SERVICE_INSTAGRAM,
-  "your_topics/your_reels_topics.json",
+  ".*/your_reels_topics.json",
   "your_reels_topics"
 );
