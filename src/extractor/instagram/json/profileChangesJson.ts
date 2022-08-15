@@ -31,6 +31,6 @@ class ProfileChangesJson extends JsonExtractor {
 
 export const profileChangesJson = new ProfileChangesJson(
   config.SERVICE_INSTAGRAM,
-  "account_information/profile_changes.json",
+  ".*/profile_changes.json",
   "profile_changes"
 );

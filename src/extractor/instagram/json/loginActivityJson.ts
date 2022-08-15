@@ -31,6 +31,6 @@ class LoginActivityJson extends JsonExtractor {
 
 export const loginActivityJson = new LoginActivityJson(
   config.SERVICE_INSTAGRAM,
-  "login_and_account_creation/login_activity.json",
+  ".*/login_activity.json",
   "login_activity"
 );

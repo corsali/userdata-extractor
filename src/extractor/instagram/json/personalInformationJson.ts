@@ -35,6 +35,6 @@ class PersonalInformationJson extends JsonExtractor {
 
 export const personalInformationJson = new PersonalInformationJson(
   config.SERVICE_INSTAGRAM,
-  "account_information/personal_information.json",
+  ".*/personal_information.json",
   "personal_information"
 );

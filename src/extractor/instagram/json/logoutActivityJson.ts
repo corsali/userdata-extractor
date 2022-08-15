@@ -31,6 +31,6 @@ class LogoutActivityJson extends JsonExtractor {
 
 export const logoutActivityJson = new LogoutActivityJson(
   config.SERVICE_INSTAGRAM,
-  "login_and_account_creation/logout_activity.json",
+  ".*/logout_activity.json",
   "logout_activity"
 );

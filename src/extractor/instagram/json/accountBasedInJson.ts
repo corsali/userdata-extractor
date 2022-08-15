@@ -16,6 +16,6 @@ class AccountBasedInJson extends JsonExtractor {
 
 export const accountBasedInJson = new AccountBasedInJson(
   config.SERVICE_INSTAGRAM,
-  "information_about_you/account_based_in.json",
+  ".*/account_based_in.json",
   "account_based_in"
 );
