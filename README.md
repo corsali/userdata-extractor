@@ -101,7 +101,7 @@ When we're ready to release a new version of this package, visit [Github Release
 ├── blockchain_accounts
 │   └── no-data.txt
 ├── comments
-│   └── post_comments.json
+│   └── post_comments.json  ✅
 ├── comments_settings
 │   ├── comments_allowed_from.json
 │   └── use_cross-app_messaging.json
@@ -110,7 +110,7 @@ When we're ready to release a new version of this package, visit [Github Release
 ├── content
 │   ├── posts_1.json
 │   ├── profile_photos.json
-│   └── stories.json
+│   └── stories.json  ✅
 ├── device_information
 │   ├── camera_information.json
 │   └── devices.json
