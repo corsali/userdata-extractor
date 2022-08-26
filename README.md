@@ -103,8 +103,8 @@ When we're ready to release a new version of this package, visit [Github Release
 ├── comments
 │   └── post_comments.json  ✅
 ├── comments_settings
-│   ├── comments_allowed_from.json
-│   └── use_cross-app_messaging.json
+│   ├── comments_allowed_from.json  ✅
+│   └── use_cross-app_messaging.json  ✅
 ├── contacts
 │   └── synced_contacts.json
 ├── content
