@@ -1,0 +1,119 @@
+{
+  "devices_devices": [
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Device ID": {
+          "href": "",
+          "value": "android-8623654bffecb343",
+          "timestamp": 0
+        },
+        "Last Login": {
+          "href": "",
+          "value": "",
+          "timestamp": 1643336685
+        },
+        "User Agent": {
+          "href": "",
+          "value": "Instagram 219.0.0.12.117 Android (31/12; 420dpi; 1080x2123; samsung; SM-N986W; c2q; qcom; en_CA; 346138354)",
+          "timestamp": 0
+        }
+      }
+    },
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Device ID": {
+          "href": "",
+          "value": "android-3fb8bfc7e4a6bbe1",
+          "timestamp": 0
+        },
+        "Last Login": {
+          "href": "",
+          "value": "",
+          "timestamp": 1563110836
+        },
+        "User Agent": {
+          "href": "",
+          "value": "Instagram 101.0.0.15.120 Android (28/9; 240dpi; 480x782; HMD Global/Nokia; Nokia 1; FRT; mt6735; en_GB; 162439026)",
+          "timestamp": 0
+        }
+      }
+    },
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Device ID": {
+          "href": "",
+          "value": "android-eb5e8f71a4ae887e",
+          "timestamp": 0
+        },
+        "Last Login": {
+          "href": "",
+          "value": "",
+          "timestamp": 1562734298
+        },
+        "User Agent": {
+          "href": "",
+          "value": "Instagram 85.0.0.21.100 Android (27/8.1.0; 440dpi; 1080x2030; Xiaomi/xiaomi; Redmi Note 5; whyred; qcom; en_US; 146536611)",
+          "timestamp": 0
+        }
+      }
+    },
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Device ID": {
+          "href": "",
+          "value": "android-ddca27fef72e5f83",
+          "timestamp": 0
+        },
+        "Last Login": {
+          "href": "",
+          "value": "",
+          "timestamp": 1560310291
+        },
+        "User Agent": {
+          "href": "",
+          "value": "Instagram 97.0.0.32.119 Android (28/9; 420dpi; 1080x2094; samsung; SM-N950F; greatlte; samsungexynos8895; en_CA; 158441917)",
+          "timestamp": 0
+        }
+      }
+    },
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Device ID": {
+          "href": "",
+          "value": "android-eea0b36ca6ef14cc",
+          "timestamp": 0
+        },
+        "Last Login": {
+          "href": "",
+          "value": "",
+          "timestamp": 1559747068
+        },
+        "User Agent": {
+          "href": "",
+          "value": "Instagram 64.0.0.14.96 Android (16/4.1.2; 373dpi; 1080x1920; Hisense; HS-EG978; EG978; en_US)",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}

@@ -109,17 +109,17 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── synced_contacts.json
 ├── content
 │   ├── posts_1.json
-│   ├── profile_photos.json
+│   ├── profile_photos.json  ✅
 │   └── stories.json  ✅
 ├── device_information
 │   ├── camera_information.json
-│   └── devices.json
+│   └── devices.json  ✅
 ├── events
 │   └── no-data.txt
 ├── followers_and_following
 │   ├── blocked_accounts.json
-│   ├── followers.json
-│   ├── following.json
+│   ├── followers.json  ✅
+│   ├── following.json  ✅
 │   ├── pending_follow_requests.json
 │   ├── recent_follow_requests.json
 │   └── recently_unfollowed_accounts.json
