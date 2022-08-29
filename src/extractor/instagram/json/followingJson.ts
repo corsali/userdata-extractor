@@ -1,17 +1,18 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { FollowersAndFollowing as Following } from "../models/followersAndFollowing.js";
+import { Following } from "../models/following";
 
 class FollowingJson extends JsonExtractor {
   async process() {
-    const following = this.query(`$.relationships_following[*].string_list_data`) ?? [];
+    const following =
+      this.query(`$.relationships_following[*].string_list_data`) ?? [];
 
     const processedFollowing = following.map(
       (singleFollowing) =>
         new Following({
           name: singleFollowing[0].value,
-          url: singleFollowing[0].href,
-          timestamp: singleFollowing[0].timestamp,
+          profileUrl: singleFollowing[0].href,
+          dateFollowed: singleFollowing[0].timestamp,
         })
     );
 

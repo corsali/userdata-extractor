@@ -20,7 +20,7 @@ export class JsonExtractor extends FileExtractor {
   }
 
   query(jsonPath: string) {
-    return jp.query(this.jsonDocument, jsonPath);
+    return jp.query(this.jsonDocument, jsonPath) ?? [];
   }
 
   // eslint-disable-next-line class-methods-use-this

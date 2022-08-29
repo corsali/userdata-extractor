@@ -1,4 +1,4 @@
-import { DateTableValue, BoolTableValue } from "../../../models/table/index.js";
+import { BoolTableValue, DateTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class UpgradedToCrossAppMessaging extends InstagramBaseModel {
@@ -6,9 +6,9 @@ export class UpgradedToCrossAppMessaging extends InstagramBaseModel {
 
   timeUpgraded?: DateTableValue;
 
-  constructor(values: { [key: string]: string }) {
+  constructor(upgraded: string, timeUpgraded: string) {
     super();
-    this.upgraded = new BoolTableValue(values.upgraded);
-    this.timeUpgraded = new DateTableValue(values.timeUpgraded);
+    this.upgraded = new BoolTableValue(upgraded);
+    this.timeUpgraded = new DateTableValue(timeUpgraded);
   }
 }

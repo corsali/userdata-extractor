@@ -10,14 +10,11 @@ class UpgradedToCrossAppMessagingJson extends JsonExtractor {
 
     const processedUpgradeToCrossAppMessagingData =
       upgradeToCrossAppMessagingData.map(
-        (upgradeToCrossAppMessagingData) =>
-          new UpgradedToCrossAppMessaging({
-            upgraded:
-              upgradeToCrossAppMessagingData["Upgraded To Cross-App Messaging"]
-                .value,
-            timeUpgraded:
-              upgradeToCrossAppMessagingData["Time Upgraded"].timestamp,
-          })
+        (entry) =>
+          new UpgradedToCrossAppMessaging(
+            entry["Upgraded To Cross-App Messaging"].value,
+            entry["Time Upgraded"].timestamp
+          )
       );
 
     this.table.rows.push(...processedUpgradeToCrossAppMessagingData);
@@ -27,6 +24,6 @@ class UpgradedToCrossAppMessagingJson extends JsonExtractor {
 export const upgradedToCrossAppMessagingJson =
   new UpgradedToCrossAppMessagingJson(
     config.SERVICE_INSTAGRAM,
-    ".*/comments_allowed_from.json",
-    "comments_allowed_from"
+    ".*/use_cross-app_messaging.json",
+    "upgraded_to_cross_app_messaging"
   );

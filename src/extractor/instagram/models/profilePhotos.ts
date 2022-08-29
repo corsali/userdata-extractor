@@ -1,4 +1,9 @@
-import { DateTableValue, TextTableValue, UrlTableValue, BoolTableValue } from "../../../models/table/index.js";
+import {
+  BoolTableValue,
+  DateTableValue,
+  TextTableValue,
+  UrlTableValue,
+} from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class ProfilePhotos extends InstagramBaseModel {

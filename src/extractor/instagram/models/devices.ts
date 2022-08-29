@@ -2,20 +2,20 @@ import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class Devices extends InstagramBaseModel {
-  deviceId?: TextTableValue;
+  device_id?: TextTableValue;
 
-  lastLogin?: DateTableValue;
+  last_login?: DateTableValue;
 
-  userAgent?: TextTableValue;
+  user_agent?: TextTableValue;
 
-  constructor(valueMap: {
+  constructor(values: {
     deviceId: string;
     lastLogin: number;
     userAgent: string;
   }) {
     super();
-    this.deviceId = new TextTableValue(valueMap.deviceId);
-    this.lastLogin = new DateTableValue(valueMap.lastLogin);
-    this.userAgent = new TextTableValue(valueMap.userAgent);
+    this.device_id = new TextTableValue(values.deviceId);
+    this.last_login = new DateTableValue(values.lastLogin);
+    this.user_agent = new TextTableValue(values.userAgent);
   }
 }
