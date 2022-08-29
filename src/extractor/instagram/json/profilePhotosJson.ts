@@ -4,7 +4,7 @@ import { ProfilePhotos } from "../models/profilePhotos.js";
 
 class ProfilePhotosJson extends JsonExtractor {
   async process() {
-    const profilePictures = this.query(`$.ig_profile_picture[*]`) ?? [];
+    const profilePictures = this.query(`$.ig_profile_picture[*]`);
 
     const processedProfilePictures = profilePictures.map(
       (profilePicture) =>

@@ -4,8 +4,9 @@ import { Following } from "../models/following";
 
 class FollowingJson extends JsonExtractor {
   async process() {
-    const following =
-      this.query(`$.relationships_following[*].string_list_data`) ?? [];
+    const following = this.query(
+      `$.relationships_following[*].string_list_data`
+    );
 
     const processedFollowing = following.map(
       (singleFollowing) =>

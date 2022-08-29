@@ -4,8 +4,7 @@ import { ProfileChanges } from "../models/profileChanges.js";
 
 class ProfileChangesJson extends JsonExtractor {
   async process() {
-    const changes =
-      this.query(`$.profile_profile_change[*].string_map_data`) ?? [];
+    const changes = this.query(`$.profile_profile_change[*].string_map_data`);
 
     const processedChanges = changes
       .map((change) => {

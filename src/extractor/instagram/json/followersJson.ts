@@ -4,8 +4,9 @@ import { Followers } from "../models/followers.js";
 
 class FollowersJson extends JsonExtractor {
   async process() {
-    const followers =
-      this.query(`$.relationships_followers[*].string_list_data`) ?? [];
+    const followers = this.query(
+      `$.relationships_followers[*].string_list_data`
+    );
 
     const processedFollowers = followers.map(
       (follower) =>

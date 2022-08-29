@@ -4,7 +4,7 @@ import { Devices } from "../models/devices.js";
 
 class DevicesJson extends JsonExtractor {
   async process() {
-    const devices = this.query(`$.devices_devices[*].string_map_data`) ?? [];
+    const devices = this.query(`$.devices_devices[*].string_map_data`);
 
     const processedDevices = devices.map(
       (device) =>
