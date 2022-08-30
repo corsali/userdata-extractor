@@ -5,7 +5,7 @@ import { YourReelsTopics } from "../models/yourReelsTopics.js";
 class YourReelsTopicsJson extends JsonExtractor {
   async process() {
     const topicData = this.query(
-      `$.topics_your_reels_topics[*].string_map_data["Name"].value`
+      `$.topics_your_reels_topics[*].string_map_data["name"].value`
     );
 
     const processedTopicData = topicData.map(

@@ -5,7 +5,7 @@ import { AdsInterests } from "../models/adsInterestsJson.js";
 class AdInterestsJson extends JsonExtractor {
   async process() {
     const interestData = this.query(
-      `$.inferred_data_ig_interest.*.string_map_data.Interest.value`
+      `$.inferred_data_ig_interest.*.string_map_data.interest.value`
     );
 
     const processedInterestData = interestData.map(

@@ -5,7 +5,7 @@ import { CommentsAllowedFrom } from "../models/commentsAllowedFrom.js";
 class CommentsAllowedFromJson extends JsonExtractor {
   async process() {
     const allowedFromData = this.query(
-      `$.settings_allow_comments_from.*.string_map_data["Comments Allowed From"].value`
+      `$.settings_allow_comments_from.*.string_map_data["comments allowed from"].value`
     );
 
     const processedAllowedFromData = allowedFromData.map(

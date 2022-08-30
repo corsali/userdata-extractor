@@ -13,7 +13,7 @@ export class ProfilePhotos extends InstagramBaseModel {
 
   title?: TextTableValue;
 
-  isProfilePicture?: BoolTableValue;
+  is_profile_picture?: BoolTableValue;
 
   constructor(valueMap: {
     uri: string;
@@ -25,6 +25,6 @@ export class ProfilePhotos extends InstagramBaseModel {
     this.uri = new UrlTableValue(valueMap.uri);
     this.created = new DateTableValue(valueMap.created);
     this.title = new TextTableValue(valueMap.title);
-    this.isProfilePicture = new BoolTableValue(valueMap.isProfilePicture);
+    this.is_profile_picture = new BoolTableValue(valueMap.isProfilePicture);
   }
 }

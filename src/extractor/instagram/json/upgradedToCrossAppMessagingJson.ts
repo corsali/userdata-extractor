@@ -12,8 +12,8 @@ class UpgradedToCrossAppMessagingJson extends JsonExtractor {
       upgradeToCrossAppMessagingData.map(
         (entry) =>
           new UpgradedToCrossAppMessaging(
-            entry["Upgraded To Cross-App Messaging"].value,
-            entry["Time Upgraded"].timestamp
+            entry["upgraded to cross-app messaging"]?.value,
+            entry["time upgraded"]?.timestamp
           )
       );
 
