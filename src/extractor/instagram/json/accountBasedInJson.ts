@@ -5,7 +5,7 @@ import { AccountBasedIn } from "../models/accountBasedIn.js";
 class AccountBasedInJson extends JsonExtractor {
   async process() {
     const interestData = this.query(
-      `$.inferred_data_primary_location.*.string_map_data["City Name"].value`
+      `$.inferred_data_primary_location.*.string_map_data["city name"].value`
     );
 
     const processedInterestData: string = interestData[0] ?? "";

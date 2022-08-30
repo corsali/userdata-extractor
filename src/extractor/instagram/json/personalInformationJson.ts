@@ -6,11 +6,11 @@ import { PersonalInformation } from "../models/personalInformation.js";
 class PersonalInformationJson extends JsonExtractor {
   async process() {
     const mediaData = this.query(
-      `$.profile_user[*].media_map_data['Profile Photo']`
+      `$.profile_user[*].media_map_data['profile photo']`
     )[0];
 
     const processedMediaData = {
-      profile_photo: mediaData.uri,
+      profile_photo: mediaData?.uri,
     };
 
     const stringData = this.query(`$.profile_user[*].string_map_data`)[0];

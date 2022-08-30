@@ -9,9 +9,9 @@ class DevicesJson extends JsonExtractor {
     const processedDevices = devices.map(
       (device) =>
         new Devices({
-          deviceId: device["Device ID"].value,
-          lastLogin: device["Last Login"].timestamp,
-          userAgent: device["User Agent"].value,
+          deviceId: device["device id"]?.value,
+          lastLogin: device["last login"]?.timestamp,
+          userAgent: device["user agent"]?.value,
         })
     );
 

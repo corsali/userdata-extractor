@@ -9,8 +9,8 @@ class SuggestedAccountsViewedJson extends JsonExtractor {
     );
 
     values.forEach((value) => {
-      const accountSuggested = value.Username.value;
-      const dateSuggested = value.Time.timestamp;
+      const accountSuggested = value.username.value;
+      const dateSuggested = value.time.timestamp;
       this.table.rows.push(
         new SuggestedAccountsViewed(accountSuggested, dateSuggested)
       );

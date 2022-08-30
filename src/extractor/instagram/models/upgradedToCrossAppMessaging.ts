@@ -4,11 +4,11 @@ import { InstagramBaseModel } from "./instagramBaseModel.js";
 export class UpgradedToCrossAppMessaging extends InstagramBaseModel {
   upgraded?: BoolTableValue;
 
-  timeUpgraded?: DateTableValue;
+  time_upgraded?: DateTableValue;
 
   constructor(upgraded: string, timeUpgraded: string) {
     super();
     this.upgraded = new BoolTableValue(upgraded);
-    this.timeUpgraded = new DateTableValue(timeUpgraded);
+    this.time_upgraded = new DateTableValue(timeUpgraded);
   }
 }

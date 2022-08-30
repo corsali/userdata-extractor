@@ -7,10 +7,10 @@ class PostCommentsJson extends JsonExtractor {
     const values = this.query("$.comments_media_comments[*].string_map_data");
 
     values.forEach((value) => {
-      const comment = value.Comment.value;
-      const dateCommented = value["Comment creation time"].timestamp;
-      const deletedComment = value["Deletion status"].value;
-      const mediaOwner = value["Media owner"].value;
+      const comment = value.comment.value;
+      const dateCommented = value["comment creation time"].timestamp;
+      const deletedComment = value["deletion status"].value;
+      const mediaOwner = value["media owner"].value;
       this.table.rows.push(
         new PostComments(comment, dateCommented, deletedComment, mediaOwner)
       );
