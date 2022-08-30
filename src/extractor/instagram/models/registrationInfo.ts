@@ -1,4 +1,9 @@
-import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
+import {
+  DateTableValue,
+  EmailTableValue,
+  PhoneNumberValue,
+  TextTableValue,
+} from "../../../models/table/index.js";
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class RegistrationInfo extends InstagramBaseModel {
@@ -8,9 +13,9 @@ export class RegistrationInfo extends InstagramBaseModel {
 
   time?: DateTableValue;
 
-  email?: TextTableValue;
+  email?: EmailTableValue;
 
-  phone_number?: TextTableValue;
+  phone_number?: PhoneNumberValue;
 
   device?: TextTableValue;
 
@@ -26,8 +31,8 @@ export class RegistrationInfo extends InstagramBaseModel {
     this.username = new TextTableValue(values.username);
     this.ip_address = new TextTableValue(values.ipAddress);
     this.time = new DateTableValue(values.time);
-    this.email = new TextTableValue(values.email);
-    this.phone_number = new TextTableValue(values.phoneNumber);
+    this.email = new EmailTableValue(values.email);
+    this.phone_number = new PhoneNumberValue(values.phoneNumber);
     this.device = new TextTableValue(values.device);
   }
 }

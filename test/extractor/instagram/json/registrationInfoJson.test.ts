@@ -1,6 +1,11 @@
 /* eslint-disable no-restricted-syntax */
 import { registrationInfoJson } from "../../../../src/extractor/instagram/json/registrationInfoJson";
-import { DateTableValue, TextTableValue } from "../../../../src/models/table";
+import {
+  DateTableValue,
+  EmailTableValue,
+  PhoneNumberValue,
+  TextTableValue,
+} from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Registration Info (JSON)", () => {
@@ -21,8 +26,8 @@ describe("Registration Info (JSON)", () => {
     expect(row.username).toEqual(new TextTableValue("IGUser12345"));
     expect(row.ip_address).toEqual(new TextTableValue("99.244.197.7"));
     expect(row.time).toEqual(new DateTableValue(1463108884));
-    expect(row.email).toEqual(new TextTableValue("support@iguser12345.net"));
-    expect(row.phone_number).toEqual(new TextTableValue(""));
+    expect(row.email).toEqual(new EmailTableValue("support@iguser12345.net"));
+    expect(row.phone_number).toEqual(new PhoneNumberValue(""));
     expect(row.device).toEqual(new TextTableValue(""));
   });
 });

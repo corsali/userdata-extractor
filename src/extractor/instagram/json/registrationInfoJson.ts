@@ -9,12 +9,12 @@ class RegistrationInfoJson extends JsonExtractor {
     )[0];
 
     const processedRegistrationInfo = new RegistrationInfo({
-      username: registrationInfo.username.value,
-      ipAddress: registrationInfo["ip address"].value,
-      time: registrationInfo.time.timestamp,
-      email: registrationInfo.email.value,
-      phoneNumber: registrationInfo["phone number"].value,
-      device: registrationInfo.device.value,
+      username: registrationInfo.username?.value,
+      ipAddress: registrationInfo["ip address"]?.value,
+      time: registrationInfo.time?.timestamp,
+      email: registrationInfo.email?.value,
+      phoneNumber: registrationInfo["phone number"]?.value,
+      device: registrationInfo.device?.value,
     });
     this.table.rows.push(processedRegistrationInfo);
   }

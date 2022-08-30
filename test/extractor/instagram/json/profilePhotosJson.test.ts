@@ -1,10 +1,10 @@
 /* eslint-disable no-restricted-syntax */
 import { profilePhotosJson } from "../../../../src/extractor/instagram/json/profilePhotosJson";
 import {
-  UrlTableValue,
+  BoolTableValue,
   DateTableValue,
   TextTableValue,
-  BoolTableValue,
+  UrlTableValue,
 } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
@@ -29,6 +29,6 @@ describe("Profile Photos (JSON)", () => {
     );
     expect(row.created).toEqual(new DateTableValue(1463170610));
     expect(row.title).toEqual(new TextTableValue(""));
-    expect(row.isProfilePicture).toEqual(new BoolTableValue(true));
+    expect(row.is_profile_picture).toEqual(new BoolTableValue(true));
   });
 });
