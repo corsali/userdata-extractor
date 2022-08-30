@@ -93,7 +93,8 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── posts_viewed.json
 │   └── videos_watched.json
 ├── apps_and_websites
-│   └── active_apps.json
+│   ├── active_apps.json
+│   └── expired_pps.json ✅
 ├── autofill_information
 │   └── no-data.txt
 ├── avatars_store
@@ -118,6 +119,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── no-data.txt
 ├── followers_and_following
 │   ├── blocked_accounts.json
+│   ├── close_friends.json ✅
 │   ├── followers.json  ✅
 │   ├── following.json  ✅
 │   ├── pending_follow_requests.json
@@ -132,12 +134,12 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── ads_interests.json    ✅
 ├── likes
 │   ├── liked_comments.json
-│   └── liked_posts.json
+│   └── liked_posts.json ✅
 ├── login_and_account_creation
 │   ├── login_activity.json   ✅
 │   ├── logout_activity.json  ✅
-│   ├── password_change_activity.json
-│   └── signup_information.json
+│   ├── password_change_activity.json ✅
+│   └── signup_information.json ✅
 ├── loyalty_accounts
 │   └── no-data.txt
 ├── media ❌ (skipping non-text formats)
@@ -156,9 +158,10 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── secret_conversations.json
 │   └── secret_groups.json
 ├── monetization
-│   └── eligibility.json
+│   └── eligibility.json ✅
 ├── past_instagram_insights
-│   └── no-data.txt
+│   ├── accounts_reached.json ✅
+│   └── audience_insights.json ✅
 ├── recent_searches
 │   └── account_searches.json
 ├── reports
