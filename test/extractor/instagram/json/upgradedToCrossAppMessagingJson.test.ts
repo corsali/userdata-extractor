@@ -15,6 +15,6 @@ describe("Upgraded to Cross-App Messaging (JSON)", () => {
     const row = rows[0];
 
     expect(row.upgraded).toEqual(new BoolTableValue(true));
-    expect(row.timeUpgraded).toEqual(new DateTableValue(1611115515));
+    expect(row.time_upgraded).toEqual(new DateTableValue(1611115515));
   });
 });
