@@ -1,6 +1,7 @@
 import * as zip from "@zip.js/zip.js";
 import jp from "jsonpath";
 
+import { recursivelyLowercaseObjectKeys } from "../utils/recursivelyLowercaseObjectKeys.js";
 import { FileExtractor } from "./fileExtractor.js";
 
 export class JsonExtractor extends FileExtractor {
@@ -8,7 +9,8 @@ export class JsonExtractor extends FileExtractor {
 
   async loadFileContents(zipEntry: zip.ZipEntry) {
     await super.loadFileContents(zipEntry);
-    this.jsonDocument = JSON.parse(this.fileContents);
+    const parsedJson = JSON.parse(this.fileContents);
+    this.jsonDocument = recursivelyLowercaseObjectKeys(parsedJson);
   }
 
   /**
@@ -16,7 +18,7 @@ export class JsonExtractor extends FileExtractor {
    * @param file
    */
   public async setJsonDocument(json: object) {
-    this.jsonDocument = json;
+    this.jsonDocument = recursivelyLowercaseObjectKeys(json);
   }
 
   query(jsonPath: string) {
