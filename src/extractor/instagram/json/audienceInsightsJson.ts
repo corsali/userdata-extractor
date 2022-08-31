@@ -9,11 +9,19 @@ class AudienceInsightsJson extends JsonExtractor {
     );
 
     const processedAudienceInsights = audienceInsights.map(
-      (audienceInsightsEntry) =>
-        new AudienceInsights(
-          audienceInsightsEntry["date range"].value,
+      (audienceInsightsEntry) => {
+        // @todo Need more data and see examples with year provided to have
+        // reliable parsing to Date. The relevant parser can be included in
+        // DateTableValue object parsing.
+        const dateRange =
+          audienceInsightsEntry["date range"].value.split(" - ");
+
+        return new AudienceInsights(
+          dateRange[0],
+          dateRange[1],
           audienceInsightsEntry.followers.value
-        )
+        );
+      }
     );
 
     this.table.rows.push(...processedAudienceInsights);

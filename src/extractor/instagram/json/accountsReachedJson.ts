@@ -9,9 +9,15 @@ class AccountsReachedJson extends JsonExtractor {
     );
 
     const processedAccountsReached = accountsReached.map(
-      (accountsReachedEntry) =>
-        new AccountsReached({
-          dateRange: accountsReachedEntry["date range"].value,
+      (accountsReachedEntry) => {
+        // @todo Need more data and see examples with year provided to have
+        // reliable parsing to Date. The relevant parser can be included in
+        // DateTableValue object parsing.
+        const dateRange = accountsReachedEntry["date range"].value.split(" - ");
+
+        return new AccountsReached({
+          dateRangeFrom: dateRange[0],
+          dateRangeTo: dateRange[1],
           accountsReached: accountsReachedEntry["accounts reached"].value,
           accountsReachedDelta:
             accountsReachedEntry["accounts reached delta"].value,
@@ -25,7 +31,8 @@ class AccountsReachedJson extends JsonExtractor {
           emailButtonTaps: accountsReachedEntry["email button taps"].value,
           emailButtonTapsDelta:
             accountsReachedEntry["email button taps delta"].value,
-        })
+        });
+      }
     );
 
     this.table.rows.push(...processedAccountsReached);

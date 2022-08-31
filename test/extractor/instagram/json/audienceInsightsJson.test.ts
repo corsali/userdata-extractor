@@ -21,7 +21,8 @@ describe("Audience insights (JSON)", () => {
 
     const row = rows[0];
 
-    expect(row.date_range).toEqual(new TextTableValue("Jan 27 - Apr 26"));
+    expect(row.date_range_from).toEqual(new TextTableValue("Jan 27"));
+    expect(row.date_range_to).toEqual(new TextTableValue("Apr 26"));
     expect(row.followers).toEqual(new IntegerTableValue("8"));
   });
 });

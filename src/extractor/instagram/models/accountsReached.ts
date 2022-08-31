@@ -5,7 +5,9 @@ import {
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class AccountsReached extends InstagramBaseModel {
-  date_range?: TextTableValue;
+  date_range_from?: TextTableValue;
+
+  date_range_to?: TextTableValue;
 
   accounts_reached?: IntegerTableValue;
 
@@ -28,7 +30,8 @@ export class AccountsReached extends InstagramBaseModel {
   email_button_taps_delta?: TextTableValue;
 
   constructor(values: {
-    dateRange: string;
+    dateRangeFrom: string;
+    dateRangeTo: string;
     accountsReached: string | number;
     accountsReachedDelta: string;
     followers: string | number;
@@ -41,7 +44,8 @@ export class AccountsReached extends InstagramBaseModel {
     emailButtonTapsDelta: string;
   }) {
     super();
-    this.date_range = new TextTableValue(values.dateRange);
+    this.date_range_from = new TextTableValue(values.dateRangeFrom);
+    this.date_range_to = new TextTableValue(values.dateRangeTo);
     this.accounts_reached = new IntegerTableValue(values.accountsReached);
     this.accounts_reached_delta = new TextTableValue(
       values.accountsReachedDelta

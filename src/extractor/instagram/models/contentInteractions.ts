@@ -5,7 +5,9 @@ import {
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class ContentInteractions extends InstagramBaseModel {
-  date_range?: TextTableValue;
+  date_range_from?: TextTableValue;
+
+  date_range_to?: TextTableValue;
 
   content_interactions?: IntegerTableValue;
 
@@ -33,7 +35,8 @@ export class ContentInteractions extends InstagramBaseModel {
 
   constructor(values: { [key: string]: string }) {
     super();
-    this.date_range = new TextTableValue(values.dateRange);
+    this.date_range_from = new TextTableValue(values.dateRangeFrom);
+    this.date_range_to = new TextTableValue(values.dateRangeTo);
     this.content_interactions = new IntegerTableValue(
       values.contentInteractions
     );

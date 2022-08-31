@@ -9,9 +9,16 @@ class ContentInteractionsJson extends JsonExtractor {
     );
 
     const processedContentInteractions = contentInteractions.map(
-      (contentInteractionsEntry) =>
-        new ContentInteractions({
-          dateRange: contentInteractionsEntry["date range"].value,
+      (contentInteractionsEntry) => {
+        // @todo Need more data and see examples with year provided to have
+        // reliable parsing to Date. The relevant parser can be included in
+        // DateTableValue object parsing.
+        const dateRange =
+          contentInteractionsEntry["date range"].value.split(" - ");
+
+        return new ContentInteractions({
+          dateRangeFrom: dateRange[0],
+          dateRangeTo: dateRange[1],
           contentInteractions:
             contentInteractionsEntry["content interactions"].value,
           contentInteractionsDelta:
@@ -34,7 +41,8 @@ class ContentInteractionsJson extends JsonExtractor {
           accountsEngaged: contentInteractionsEntry["accounts engaged"].value,
           accountsEngagedDelta:
             contentInteractionsEntry["accounts engaged delta"].value,
-        })
+        });
+      }
     );
 
     this.table.rows.push(...processedContentInteractions);
