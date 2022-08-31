@@ -161,9 +161,11 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── eligibility.json ✅
 ├── past_instagram_insights
 │   ├── accounts_reached.json ✅
-│   └── audience_insights.json ✅
+│   ├── audience_insights.json ✅
+│   └── content_interactions.json ✅
 ├── recent_searches
-│   └── account_searches.json
+│   ├── account_searches.json
+│   └── word_or_phrase_searches.json ✅
 ├── reports
 │   └── no-data.txt
 ├── saved

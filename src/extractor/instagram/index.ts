@@ -20,6 +20,7 @@ export * from "./json/advertisersUsingYourActivityOrInformationJson.js";
 export * from "./json/audienceInsightsJson.js";
 export * from "./json/closeFriendsJson.js";
 export * from "./json/commentsAllowedFromJson.js";
+export * from "./json/contentInteractionsJson.js";
 export * from "./json/devicesJson.js";
 export * from "./json/expiredAppsJson.js";
 export * from "./json/followersJson.js";
@@ -38,6 +39,7 @@ export * from "./json/registrationInfoJson";
 export * from "./json/stories.js";
 export * from "./json/suggestedAccountsViewedJson.js";
 export * from "./json/upgradedToCrossAppMessagingJson.js";
+export * from "./json/wordOrPhraseSearchesJson.js";
 export * from "./json/yourReelsSentimentsJson.js";
 export * from "./json/yourReelsTopicsJson.js";
 
