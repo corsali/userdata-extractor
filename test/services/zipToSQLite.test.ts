@@ -35,7 +35,6 @@ describe("services/zipExporter", () => {
         const file = await loadTestFile(`${testFile}.zip`);
         const database = await zipToSQLiteInstance("instagram", file, false);
         saveSqliteDump(database.exportDatabase(), `${testFile}.sqlite`);
-        console.log(testFile);
         expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
       })
     );
