@@ -81,7 +81,7 @@ When we're ready to release a new version of this package, visit [Github Release
 .
 ├── account_information (see 2nd zip test file - these are in personal_information/)
 │   ├── account_information.json      ✅
-│   ├── linked_meta_accounts.json (from personal_information/)
+│   ├── linked_meta_accounts.json (from personal_information/) ✅
 │   ├── personal_information.json     ✅
 │   ├── professional_information.json ❌ (no data example)
 │   └── profile_changes.json          ✅
@@ -89,15 +89,15 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── advertisers_using_your_activity_or_information.json  ✅
 ├── ads_and_topics
 │   ├── accounts_you're_not_interested_in.json
-│   ├── ads_clicked.json
-│   ├── ads_viewed.json
-│   ├── posts_viewed.json
-│   └── videos_watched.json
+│   ├── ads_clicked.json ✅
+│   ├── ads_viewed.json ✅
+│   ├── posts_viewed.json ✅
+│   └── videos_watched.json ✅
 ├── apps_and_websites
 │   ├── active_apps.json
 │   └── expired_pps.json ✅
 ├── autofill_information
-│   └── no-data.txt
+│   └── autofill_information.json ✅
 ├── avatars_store
 │   └── no-data.txt
 ├── blockchain_accounts
@@ -114,7 +114,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── profile_photos.json  ✅
 │   └── stories.json  ✅
 ├── device_information
-│   ├── camera_information.json
+│   ├── camera_information.json ✅
 │   └── devices.json  ✅
 ├── events
 │   └── no-data.txt
@@ -124,8 +124,8 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── followers.json  ✅
 │   ├── following.json  ✅
 │   ├── pending_follow_requests.json
-│   ├── recent_follow_requests.json
-│   ├── recently_unfollowed_accounts.json
+│   ├── recent_follow_requests.json ✅
+│   ├── recently_unfollowed_accounts.json ✅
 │   └── removed_suggestions.json ✅
 ├── fundraisers
 │   └── no-data.txt
@@ -168,6 +168,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── content_interactions.json ✅
 ├── recent_searches
 │   ├── account_searches.json
+│   ├── tag_searches.json
 │   └── word_or_phrase_searches.json ✅
 ├── reports
 │   └── no-data.txt

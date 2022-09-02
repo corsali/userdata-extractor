@@ -1,0 +1,43 @@
+{
+  "relationships_unfollowed_users": [
+    {
+      "title": "",
+      "media_list_data": [
+        
+      ],
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/the__dahl__house",
+          "value": "the__dahl__house",
+          "timestamp": 1657245900
+        }
+      ]
+    },
+    {
+      "title": "",
+      "media_list_data": [
+        
+      ],
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/da_snakepitsafariofficial",
+          "value": "da_snakepitsafariofficial",
+          "timestamp": 1656026048
+        }
+      ]
+    },
+    {
+      "title": "",
+      "media_list_data": [
+        
+      ],
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_okiden",
+          "value": "_okiden",
+          "timestamp": 1655155231
+        }
+      ]
+    }
+  ]
+}
