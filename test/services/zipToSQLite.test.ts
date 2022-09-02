@@ -28,18 +28,16 @@ describe("services/zipExporter", () => {
       "instagram_json_1",
       "instagram_json_2",
       "instagram_json_3",
+      "instagram_json_4",
     ];
-    await testFiles.forEach(async (testFile: string) => {
-      deleteFile(`${testFile}.sqlite`);
-      const file = await loadTestFile(`${testFile}.zip`);
-      const database = await zipToSQLiteInstance("instagram", file, false);
-      saveSqliteDump(database.exportDatabase(), `${testFile}.sqlite`);
-      expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
-    });
-  });
-
-  afterAll(async () => {
-    // Allows tests time to wrap up and avoid jest open handle error
-    await new Promise<void>((resolve) => setTimeout(() => resolve(), 2000));
+    await Promise.all(
+      testFiles.map(async (testFile: string) => {
+        deleteFile(`${testFile}.sqlite`);
+        const file = await loadTestFile(`${testFile}.zip`);
+        const database = await zipToSQLiteInstance("instagram", file, false);
+        saveSqliteDump(database.exportDatabase(), `${testFile}.sqlite`);
+        expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
+      })
+    );
   });
 });
