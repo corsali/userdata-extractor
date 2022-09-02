@@ -28,6 +28,7 @@ describe("services/zipExporter", () => {
       "instagram_json_1",
       "instagram_json_2",
       "instagram_json_3",
+      "instagram_json_4",
     ];
     await Promise.all(
       testFiles.map(async (testFile: string) => {
@@ -38,10 +39,5 @@ describe("services/zipExporter", () => {
         expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
       })
     );
-  });
-
-  afterAll(async () => {
-    // Allows tests time to wrap up and avoid jest open handle error
-    await new Promise<void>((resolve) => setTimeout(() => resolve(), 2000));
   });
 });
