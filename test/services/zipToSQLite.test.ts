@@ -29,13 +29,15 @@ describe("services/zipExporter", () => {
       "instagram_json_2",
       "instagram_json_3",
     ];
-    await testFiles.forEach(async (testFile: string) => {
-      deleteFile(`${testFile}.sqlite`);
-      const file = await loadTestFile(`${testFile}.zip`);
-      const database = await zipToSQLiteInstance("instagram", file, false);
-      saveSqliteDump(database.exportDatabase(), `${testFile}.sqlite`);
-      expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
-    });
+    await Promise.all(
+      testFiles.map(async (testFile: string) => {
+        deleteFile(`${testFile}.sqlite`);
+        const file = await loadTestFile(`${testFile}.zip`);
+        const database = await zipToSQLiteInstance("instagram", file, false);
+        saveSqliteDump(database.exportDatabase(), `${testFile}.sqlite`);
+        expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
+      })
+    );
   });
 
   afterAll(async () => {
