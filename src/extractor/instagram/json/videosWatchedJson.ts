@@ -11,8 +11,8 @@ class VideosWatchedJson extends JsonExtractor {
     const processedVideosWatched = videosWatched.map(
       (videoWatched) =>
         new VideosWatched(
-          videoWatched.author.value,
-          videoWatched.time.timestamp
+          videoWatched.author?.value,
+          videoWatched.time?.timestamp
         )
     );
 
