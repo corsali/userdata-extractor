@@ -78,7 +78,7 @@ When we're ready to release a new version of this package, visit [Github Release
 ### JSON
 
 ```
-.
+Instagram
 ├── account_information (see 2nd zip test file - these are in personal_information/)
 │   ├── account_information.json      ✅
 │   ├── linked_meta_accounts.json (from personal_information/) ✅
@@ -187,6 +187,10 @@ When we're ready to release a new version of this package, visit [Github Release
 └── your_topics
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
+Facebook
+└── activity_messages
+    ├── group_interactions.json
+    └── people_and_friends.json
 ```
 
 ### HTML
