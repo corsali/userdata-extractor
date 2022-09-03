@@ -11,9 +11,9 @@ class CloseFriendsJson extends JsonExtractor {
     const processedCloseFriends = closeFriends.map(
       (closeFriend) =>
         new CloseFriends({
-          name: closeFriend[0].value,
-          profileUrl: closeFriend[0].href,
-          dateBefriended: closeFriend[0].timestamp,
+          name: closeFriend[0]?.value,
+          profileUrl: closeFriend[0]?.href,
+          dateBefriended: closeFriend[0]?.timestamp,
         })
     );
 

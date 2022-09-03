@@ -11,9 +11,9 @@ class FollowingJson extends JsonExtractor {
     const processedFollowing = following.map(
       (singleFollowing) =>
         new Following({
-          name: singleFollowing[0].value,
-          profileUrl: singleFollowing[0].href,
-          dateFollowed: singleFollowing[0].timestamp,
+          name: singleFollowing[0]?.value,
+          profileUrl: singleFollowing[0]?.href,
+          dateFollowed: singleFollowing[0]?.timestamp,
         })
     );
 

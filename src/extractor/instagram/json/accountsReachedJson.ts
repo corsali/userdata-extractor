@@ -13,24 +13,25 @@ class AccountsReachedJson extends JsonExtractor {
         // @todo Need more data and see examples with year provided to have
         // reliable parsing to Date. The relevant parser can be included in
         // DateTableValue object parsing.
-        const dateRange = accountsReachedEntry["date range"].value.split(" - ");
+        const dateRange =
+          accountsReachedEntry["date range"]?.value?.split(" - ");
 
         return new AccountsReached({
-          dateRangeFrom: dateRange[0],
-          dateRangeTo: dateRange[1],
-          accountsReached: accountsReachedEntry["accounts reached"].value,
+          dateRangeFrom: dateRange?.[0],
+          dateRangeTo: dateRange?.[1],
+          accountsReached: accountsReachedEntry["accounts reached"]?.value,
           accountsReachedDelta:
-            accountsReachedEntry["accounts reached delta"].value,
-          followers: accountsReachedEntry.followers.value,
-          nonFollowers: accountsReachedEntry["non-followers"].value,
-          impressions: accountsReachedEntry.impressions.value,
-          impressionsDelta: accountsReachedEntry["impressions delta"].value,
-          profileVisits: accountsReachedEntry["profile visits"].value,
+            accountsReachedEntry["accounts reached delta"]?.value,
+          followers: accountsReachedEntry.followers?.value,
+          nonFollowers: accountsReachedEntry["non-followers"]?.value,
+          impressions: accountsReachedEntry.impressions?.value,
+          impressionsDelta: accountsReachedEntry["impressions delta"]?.value,
+          profileVisits: accountsReachedEntry["profile visits"]?.value,
           profileVisitsDelta:
-            accountsReachedEntry["profile visits delta"].value,
-          emailButtonTaps: accountsReachedEntry["email button taps"].value,
+            accountsReachedEntry["profile visits delta"]?.value,
+          emailButtonTaps: accountsReachedEntry["email button taps"]?.value,
           emailButtonTapsDelta:
-            accountsReachedEntry["email button taps delta"].value,
+            accountsReachedEntry["email button taps delta"]?.value,
         });
       }
     );
