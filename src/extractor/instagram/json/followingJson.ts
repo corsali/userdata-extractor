@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { Following } from "../models/following";
+import { Following } from "../models/following.js";
 
 class FollowingJson extends JsonExtractor {
   async process() {
