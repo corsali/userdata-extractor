@@ -1,0 +1,25 @@
+{
+  "installed_apps_v2": [
+    {
+      "name": "Laka",
+      "added_timestamp": 0,
+      "user_app_scoped_id": 10257982978220242,
+      "category": "removed",
+      "removed_timestamp": 0
+    },
+    {
+      "name": "Risk: Global Domination",
+      "added_timestamp": 0,
+      "user_app_scoped_id": 10245660567714528,
+      "category": "removed",
+      "removed_timestamp": 0
+    },
+    {
+      "name": "ROUVY",
+      "added_timestamp": 0,
+      "user_app_scoped_id": 10536167025774856,
+      "category": "removed",
+      "removed_timestamp": 0
+    }
+  ]
+}
