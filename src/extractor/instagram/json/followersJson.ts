@@ -11,9 +11,9 @@ class FollowersJson extends JsonExtractor {
     const processedFollowers = followers.map(
       (follower) =>
         new Followers({
-          name: follower[0].value,
-          profileUrl: follower[0].href,
-          dateFollowed: follower[0].timestamp,
+          name: follower[0]?.value,
+          profileUrl: follower[0]?.href,
+          dateFollowed: follower[0]?.timestamp,
         })
     );
 

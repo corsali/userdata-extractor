@@ -1,0 +1,42 @@
+{
+  "account_history_registration_info": [
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Username": {
+          "href": "",
+          "value": "IGUser12345",
+          "timestamp": 0
+        },
+        "IP Address": {
+          "href": "",
+          "value": "99.244.197.7",
+          "timestamp": 0
+        },
+        "Time": {
+          "href": "",
+          "value": "",
+          "timestamp": 1463108884
+        },
+        "Email": {
+          "href": "",
+          "value": "support@iguser12345.net",
+          "timestamp": 0
+        },
+        "Phone Number": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "Device": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}

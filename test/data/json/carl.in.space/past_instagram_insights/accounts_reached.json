@@ -1,0 +1,67 @@
+{
+  "organic_insights_reach": [
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Date Range": {
+          "href": "",
+          "value": "Jan 27 - Apr 26",
+          "timestamp": 0
+        },
+        "Accounts Reached": {
+          "href": "",
+          "value": "1",
+          "timestamp": 0
+        },
+        "Accounts Reached Delta": {
+          "href": "",
+          "value": "-- vs Oct 29 - Jan 26",
+          "timestamp": 0
+        },
+        "Followers": {
+          "href": "",
+          "value": "1",
+          "timestamp": 0
+        },
+        "Non-Followers": {
+          "href": "",
+          "value": "0",
+          "timestamp": 0
+        },
+        "Impressions": {
+          "href": "",
+          "value": "1",
+          "timestamp": 0
+        },
+        "Impressions Delta": {
+          "href": "",
+          "value": "--",
+          "timestamp": 0
+        },
+        "Profile Visits": {
+          "href": "",
+          "value": "0",
+          "timestamp": 0
+        },
+        "Profile Visits Delta": {
+          "href": "",
+          "value": "0%",
+          "timestamp": 0
+        },
+        "Email Button Taps": {
+          "href": "",
+          "value": "0",
+          "timestamp": 0
+        },
+        "Email Button Taps Delta": {
+          "href": "",
+          "value": "0%",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}
