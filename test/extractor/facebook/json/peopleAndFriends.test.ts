@@ -1,9 +1,5 @@
 import { peopleAndFriendsJson } from "../../../../src/extractor/facebook/json/peopleAndFriendsJson";
-import {
-  IntegerTableValue,
-  TextTableValue,
-  UrlTableValue,
-} from "../../../../src/models/table";
+import { TextTableValue, UrlTableValue } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("People and Friends (JSON)", () => {
@@ -17,19 +13,15 @@ describe("People and Friends (JSON)", () => {
 
     const { rows } = peopleAndFriendsJson.table;
 
-    expect(rows.length).toEqual(3);
+    expect(rows.length).toEqual(2);
 
-    expect(rows[0].group_name).toEqual(new TextTableValue("Zwift Riders"));
-    expect(rows[0].interaction_count).toEqual(new IntegerTableValue(82));
-    expect(rows[0].group_url).toEqual(
-      new UrlTableValue("https://www.facebook.com/groups/zwiftriders/")
+    expect(rows[0].person_name).toEqual(new TextTableValue("Jack Sparrow"));
+    expect(rows[0].person_url).toEqual(
+      new UrlTableValue("https://www.facebook.com/jack.sparrow")
     );
-    expect(rows[1].group_name).toEqual(
-      new TextTableValue("Global Cycling Network Community")
-    );
-    expect(rows[1].interaction_count).toEqual(new IntegerTableValue(62));
-    expect(rows[1].group_url).toEqual(
-      new UrlTableValue("https://www.facebook.com/groups/gcncommunity/")
+    expect(rows[1].person_name).toEqual(new TextTableValue("Ben Burton"));
+    expect(rows[1].person_url).toEqual(
+      new UrlTableValue("https://www.facebook.com/bentburton")
     );
   });
 });
