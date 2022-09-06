@@ -4,10 +4,11 @@ import { LinkedMetaAccounts } from "../models/linkedMetaAccounts.js";
 
 class LinkedMetaAccountsJson extends JsonExtractor {
   async process() {
-    const linkedAccounts = this.query(`$.profile_linked_meta_accounts[*]`);
+    const linkedAccounts = this.query(
+      `$.profile_linked_meta_accounts[*].string_map_data`
+    );
 
-    const processedLinkedAccounts = linkedAccounts.map((linkedAccount) => {
-      const linkedAccountMap = linkedAccount.string_map_data;
+    const processedLinkedAccounts = linkedAccounts.map((linkedAccountMap) => {
       return new LinkedMetaAccounts({
         accountType: linkedAccountMap["account type"].value,
         username: linkedAccountMap["user name"].value,

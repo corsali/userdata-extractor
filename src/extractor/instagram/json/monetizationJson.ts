@@ -9,9 +9,9 @@ class MonetizationJson extends JsonExtractor {
     )[0];
 
     const processedMonetization = new Monetization({
-      productName: monetization["product name"].value,
-      decision: monetization.decision.value,
-      reason: monetization.reason.value,
+      productName: monetization?.["product name"]?.value,
+      decision: monetization?.decision?.value,
+      reason: monetization?.reason?.value,
     });
 
     this.table.rows.push(processedMonetization);

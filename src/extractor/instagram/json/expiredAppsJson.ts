@@ -11,9 +11,9 @@ class ExpiredAppsJson extends JsonExtractor {
     const processedExpiredApps = expiredApps.map(
       (expiredApp) =>
         new ExpiredApps(
-          expiredApp["app name"].value,
-          expiredApp["expired on"].timestamp,
-          expiredApp["user id"].value
+          expiredApp["app name"]?.value,
+          expiredApp["expired on"]?.timestamp,
+          expiredApp["user id"]?.value
         )
     );
 

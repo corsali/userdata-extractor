@@ -10,7 +10,7 @@ class PasswordChangeHistoryJson extends JsonExtractor {
 
     const processedPasswordChanges = passwordChanges.map(
       (passwordChange) =>
-        new PasswordChangeHistory(passwordChange.time.timestamp)
+        new PasswordChangeHistory(passwordChange.time?.timestamp)
     );
 
     this.table.rows.push(...processedPasswordChanges);
