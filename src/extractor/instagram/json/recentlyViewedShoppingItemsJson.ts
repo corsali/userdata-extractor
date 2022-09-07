@@ -11,10 +11,10 @@ class RecentlyViewedShoppingItemsJson extends JsonExtractor {
     const processedRecentlyViewedItem = recentlyViewedItems.map(
       (viewedItem) =>
         new RecentlyViewedShoppingItems({
-          productId: viewedItem["product id"].value,
-          productName: viewedItem["product name"].value,
-          merchantId: viewedItem["merchant id"].value,
-          merchantName: viewedItem["merchant name"].value,
+          productId: viewedItem["product id"]?.value,
+          productName: viewedItem["product name"]?.value,
+          merchantId: viewedItem["merchant id"]?.value,
+          merchantName: viewedItem["merchant name"]?.value,
         })
     );
 
