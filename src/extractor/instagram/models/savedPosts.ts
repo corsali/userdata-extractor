@@ -6,20 +6,20 @@ import {
 import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class SavedPosts extends InstagramBaseModel {
-  shared_url?: UrlTableValue;
+  post_url?: UrlTableValue;
 
-  shared_username?: TextTableValue;
+  post_username?: TextTableValue;
 
-  shared_date?: DateTableValue;
+  date_saved?: DateTableValue;
 
   constructor(values: {
-    sharedUrl?: string;
-    sharedUsername?: string;
-    sharedDate?: number;
+    postUrl?: string;
+    postUsername?: string;
+    dateSaved?: number;
   }) {
     super();
-    this.shared_url = new UrlTableValue(values.sharedUrl);
-    this.shared_username = new TextTableValue(values.sharedUsername);
-    this.shared_date = new DateTableValue(values.sharedDate);
+    this.post_url = new UrlTableValue(values.postUrl);
+    this.post_username = new TextTableValue(values.postUsername);
+    this.date_saved = new DateTableValue(values.dateSaved);
   }
 }

@@ -10,11 +10,11 @@ class LinkedMetaAccountsJson extends JsonExtractor {
 
     const processedLinkedAccounts = linkedAccounts.map((linkedAccountMap) => {
       return new LinkedMetaAccounts({
-        accountType: linkedAccountMap["account type"].value,
-        username: linkedAccountMap["user name"].value,
-        identifier: linkedAccountMap.identifier.value,
-        email: linkedAccountMap["email address"].value,
-        phone: linkedAccountMap["phone number"].value,
+        accountType: linkedAccountMap["account type"]?.value,
+        username: linkedAccountMap["user name"]?.value,
+        identifier: linkedAccountMap.identifier?.value,
+        email: linkedAccountMap["email address"]?.value,
+        phone: linkedAccountMap["phone number"]?.value,
       });
     });
 
