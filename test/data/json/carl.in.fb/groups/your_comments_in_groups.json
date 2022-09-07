@@ -1,0 +1,36 @@
+{
+  "group_comments_v2": [
+    {
+      "timestamp": 1567446044,
+      "title": "Carl Ryan commented on a post."
+    },
+    {
+      "timestamp": 1585040889,
+      "data": [
+        {
+          "comment": {
+            "timestamp": 1585040889,
+            "comment": "...and this is what we call indoor cycling",
+            "author": "Carl Ryan",
+            "group": "Zwift Riders"
+          }
+        }
+      ],
+      "title": "Carl Ryan commented on Mark Brooks's post."
+    },
+    {
+      "timestamp": 1595437307,
+      "data": [
+        {
+          "comment": {
+            "timestamp": 1595437307,
+            "comment": "Is that weekly inspiration photo?",
+            "author": "Carl Ryan",
+            "group": "Global Cycling Network Community"
+          }
+        }
+      ],
+      "title": "Carl Ryan commented on Vipper Scoffield's post."
+    }
+  ]
+}
