@@ -23,7 +23,7 @@ describe("SQLite Database", () => {
     });
 
     await database.initialize();
-    database.createTable(personalInformation);
+    database.createTable("instagram", personalInformation);
   });
 
   describe("runQuery", () => {

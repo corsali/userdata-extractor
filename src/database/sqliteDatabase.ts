@@ -6,7 +6,9 @@ import { Database, QueryResult } from "./database.js";
 export class SQLiteDatabase implements Database {
   sql: SqlJsStatic;
 
-  database: SqlDatabase;
+  databaseMap: { [key: string]: SqlDatabase };
+
+  mainDatabase: SqlDatabase;
 
   async initialize() {
     this.sql = await initSqlJs({
@@ -16,18 +18,26 @@ export class SQLiteDatabase implements Database {
           ? "./node_modules/sql.js/dist/sql-wasm.wasm"
           : `https://sql.js.org/dist/${file}`,
     });
-    this.database = new this.sql.Database();
+    this.databaseMap = {};
+    this.mainDatabase = new this.sql.Database();
   }
 
   /**
    * Creates an SQLite table from a Table object
    * @param table Table object to create the table from
    */
-  async createTable(table: Table) {
+  async createTable(serviceName: string, table: Table) {
+    if (!this.databaseMap[serviceName]) {
+      this.databaseMap[serviceName] = new this.sql.Database();
+      this.mainDatabase.exec(
+        `ATTACH DATABASE "${this.databaseMap[serviceName].filename}" AS ${serviceName};`
+      );
+    }
+
     if (table?.rows?.length > 0) {
       const columnTypes = this.getColumnTypes(table.rows[0]).join(", ");
-      const createTableSql = `CREATE TABLE IF NOT EXISTS ${table.tableName} (${columnTypes});`;
-      this.database.run(createTableSql);
+      const createTableSql = `CREATE TABLE IF NOT EXISTS ${serviceName}.${table.tableName} (${columnTypes});`;
+      this.mainDatabase.run(createTableSql);
     }
 
     if (table?.rows?.length > 0 && Object.keys(table.rows[0]).length > 0) {
@@ -37,7 +47,7 @@ export class SQLiteDatabase implements Database {
           .map((columnName) => `:${columnName}`)
           .join(", ");
 
-        const insertRowSql = `INSERT INTO ${table.tableName} VALUES (${columnValues});`;
+        const insertRowSql = `INSERT INTO ${serviceName}.${table.tableName} VALUES (${columnValues});`;
 
         const bindParams = Object.keys(row).reduce(
           (acc, columnName) => ({
@@ -46,7 +56,7 @@ export class SQLiteDatabase implements Database {
           }),
           {}
         );
-        this.database.exec(insertRowSql, bindParams);
+        this.mainDatabase.exec(insertRowSql, bindParams);
       }
     }
   }
@@ -81,11 +91,14 @@ export class SQLiteDatabase implements Database {
   }
 
   getDatabase(): SqlDatabase {
-    return this.database;
+    return this.mainDatabase;
   }
 
-  exportDatabase(): Uint8Array {
-    return this.database.export();
+  exportDatabase(serviceName: string): Uint8Array {
+    if (this.databaseMap[serviceName]) {
+      return this.databaseMap[serviceName].export();
+    }
+    return null;
   }
 
   /**
@@ -96,7 +109,7 @@ export class SQLiteDatabase implements Database {
   runQuery(query: string): QueryResult[] {
     const queryResults: QueryResult[] = [];
     try {
-      const queryIterator = this.database.iterateStatements(query);
+      const queryIterator = this.mainDatabase.iterateStatements(query);
 
       // Iterate through the query which possibly has multiple SQL statements
       // eslint-disable-next-line no-restricted-syntax
@@ -104,7 +117,9 @@ export class SQLiteDatabase implements Database {
         const queryResult: QueryResult = {};
         try {
           queryResult.queryString = statement.getNormalizedSQL();
-          queryResult.queryResult = this.database.exec(queryResult.queryString);
+          queryResult.queryResult = this.mainDatabase.exec(
+            queryResult.queryString
+          );
         } catch (singleQueryError) {
           queryResult.queryString = queryIterator.getRemainingSql();
           queryResult.error = singleQueryError.toString();

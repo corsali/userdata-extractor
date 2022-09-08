@@ -84,7 +84,7 @@ export class FileExtractor {
 
   createTable(database: Database) {
     if (this.table) {
-      database.createTable(this.table);
+      database.createTable(this.serviceName, this.table);
     }
   }
 }

@@ -17,7 +17,6 @@ describe("Saved Collections (JSON)", () => {
     savedCollectionsJson.process();
 
     const { rows } = savedCollectionsJson.table;
-console.log(rows)
     expect(rows.length).toEqual(6);
     expect(rows[0].name).toEqual(new TextTableValue("Spangly heroes"));
     expect(rows[0].created_date).toEqual(new DateTableValue(1536379872));

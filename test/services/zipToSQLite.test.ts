@@ -19,7 +19,10 @@ describe("services/zipExporter", () => {
     deleteFile("instagram_html_1.sqlite");
     const file = await loadTestFile("instagram_html_1.zip");
     const database = await zipToSQLiteInstance("instagram", file, false);
-    saveSqliteDump(database.exportDatabase(), "instagram_html_1.sqlite");
+    saveSqliteDump(
+      database.exportDatabase("instagram"),
+      "instagram_html_1.sqlite"
+    );
     expect(fileExists("instagram_html_1.sqlite")).toBeTruthy();
   });
 
@@ -35,7 +38,10 @@ describe("services/zipExporter", () => {
         deleteFile(`${testFile}.sqlite`);
         const file = await loadTestFile(`${testFile}.zip`);
         const database = await zipToSQLiteInstance("instagram", file, false);
-        saveSqliteDump(database.exportDatabase(), `${testFile}.sqlite`);
+        saveSqliteDump(
+          database.exportDatabase("instagram"),
+          `${testFile}.sqlite`
+        );
         expect(fileExists(`${testFile}.sqlite`)).toBeTruthy();
       })
     );
