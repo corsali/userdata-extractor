@@ -11,9 +11,9 @@ class SavedPostsJson extends JsonExtractor {
     const processedSavedPosts = savedPosts.map(
       (savedPost) =>
         new SavedPosts({
-          sharedUrl: savedPost.href,
-          sharedUsername: savedPost.value,
-          sharedDate: savedPost.timestamp,
+          postUrl: savedPost.href,
+          postUsername: savedPost.value,
+          dateSaved: savedPost.timestamp,
         })
     );
 

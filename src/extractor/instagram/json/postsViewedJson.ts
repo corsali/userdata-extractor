@@ -10,7 +10,7 @@ class PostsViewedJson extends JsonExtractor {
 
     const processedPostsViewed = postsViewed.map(
       (postViewed) =>
-        new PostsViewed(postViewed.author.value, postViewed.time.timestamp)
+        new PostsViewed(postViewed.author?.value, postViewed.time?.timestamp)
     );
 
     this.table.rows.push(...processedPostsViewed);

@@ -12,7 +12,7 @@ class AccountPrivacyChangesJson extends JsonExtractor {
       (privacyChange) =>
         new AccountPrivacyChanges(
           privacyChange.title,
-          privacyChange.string_map_data.time.timestamp
+          privacyChange.string_map_data?.time?.timestamp
         )
     );
 

@@ -14,12 +14,12 @@ class AudienceInsightsJson extends JsonExtractor {
         // reliable parsing to Date. The relevant parser can be included in
         // DateTableValue object parsing.
         const dateRange =
-          audienceInsightsEntry["date range"].value.split(" - ");
+          audienceInsightsEntry["date range"]?.value?.split(" - ");
 
         return new AudienceInsights(
-          dateRange[0],
-          dateRange[1],
-          audienceInsightsEntry.followers.value
+          dateRange?.[0],
+          dateRange?.[1],
+          audienceInsightsEntry.followers?.value
         );
       }
     );
