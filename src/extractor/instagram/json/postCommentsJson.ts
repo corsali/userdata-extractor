@@ -8,9 +8,9 @@ class PostCommentsJson extends JsonExtractor {
 
     values.forEach((value) => {
       const comment = value.comment.value;
-      const dateCommented = value["comment creation time"].timestamp;
-      const deletedComment = value["deletion status"].value;
-      const mediaOwner = value["media owner"].value;
+      const dateCommented = value["comment creation time"]?.timestamp;
+      const deletedComment = value["deletion status"]?.value;
+      const mediaOwner = value["media owner"]?.value;
       this.table.rows.push(
         new PostComments(comment, dateCommented, deletedComment, mediaOwner)
       );

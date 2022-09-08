@@ -11,9 +11,9 @@ class FollowingHashtagsJson extends JsonExtractor {
     const processedFollowingHashtags = followingHashtags.map(
       (followingHashtag) =>
         new FollowingHashtags({
-          hashtag: followingHashtag[0].value,
-          hashtagUrl: followingHashtag[0].href,
-          dateFollowed: followingHashtag[0].timestamp,
+          hashtag: followingHashtag[0]?.value,
+          hashtagUrl: followingHashtag[0]?.href,
+          dateFollowed: followingHashtag[0]?.timestamp,
         })
     );
 

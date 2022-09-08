@@ -13,8 +13,8 @@ class OffFacebookActivityJson extends JsonExtractor {
             new OffFacebookActivity({
               activityName: activities.name,
               activityId: activity.id?.toString?.(),
-              activityType: activity.type,
-              dateOccured: activity.timestamp,
+              activityType: activity?.type,
+              dateOccured: activity?.timestamp,
             })
         ) ?? []
     );

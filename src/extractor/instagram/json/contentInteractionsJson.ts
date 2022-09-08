@@ -14,33 +14,34 @@ class ContentInteractionsJson extends JsonExtractor {
         // reliable parsing to Date. The relevant parser can be included in
         // DateTableValue object parsing.
         const dateRange =
-          contentInteractionsEntry["date range"].value.split(" - ");
+          contentInteractionsEntry["date range"]?.value?.split(" - ");
 
         return new ContentInteractions({
-          dateRangeFrom: dateRange[0],
-          dateRangeTo: dateRange[1],
+          dateRangeFrom: dateRange?.[0],
+          dateRangeTo: dateRange?.[1],
           contentInteractions:
-            contentInteractionsEntry["content interactions"].value,
+            contentInteractionsEntry["content interactions"]?.value,
           contentInteractionsDelta:
-            contentInteractionsEntry["content interactions delta"].value,
-          postInteractions: contentInteractionsEntry["post interactions"].value,
+            contentInteractionsEntry["content interactions delta"]?.value,
+          postInteractions:
+            contentInteractionsEntry["post interactions"]?.value,
           postInteractionsDelta:
-            contentInteractionsEntry["post interactions delta"].value,
+            contentInteractionsEntry["post interactions delta"]?.value,
           storyInteractions:
-            contentInteractionsEntry["story interactions"].value,
+            contentInteractionsEntry["story interactions"]?.value,
           storyInteractionsDelta:
-            contentInteractionsEntry["story interactions delta"].value,
+            contentInteractionsEntry["story interactions delta"]?.value,
           videoInteractions:
-            contentInteractionsEntry["video interactions"].value,
+            contentInteractionsEntry["video interactions"]?.value,
           videoInteractionsDelta:
-            contentInteractionsEntry["video interactions delta"].value,
+            contentInteractionsEntry["video interactions delta"]?.value,
           liveVideoInteractions:
-            contentInteractionsEntry["live video interactions"].value,
+            contentInteractionsEntry["live video interactions"]?.value,
           liveVideoInteractionsDelta:
-            contentInteractionsEntry["live video interactions delta"].value,
-          accountsEngaged: contentInteractionsEntry["accounts engaged"].value,
+            contentInteractionsEntry["live video interactions delta"]?.value,
+          accountsEngaged: contentInteractionsEntry["accounts engaged"]?.value,
           accountsEngagedDelta:
-            contentInteractionsEntry["accounts engaged delta"].value,
+            contentInteractionsEntry["accounts engaged delta"]?.value,
         });
       }
     );

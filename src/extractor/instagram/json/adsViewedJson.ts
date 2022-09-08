@@ -10,7 +10,7 @@ class AdsViewedJson extends JsonExtractor {
 
     const processedAdsViewed = adsViewed.map(
       (adViewed) =>
-        new AdsViewed(adViewed.author.value, adViewed.time.timestamp)
+        new AdsViewed(adViewed.author?.value, adViewed.time?.timestamp)
     );
 
     this.table.rows.push(...processedAdsViewed);

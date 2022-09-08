@@ -2,8 +2,6 @@
 import { savedPostsJson } from "../../../../src/extractor/instagram/json/savedPostsJson";
 import {
   DateTableValue,
-  EmailTableValue,
-  PhoneNumberValue,
   TextTableValue,
   UrlTableValue,
 } from "../../../../src/models/table";
@@ -22,10 +20,10 @@ describe("Saved Posts (JSON)", () => {
 
     expect(rows.length).toEqual(267);
 
-    expect(rows[0].shared_url).toEqual(
+    expect(rows[0].post_url).toEqual(
       new UrlTableValue("https://www.instagram.com/tv/Cd5GO_ohREt/")
     );
-    expect(rows[0].shared_username).toEqual(new TextTableValue("studio_round"));
-    expect(rows[0].shared_date).toEqual(new DateTableValue(1653784972));
+    expect(rows[0].post_username).toEqual(new TextTableValue("studio_round"));
+    expect(rows[0].date_saved).toEqual(new DateTableValue(1653784972));
   });
 });

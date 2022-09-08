@@ -8,7 +8,7 @@ class TagSearchesJson extends JsonExtractor {
 
     const processedTagSearches = tagSearches.map(
       (tagSearch) =>
-        new TagSearches(tagSearch.search.value, tagSearch.time.timestamp)
+        new TagSearches(tagSearch.search?.value, tagSearch.time?.timestamp)
     );
 
     this.table.rows.push(...processedTagSearches);
