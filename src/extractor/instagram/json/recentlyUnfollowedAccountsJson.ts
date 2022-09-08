@@ -11,9 +11,9 @@ class RecentlyUnfollowedAccountsJson extends JsonExtractor {
     const processedUnfollowedAccounts = recentlyUnfollowedAccounts.map(
       (unfollowedAccount) =>
         new RecentlyUnfollowedAccounts({
-          name: unfollowedAccount[0].value,
-          profileUrl: unfollowedAccount[0].href,
-          dateFollowed: unfollowedAccount[0].timestamp,
+          name: unfollowedAccount[0]?.value,
+          profileUrl: unfollowedAccount[0]?.href,
+          dateFollowed: unfollowedAccount[0]?.timestamp,
         })
     );
 
