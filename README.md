@@ -79,8 +79,9 @@ When we're ready to release a new version of this package, visit [Github Release
 
 ```
 .
-├── account_information
+├── account_information (see 2nd zip test file - these are in personal_information/)
 │   ├── account_information.json      ✅
+│   ├── linked_meta_accounts.json (from personal_information/)
 │   ├── personal_information.json     ✅
 │   ├── professional_information.json ❌ (no data example)
 │   └── profile_changes.json          ✅
@@ -118,22 +119,24 @@ When we're ready to release a new version of this package, visit [Github Release
 ├── events
 │   └── no-data.txt
 ├── followers_and_following
-│   ├── blocked_accounts.json
+│   ├── blocked_accounts.json ✅
 │   ├── close_friends.json ✅
 │   ├── followers.json  ✅
 │   ├── following.json  ✅
 │   ├── pending_follow_requests.json
 │   ├── recent_follow_requests.json
-│   └── recently_unfollowed_accounts.json
+│   ├── recently_unfollowed_accounts.json
+│   └── removed_suggestions.json ✅
 ├── fundraisers
 │   └── no-data.txt
 ├── guides
 │   └── no-data.txt
 ├── information_about_you
 │   ├── account_based_in.json ✅
-│   └── ads_interests.json    ✅
+│   ├── ads_interests.json    ✅
+│   └── possible_phone_numbers.json ✅
 ├── likes
-│   ├── liked_comments.json
+│   ├── liked_comments.json ✅
 │   └── liked_posts.json ✅
 ├── login_and_account_creation
 │   ├── login_activity.json   ✅
@@ -169,7 +172,8 @@ When we're ready to release a new version of this package, visit [Github Release
 ├── reports
 │   └── no-data.txt
 ├── saved
-│   └── saved_posts.json
+│   ├── saved_collections.json ✅
+│   └── saved_posts.json ✅
 ├── shopping
 │   └── recently_viewed_items.json
 ├── story_sticker_interactions

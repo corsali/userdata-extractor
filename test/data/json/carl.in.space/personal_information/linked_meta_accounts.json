@@ -1,0 +1,37 @@
+{
+  "profile_linked_meta_accounts": [
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Account type": {
+          "href": "",
+          "value": "Facebook",
+          "timestamp": 0
+        },
+        "User name": {
+          "href": "",
+          "value": "John Doe",
+          "timestamp": 0
+        },
+        "Identifier": {
+          "href": "",
+          "value": "595956122",
+          "timestamp": 0
+        },
+        "Email address": {
+          "href": "",
+          "value": "johndoe@gmail.com",
+          "timestamp": 0
+        },
+        "Phone number": {
+          "href": "",
+          "value": "+61408767540",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}
