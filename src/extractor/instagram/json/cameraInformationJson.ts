@@ -6,17 +6,14 @@ class CameraInformationJson extends JsonExtractor {
   async process() {
     const cameraInformation = this.query(`$.devices_camera[*].string_map_data`);
 
-    const processedCameraInformation = cameraInformation.flatMap(
-      (deviceInfo) =>
-        deviceInfo["supported sdk versions"]?.value
-          ?.split(",")
-          ?.map(
-            (supportedSdk: string) =>
-              new CameraInformation(
-                deviceInfo["device id"]?.value,
-                supportedSdk
-              )
-          ) ?? []
+    const processedCameraInformation = cameraInformation.map(
+      (device) =>
+        new CameraInformation({
+          deviceId: device["device id"]?.value,
+          supportedSdkVersions: device["supported sdk versions"]?.value,
+          compression: device.compression?.value,
+          faceTrackerVersion: device["face tracker version"]?.value,
+        })
     );
 
     this.table.rows.push(...processedCameraInformation);
