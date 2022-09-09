@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { RecentlyViewedShoppingItems } from "../models/recentlyViewedShoppingItems";
+import { RecentlyViewedShoppingItems } from "../models/recentlyViewedShoppingItems.js";
 
 class RecentlyViewedShoppingItemsJson extends JsonExtractor {
   async process() {

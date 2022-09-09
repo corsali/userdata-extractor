@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { AccountPrivacyChanges } from "../models/accountPrivacyChanges";
+import { AccountPrivacyChanges } from "../models/accountPrivacyChanges.js";
 
 class AccountPrivacyChangesJson extends JsonExtractor {
   async process() {
