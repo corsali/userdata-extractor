@@ -123,6 +123,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── close_friends.json ✅
 │   ├── followers.json  ✅
 │   ├── following.json  ✅
+│   ├── following_hashtags.json  ✅
 │   ├── pending_follow_requests.json
 │   ├── recent_follow_requests.json ✅
 │   ├── recently_unfollowed_accounts.json ✅
@@ -139,6 +140,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── liked_comments.json ✅
 │   └── liked_posts.json ✅
 ├── login_and_account_creation
+│   ├── account_privacy_changes.json ✅
 │   ├── login_activity.json   ✅
 │   ├── logout_activity.json  ✅
 │   ├── password_change_activity.json ✅
@@ -168,7 +170,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── content_interactions.json ✅
 ├── recent_searches
 │   ├── account_searches.json
-│   ├── tag_searches.json
+│   ├── tag_searches.json ✅
 │   └── word_or_phrase_searches.json ✅
 ├── reports
 │   └── no-data.txt
@@ -176,7 +178,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── saved_collections.json ✅
 │   └── saved_posts.json ✅
 ├── shopping
-│   └── recently_viewed_items.json
+│   └── recently_viewed_items.json ✅
 ├── story_sticker_interactions
 │   ├── emoji_sliders.json
 │   ├── polls.json
