@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Logout Activity (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/login_and_account_creation/logout_activity.json"
+      "/json/instagram/login_and_account_creation/logout_activity.json"
     );
 
     logoutActivityJson.setJsonDocument(data);

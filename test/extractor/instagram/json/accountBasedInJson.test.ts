@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Account Based In (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/information_about_you/account_based_in.json"
+      "/json/instagram/information_about_you/account_based_in.json"
     );
 
     accountBasedInJson.setJsonDocument(data);

@@ -6,7 +6,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Expired Apps (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/apps_and_websites/expired_pps.json"
+      "/json/instagram/apps_and_websites/expired_pps.json"
     );
 
     expiredAppsJson.setJsonDocument(data);

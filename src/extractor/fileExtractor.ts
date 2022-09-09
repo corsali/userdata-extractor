@@ -2,6 +2,7 @@ import * as zip from "@zip.js/zip.js";
 
 import { Database } from "../database/database.js";
 import { Table } from "../models/table/table.js";
+import { logger } from "../utils/logger.js";
 
 interface FileExtractorEntry {
   filePattern: string;
@@ -47,22 +48,24 @@ export class FileExtractor {
   }
 
   /**
-   * Find a matching extractor given a file path
+   * Find matching extractors given a file path
    * @param serviceName User data service name
    * @param filePath Path of a single file in a user data zip file
    * @returns
    */
-  static getExtractor(serviceName: string, filePath: string): FileExtractor {
+  static getExtractor(serviceName: string, filePath: string): FileExtractor[] {
     if (FileExtractor.registeredExtractors[serviceName?.toLowerCase()]) {
-      const fileExtractorEntry = FileExtractor.registeredExtractors[
+      const fileExtractorEntries = FileExtractor.registeredExtractors[
         serviceName?.toLowerCase()
-      ].find((extractorEntry: FileExtractorEntry) => {
+      ].filter((extractorEntry: FileExtractorEntry) => {
         const regex = new RegExp(extractorEntry.filePattern, "g");
         return regex.test(filePath);
       });
-      return fileExtractorEntry?.extractor ?? null;
+      return fileExtractorEntries.map((fe) => fe.extractor);
     }
-    throw new Error(`No file extractors found for service ${serviceName}`);
+
+    logger.error(`No file extractors found for service ${serviceName}`);
+    return [];
   }
 
   /**

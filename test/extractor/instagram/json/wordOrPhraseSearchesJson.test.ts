@@ -6,7 +6,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Content Interactions (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/recent_searches/word_or_phrase_searches.json"
+      "/json/instagram/recent_searches/word_or_phrase_searches.json"
     );
 
     wordOrPhraseSearchesJson.setJsonDocument(data);

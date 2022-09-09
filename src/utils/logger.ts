@@ -10,21 +10,21 @@ export class Logger {
     this._enabled = enabled;
   }
 
-  info(item: any): void {
+  info(...args: any): void {
     if (this._enabled) {
-      console.info(config.appName, item);
+      console.info(config.appName, ...args);
     }
   }
 
-  warn(item: any): void {
+  warn(...args: any): void {
     if (this._enabled) {
-      console.warn(config.appName, item);
+      console.warn(config.appName, ...args);
     }
   }
 
-  error(item: any): void {
+  error(...args: any): void {
     if (this._enabled) {
-      console.error(config.appName, item);
+      console.error(config.appName, ...args);
     }
   }
 }
