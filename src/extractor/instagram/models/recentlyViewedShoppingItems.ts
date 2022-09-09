@@ -4,7 +4,7 @@ import { InstagramBaseModel } from "./instagramBaseModel.js";
 export class RecentlyViewedShoppingItems extends InstagramBaseModel {
   product_id?: TextTableValue;
 
-  product_name: TextTableValue;
+  product_name?: TextTableValue;
 
   merchant_id?: TextTableValue;
 
