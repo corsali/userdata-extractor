@@ -38,7 +38,7 @@ export * from "./json/linkedMetaAccountsJson.js";
 export * from "./json/loginActivityJson.js";
 export * from "./json/logoutActivityJson.js";
 export * from "./json/monetizationJson.js";
-export * from "./json/passwordChangeHistoryJson";
+export * from "./json/passwordChangeHistoryJson.js";
 export * from "./json/personalInformationJson.js";
 export * from "./json/possiblePhoneNumbersJson.js";
 export * from "./json/postCommentsJson.js";
