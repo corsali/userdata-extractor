@@ -14,6 +14,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          registry-url: https://npm.pkg.github.com/
+          scope: '@corsali'
       - run: yarn
       - run: yarn test
 
@@ -29,6 +31,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
+          scope: '@corsali'
       - name: Get the tag name
         run: |
           echo "TAG=${GITHUB_REF:11}" >> $GITHUB_ENV
