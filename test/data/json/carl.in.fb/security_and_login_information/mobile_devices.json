@@ -1,0 +1,33 @@
+{
+  "devices_v2": [
+    {
+      "type": "unknown",
+      "os": "Android unknown",
+      "update_time": 1661518593,
+      "family_device_id": "EFE526AC-1D2C-5EBB-A314-A1C60EE6686A",
+      "device_locale": "en_US"
+    },
+    {
+      "type": "HD1903",
+      "os": "Android 11",
+      "update_time": 1661621112,
+      "redact_tokens": [
+        "djm_********************"
+      ],
+      "push_tokens": [
+        {
+          "disabled": false,
+          "client_update_time": 1661891209,
+          "creation_time": 1608920037,
+          "app_version": "317.0.0.1.104",
+          "locale": "en_US",
+          "os_version": "11",
+          "token": "djm_********************",
+          "device_id": "e45b2454-c58f-4ae8-b0aa-6eee0dcd7047"
+        }
+      ],
+      "family_device_id": "",
+      "device_locale": "en_US"
+    }
+  ]
+}

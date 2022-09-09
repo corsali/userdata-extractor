@@ -188,9 +188,31 @@ Instagram
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
 Facebook
-└── activity_messages
-    ├── group_interactions.json
-    └── people_and_friends.json
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── polls
+│   └── polls_you_voted_on.json
+├── posts
+│   └── too complex - figure out which data we want
+├── preferences
+│   └── language_and_locale.json ✅
+├── profile_information
+│   ├── profile_information.json - complex, might require multiple tables
+│   └── profile_update_history.json ✅
+├── saved_items_and_collections
+│   ├── collections.json - not enough data
+│   └── your_saved_items.json ✅
+├── search
+│   └── your_search_history.json ✅
+├── security_and_login_information
+│   ├── account_activity.json ✅
+│   ├── browser_cookies - later
+│   ├── ip_address_activity.json ✅
+│   ├── logins_and_logouts.json ✅
+│   ├── login_protection_data.json ✅
+│   ├── mobile_devices.json ✅
+│   └── record_details.json ✅
 ```
 
 ### HTML
