@@ -188,9 +188,19 @@ Instagram
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
 Facebook
-└── activity_messages
-    ├── group_interactions.json
-    └── people_and_friends.json
+├── activity_messages
+│   ├── group_interactions.json ✅
+│   └── people_and_friends.json ✅
+├── security_and_login_information
+│   ├── where_you're_logged_in.json ✅
+│   └── your_facebook_activity_history.json ✅
+├── your_interactions_on_facebook
+│   ├── recently_viewed.json
+│   │   ├── videos ✅
+│   │   ├── posts and articles ✅
+│   │   ├── marketplace interactions (not items) ✅
+│   │   ├── marketplace items ✅
+│   │   ├── ads ✅
 ```
 
 ### HTML
