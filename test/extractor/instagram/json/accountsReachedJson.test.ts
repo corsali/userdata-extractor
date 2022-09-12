@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Accounts reached (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/past_instagram_insights/accounts_reached.json"
+      "/json/instagram/past_instagram_insights/accounts_reached.json"
     );
 
     accountsReachedJson.setJsonDocument(data);

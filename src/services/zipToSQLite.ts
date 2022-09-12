@@ -1,8 +1,10 @@
+/* eslint-disable no-restricted-syntax */
 import { Database } from "../database/database.js";
 import { SQLiteDatabase } from "../database/sqliteDatabase.js";
 import { FileExtractor } from "../extractor/fileExtractor.js";
 import * as Extractors from "../extractor/index.js";
 import { loadZipFile } from "../utils/loadZipFile.js";
+import { logger } from "../utils/logger.js";
 
 Extractors.register();
 
@@ -20,20 +22,32 @@ const zipToSQLiteInstance = async (
   const zipFile = await loadZipFile(file, useWebWorkers);
   const database = new SQLiteDatabase();
   await database.initialize();
+  const unprocessedFiles = [];
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const zipEntry of zipFile.fileIterator()) {
-    const extractor: FileExtractor = FileExtractor.getExtractor(
+    // Get a list of matching extractors
+    const extractors: FileExtractor[] = FileExtractor.getExtractor(
       serviceName,
       zipEntry.data.filename
     );
-    if (extractor) {
-      await extractor.loadFileContents(zipEntry);
-      await extractor.process();
-      extractor.createTable(database);
+    if (extractors?.length > 0) {
+      for (const extractor of extractors) {
+        // For each extractor, process the file and create the corresponding table
+        await extractor.loadFileContents(zipEntry);
+        await extractor.process();
+        extractor.createTable(database);
+      }
+    } else {
+      unprocessedFiles.push(zipEntry.data.filename);
     }
   }
 
+  if (unprocessedFiles) {
+    logger.warn(
+      `No extractor found for the following files:`,
+      unprocessedFiles
+    );
+  }
   return database;
 };
 

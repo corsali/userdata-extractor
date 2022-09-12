@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Saved Posts (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/saved/saved_posts.json"
+      "/json/instagram/saved/saved_posts.json"
     );
 
     savedPostsJson.setJsonDocument(data);
