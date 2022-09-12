@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Upgraded to Cross-App Messaging (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/comments_settings/use_cross-app_messaging.json"
+      "/json/instagram/comments_settings/use_cross-app_messaging.json"
     );
 
     upgradedToCrossAppMessagingJson.setJsonDocument(data);

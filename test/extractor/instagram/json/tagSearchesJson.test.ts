@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Tag Searches (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/recent_searches/tag_searches.json"
+      "/json/instagram/recent_searches/tag_searches.json"
     );
 
     tagSearchesJson.setJsonDocument(data);

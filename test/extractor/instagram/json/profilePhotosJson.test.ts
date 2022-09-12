@@ -11,7 +11,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Profile Photos (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/content/profile_photos.json"
+      "/json/instagram/content/profile_photos.json"
     );
 
     profilePhotosJson.setJsonDocument(data);

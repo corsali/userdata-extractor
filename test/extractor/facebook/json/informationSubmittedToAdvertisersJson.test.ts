@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Information You've Submitted To Advertisers (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/ads_information/information_you've_submitted_to_advertisers.json"
+      "/json/facebook/ads_information/information_you've_submitted_to_advertisers.json"
     );
 
     informationXJson.setJsonDocument(data);

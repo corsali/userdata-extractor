@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Off-Facebook Activity (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/apps_and_websites_off_of_facebook/your_off-facebook_activity.json"
+      "/json/facebook/apps_and_websites_off_of_facebook/your_off-facebook_activity.json"
     );
 
     offFacebookActivityJson.setJsonDocument(data);

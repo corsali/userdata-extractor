@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Event Invitations (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/events/event_invitations.json"
+      "/json/facebook/events/event_invitations.json"
     );
 
     eventInvitationsJson.setJsonDocument(data);
