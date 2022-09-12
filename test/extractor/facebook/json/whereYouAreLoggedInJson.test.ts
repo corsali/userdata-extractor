@@ -58,16 +58,23 @@ describe("Record Details (JSON)", () => {
         new DateTableValue(expectedValue.created_timestamp)
       );
       expect(rows[0].date_session_created).toEqual(
-        new DateTableValue(1599915008)
+        new DateTableValue(1660431243)
       );
-      expect(rows[0].session_ip_address).toEqual(
-        new TextTableValue("45.197.215.186")
-      );
-      expect(rows[0].session_user_agent).toEqual(
+      expect(rows[0].ip_address).toEqual(new TextTableValue("74.219.42.162"));
+      expect(rows[0].user_agent).toEqual(
         new TextTableValue(
-          "Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G930F Build/R16NW) [FBAN/Orca-Android;FBAV/281.0.0.15.120;FBPN/com.facebook.orca;FBLC/en_US;FBBV/243644793;FBCR/3;FBMF/samsung;FBBD/samsung;FBDV/SM-G930F;FBSV/8.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]"
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
         )
       );
+      expect(rows[0].cookie).toEqual(
+        new TextTableValue("hSv4********************")
+      );
+      expect(rows[0].device).toEqual(new TextTableValue("Windows PC"));
+      expect(rows[0].location).toEqual(
+        new TextTableValue("London, United Kingdom")
+      );
+      expect(rows[0].app_name).toEqual(new TextTableValue("Chrome"));
+      expect(rows[0].session_type).toEqual(new TextTableValue("web"));
     });
   });
 });
