@@ -4,7 +4,8 @@ import * as zip from "@zip.js/zip.js";
 import config from "../config/index.js";
 import { logger } from "./logger.js";
 
-const IGNORE_FILEPATHS = [/__MACOSX\/\.*/, /\.DS_Store/];
+// TODO: may need to make this blacklist service specific in the future
+const IGNORE_FILEPATHS = [/__MACOSX\/\.*/, /\.DS_Store/, /.*\/messages\/.*/]; // Ignore private messages for now
 
 /**
  * Class used for managing Zip files.
