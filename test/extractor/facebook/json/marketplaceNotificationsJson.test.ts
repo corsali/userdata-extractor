@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Events (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/facebook_marketplace/marketplace_notifications.json"
+      "/json/facebook/facebook_marketplace/marketplace_notifications.json"
     );
 
     marketplaceNotificationsJson.setJsonDocument(data);

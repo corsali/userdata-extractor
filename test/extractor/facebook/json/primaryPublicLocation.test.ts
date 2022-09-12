@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Primary Public Location (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/location/primary_public_location.json"
+      "/json/facebook/location/primary_public_location.json"
     );
 
     primaryPublicLocationJson.setJsonDocument(data);

@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Reels Sentiments (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/your_topics/your_reels_sentiments.json"
+      "/json/instagram/your_topics/your_reels_sentiments.json"
     );
 
     yourReelsSentimentsJson.setJsonDocument(data);

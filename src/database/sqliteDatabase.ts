@@ -14,7 +14,7 @@ export class SQLiteDatabase implements Database {
         // When running in Jest, sql.js is unable to resolve the sql-wasm package from the CDN
         process.env.JEST_WORKER_ID !== undefined
           ? "./node_modules/sql.js/dist/sql-wasm.wasm"
-          : `https://sql.js.org/dist/${file}`,
+          : `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`,
     });
     this.database = new this.sql.Database();
   }

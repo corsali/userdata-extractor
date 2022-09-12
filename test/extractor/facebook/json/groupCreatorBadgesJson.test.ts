@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Group Creator Badges (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/groups/creator_badges.json"
+      "/json/facebook/groups/creator_badges.json"
     );
 
     groupCreatorBadgesJson.setJsonDocument(data);

@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Recent Follow Requests (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/followers_and_following/recent_follow_requests.json"
+      "/json/instagram/followers_and_following/recent_follow_requests.json"
     );
 
     recentFollowRequestsJson.setJsonDocument(data);

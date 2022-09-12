@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Location Timezone (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/location/timezone.json"
+      "/json/facebook/location/timezone.json"
     );
 
     locationTimezoneJson.setJsonDocument(data);

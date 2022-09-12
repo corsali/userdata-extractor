@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Recently Viewed Shopping Items (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/shopping/recently_viewed_items.json"
+      "/json/instagram/shopping/recently_viewed_items.json"
     );
 
     recentlyViewedShoppingItemsJson.setJsonDocument(data);

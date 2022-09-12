@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Event Responses (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/events/your_event_responses.json"
+      "/json/facebook/events/your_event_responses.json"
     );
 
     yourEventResponsesJson.setJsonDocument(data);
