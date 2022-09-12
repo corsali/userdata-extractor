@@ -11,7 +11,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Registration Info (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/login_and_account_creation/signup_information.json"
+      "/json/instagram/login_and_account_creation/signup_information.json"
     );
 
     registrationInfoJson.setJsonDocument(data);

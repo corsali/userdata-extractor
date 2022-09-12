@@ -6,7 +6,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Devices (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/device_information/devices.json"
+      "/json/instagram/device_information/devices.json"
     );
 
     devicesJson.setJsonDocument(data);

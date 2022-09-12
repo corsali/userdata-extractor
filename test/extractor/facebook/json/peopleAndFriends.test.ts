@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("People and Friends (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/activity_messages/people_and_friends.json"
+      "/json/facebook/activity_messages/people_and_friends.json"
     );
 
     peopleAndFriendsJson.setJsonDocument(data);

@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Recently Viewed Posts and Articles (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/your_interactions_on_facebook/recently_viewed.json"
+      "/json/facebook/your_interactions_on_facebook/recently_viewed.json"
     );
 
     recentlyViewedPostsAndArticlesJson.setJsonDocument(data);

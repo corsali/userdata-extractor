@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Following Hashtags (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/followers_and_following/following_hashtags.json"
+      "/json/instagram/followers_and_following/following_hashtags.json"
     );
 
     followingHashtagsJson.setJsonDocument(data);

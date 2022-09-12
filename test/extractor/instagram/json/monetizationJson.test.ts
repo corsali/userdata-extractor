@@ -6,7 +6,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Monetization (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/monetization/eligibility.json"
+      "/json/instagram/monetization/eligibility.json"
     );
 
     monetizationJson.setJsonDocument(data);
