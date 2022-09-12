@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Group Interactions (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/activity_messages/group_interactions.json"
+      "/json/facebook/activity_messages/group_interactions.json"
     );
 
     groupInteractionsJson.setJsonDocument(data);
