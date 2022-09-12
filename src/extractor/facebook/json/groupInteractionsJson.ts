@@ -12,7 +12,7 @@ class GroupInteractionsJson extends JsonExtractor {
       (groupInteraction) =>
         new GroupInteractions(
           groupInteraction.name,
-          parseInt(groupInteraction.value, 10),
+          groupInteraction.value,
           groupInteraction.uri
         )
     );

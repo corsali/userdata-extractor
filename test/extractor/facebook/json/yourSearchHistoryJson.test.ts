@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Saved Items (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/search/your_search_history.json"
+      "/json/facebook/search/your_search_history.json"
     );
 
     yourSearchHistoryJson.setJsonDocument(data);

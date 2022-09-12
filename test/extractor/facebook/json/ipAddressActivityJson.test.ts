@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("IP Address Activity (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/security_and_login_information/ip_address_activity.json"
+      "/json/facebook/security_and_login_information/ip_address_activity.json"
     );
 
     ipAddressActivityJson.setJsonDocument(data);

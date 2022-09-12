@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Saved Items (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/saved_items_and_collections/your_saved_items.json"
+      "/json/facebook/saved_items_and_collections/your_saved_items.json"
     );
 
     yourSavedItemsJson.setJsonDocument(data);

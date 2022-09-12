@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Language And Locale (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/preferences/language_and_locale.json"
+      "/json/facebook/preferences/language_and_locale.json"
     );
 
     languageAndLocaleJson.setJsonDocument(data);

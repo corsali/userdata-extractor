@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Mobile Devices (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/security_and_login_information/mobile_devices.json"
+      "/json/facebook/security_and_login_information/mobile_devices.json"
     );
 
     mobileDevicesJson.setJsonDocument(data);

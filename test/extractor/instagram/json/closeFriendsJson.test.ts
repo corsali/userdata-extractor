@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Close Friends (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/followers_and_following/close_friends.json"
+      "/json/instagram/followers_and_following/close_friends.json"
     );
 
     closeFriendsJson.setJsonDocument(data);

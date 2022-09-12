@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Account Privacy Changes (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/login_and_account_creation/account_privacy_changes.json"
+      "/json/instagram/login_and_account_creation/account_privacy_changes.json"
     );
 
     accountPrivacyChangesJson.setJsonDocument(data);

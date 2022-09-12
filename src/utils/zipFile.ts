@@ -4,6 +4,9 @@ import * as zip from "@zip.js/zip.js";
 import config from "../config/index.js";
 import { logger } from "./logger.js";
 
+// TODO: may need to make this blacklist service specific in the future
+const IGNORE_FILEPATHS = [/__MACOSX\/\.*/, /\.DS_Store/, /.*\/messages\/.*/]; // Ignore private messages for now
+
 /**
  * Class used for managing Zip files.
  *
@@ -91,11 +94,13 @@ export class ZipFile {
   fileIterator() {
     function* helper(zipEntry: zip.ZipEntry): any {
       if (zipEntry instanceof zip.fs.ZipDirectoryEntry) {
-        // eslint-disable-next-line no-restricted-syntax
         for (const zipEntryChild of zipEntry.children) {
           yield* helper(zipEntryChild);
         }
-      } else if (zipEntry instanceof zip.fs.ZipFileEntry) {
+      } else if (
+        zipEntry instanceof zip.fs.ZipFileEntry && // It's a file (not a folder)
+        !IGNORE_FILEPATHS.some((regex) => regex.test(zipEntry.data.filename)) // Filepath is not blacklisted
+      ) {
         yield zipEntry;
       }
     }

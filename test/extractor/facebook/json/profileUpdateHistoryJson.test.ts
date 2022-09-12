@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Profile Update History (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/profile_information/profile_update_history.json"
+      "/json/facebook/profile_information/profile_update_history.json"
     );
 
     profileUpdateHistoryJson.setJsonDocument(data);

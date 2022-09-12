@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Logins and Logouts (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/security_and_login_information/logins_and_logouts.json"
+      "/json/facebook/security_and_login_information/logins_and_logouts.json"
     );
 
     loginsAndLogoutsJson.setJsonDocument(data);

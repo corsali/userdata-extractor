@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Following (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/followers_and_following/following.json"
+      "/json/instagram/followers_and_following/following.json"
     );
 
     followingJson.setJsonDocument(data);
