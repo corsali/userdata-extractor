@@ -1,0 +1,29 @@
+{
+  "your_events_v2": [
+    {
+      "name": "Chill out",
+      "start_timestamp": 1395856800,
+      "end_timestamp": 0,
+      "place": {
+        "name": "Slovak Pub, Bratislava",
+        "coordinate": {
+          "latitude": 48.148087086822,
+          "longitude": 17.111758589745
+        },
+        "address": "Obchodn\u00c3\u00a1 62, 811 06 Bratislava, Slovakia"
+      },
+      "description": "",
+      "create_timestamp": 1395652911
+    },
+    {
+      "name": "Team build",
+      "start_timestamp": 1351013400,
+      "end_timestamp": 0,
+      "place": {
+        "name": "Big Meeting Room"
+      },
+      "description": "",
+      "create_timestamp": 1350688568
+    }
+  ]
+}

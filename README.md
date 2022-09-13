@@ -189,6 +189,35 @@ Instagram
     └── your_reels_topics.json      ✅
 Facebook
 ├── activity_messages
+│   ├── group_interactions.json ✅
+│   └── people_and_friends.json ✅
+├── ads_information
+│   ├── advertisers_using_your_activity_or_information.json ✅
+│   ├── advertisers_you've_interacted_with.json ✅
+│   ├── information_you've_submitted_to_advertisers.json ✅
+│   └── other_categories_used_to_reach_you.json ✅
+├── apps_and_websites_off_of_facebook
+│   ├── apps_and_websites.json ✅
+│   └── your_off-facebook_activity.json ✅
+├── comments_and_reactions
+│   ├── comments.json
+│   └── posts_and_comments.json
+├── events
+│   ├── event_invitations.json ✅
+│   ├── your_events.json ✅
+│   └── your_event_responses.json ✅
+├── facebook_marketplace
+│   └── marketplace_notifications.json ✅
+├── facebook_payments
+│   └── payment_history.json - not enough data
+├── friends_and_followers
+│   ├── friends.json
+│   ├── friend_requests_received.json
+│   ├── friend_requests_sent.json
+│   ├── rejected_friend_requests.json
+│   ├── removed_friends.json
+│   └── who_you_follow.json
+├── activity_messages
 │   ├── group_interactions.json
 │   └── people_and_friends.json
 ├── polls

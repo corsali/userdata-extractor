@@ -1,0 +1,45 @@
+{
+  "event_responses_v2": {
+    "events_joined": [
+      {
+        "name": "Stourport Outdoor Circuit Session",
+        "start_timestamp": 1557943200,
+        "end_timestamp": 0
+      },
+      {
+        "name": "Chill out",
+        "start_timestamp": 1395856800,
+        "end_timestamp": 0,
+        "place": {
+          "name": "Slovak Pub, Bratislava",
+          "coordinate": {
+            "latitude": 48.148087086822,
+            "longitude": 17.111758589745
+          },
+          "address": "Obchodn\u00c3\u00a1 62, 811 06 Bratislava, Slovakia"
+        },
+        "description": "",
+        "create_timestamp": 1395652911
+      }
+    ],
+    "events_declined": [
+      {
+        "name": "Cycling Treasure Hunt",
+        "start_timestamp": 1592125200,
+        "end_timestamp": 1592146800
+      },
+      {
+        "name": "Boardman Performance Centre Tour",
+        "start_timestamp": 1570870800,
+        "end_timestamp": 1570896000
+      }
+    ],
+    "events_interested": [
+      {
+        "name": "La Vuelta themed ride",
+        "start_timestamp": 1568538000,
+        "end_timestamp": 1568559600
+      }
+    ]
+  }
+}
