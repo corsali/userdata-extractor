@@ -188,9 +188,20 @@ Instagram
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
 Facebook
-└── activity_messages
-    ├── group_interactions.json
-    └── people_and_friends.json
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── comments_and_reactions
+│   ├── comments.json ✅
+│   └── posts_and_comments.json ✅
+├── profile_information
+│   └── profile_information.json
+│       ├── simple (1:1) data ✅
+│       ├── relationships ✅
+│       ├── work experience
+│       └── education experiences
+├── your_topics
+    └── your_topics.json ✅
 ```
 
 ### HTML
