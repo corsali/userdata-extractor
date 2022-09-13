@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { InformationSubmittedToAdvertisers as Information } from "../models/informationSubmittedToAdvertisers";
+import { InformationSubmittedToAdvertisers as Information } from "../models/informationSubmittedToAdvertisers.js";
 
 class InformationSubmittedToAdvertisersJson extends JsonExtractor {
   async process() {

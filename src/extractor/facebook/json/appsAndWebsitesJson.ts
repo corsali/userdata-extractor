@@ -11,7 +11,7 @@ class AppsAndWebsitesJson extends JsonExtractor {
         new AppsAndWebsites({
           name: appOrWebsite.name,
           dateAdded: appOrWebsite.added_timestamp,
-          userAppScopedId: appOrWebsite.user_app_scoped_id?.toString?.(),
+          userAppScopedId: appOrWebsite.user_app_scoped_id,
           category: appOrWebsite.category,
           dateRemoved: appOrWebsite.removed_timestamp,
         })

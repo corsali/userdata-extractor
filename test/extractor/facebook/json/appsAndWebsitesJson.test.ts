@@ -1,5 +1,5 @@
 import { appsAndWebsitesJson } from "../../../../src/extractor/facebook/json/appsAndWebsitesJson";
-import { DateTableValue, TextTableValue } from "../../../../src/models/table";
+import { DateTableValue, IntegerTableValue, TextTableValue } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Apps and Websites (JSON)", () => {
@@ -29,7 +29,7 @@ describe("Apps and Websites (JSON)", () => {
         new DateTableValue(expectedData[i][1])
       );
       expect(rows[i].user_app_scoped_id).toEqual(
-        new TextTableValue(expectedData[i][2])
+        new IntegerTableValue(expectedData[i][2])
       );
       expect(rows[i].category).toEqual(new TextTableValue(expectedData[i][3]));
       expect(rows[i].date_removed).toEqual(
