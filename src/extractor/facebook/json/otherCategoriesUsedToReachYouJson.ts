@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { OtherCategoriesUsedToReachYou as OtherCategories } from "../models/otherCategoriesUsedToReachYou";
+import { OtherCategoriesUsedToReachYou as OtherCategories } from "../models/otherCategoriesUsedToReachYou.js";
 
 class OtherCategoriesUsedToReachYouJson extends JsonExtractor {
   async process() {
