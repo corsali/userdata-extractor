@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Notifications (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/notifications/notifications.json"
+      "/json/facebook/notifications/notifications.json"
     );
 
     notificationsJson.setJsonDocument(data);

@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Comments In Groups (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/groups/your_comments_in_groups.json"
+      "/json/facebook/groups/your_comments_in_groups.json"
     );
 
     yourCommentsInGroupsJson.setJsonDocument(data);

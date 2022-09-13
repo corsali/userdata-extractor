@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Rejected Friend Requests (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/friends_and_followers/rejected_friend_requests.json"
+      "/json/facebook/friends_and_followers/rejected_friend_requests.json"
     );
 
     rejectedFriendRequestsJson.setJsonDocument(data);

@@ -8,19 +8,39 @@ class SavedCollectionsJson extends JsonExtractor {
       `$.saved_saved_collections[*].string_map_data`
     );
 
-    const processedSavedCollections = savedCollections.map(
-      (savedCollection) =>
-        new SavedCollections({
-          name: savedCollection.name?.value,
-          createdDate: savedCollection["created at"]?.timestamp,
-          updatedDate: savedCollection["updated at"]?.timestamp,
-          sharedUrl: savedCollection["shared by"]?.href,
-          sharedUsername: savedCollection["shared by"]?.value,
-          sharedDate: savedCollection["shared by"]?.timestamp,
-        })
-    );
-
-    this.table.rows.push(...processedSavedCollections);
+    let common: {
+      name: { value: string };
+      "created at": { timestamp: number };
+      "updated at": { timestamp: number };
+    };
+    let hasEntries = true;
+    savedCollections.forEach((savedCollection) => {
+      if (savedCollection.name) {
+        if (!hasEntries) {
+          this.table.rows.push(
+            new SavedCollections({
+              name: common.name?.value,
+              createdDate: common["created at"]?.timestamp,
+              updatedDate: common["updated at"]?.timestamp,
+            })
+          );
+        }
+        common = savedCollection;
+        hasEntries = false;
+      } else {
+        this.table.rows.push(
+          new SavedCollections({
+            name: common.name?.value,
+            createdDate: common["created at"]?.timestamp,
+            updatedDate: common["updated at"]?.timestamp,
+            sharedUrl: savedCollection["shared by"]?.href,
+            sharedUsername: savedCollection["shared by"]?.value,
+            sharedDate: savedCollection["shared by"]?.timestamp,
+          })
+        );
+        hasEntries = true;
+      }
+    });
   }
 }
 

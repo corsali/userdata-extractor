@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Friend Requests Received (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/friends_and_followers/friend_requests_received.json"
+      "/json/facebook/friends_and_followers/friend_requests_received.json"
     );
 
     friendRequestsReceivedJson.setJsonDocument(data);

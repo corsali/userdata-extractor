@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Address Books (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/other_personal_information/your_address_books.json"
+      "/json/facebook/other_personal_information/your_address_books.json"
     );
 
     yourAddressBooksJson.setJsonDocument(data);

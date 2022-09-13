@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Linked Meta Accounts (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/personal_information/linked_meta_accounts.json"
+      "/json/instagram/personal_information/linked_meta_accounts.json"
     );
 
     linkedMetaAccountsJson.setJsonDocument(data);

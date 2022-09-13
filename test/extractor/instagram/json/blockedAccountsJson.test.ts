@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Blocked Accounts (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/followers_and_following/blocked_accounts.json"
+      "/json/instagram/followers_and_following/blocked_accounts.json"
     );
 
     blockedAccountsJson.setJsonDocument(data);

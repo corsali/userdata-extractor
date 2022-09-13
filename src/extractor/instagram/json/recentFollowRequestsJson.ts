@@ -11,9 +11,9 @@ class RecentFollowRequestsJson extends JsonExtractor {
     const processedRecentFollowRequests = recentFollowRequests.map(
       (followRequest) =>
         new RecentFollowRequests({
-          name: followRequest[0].value,
-          profileUrl: followRequest[0].href,
-          dateFollowed: followRequest[0].timestamp,
+          name: followRequest[0]?.value,
+          profileUrl: followRequest[0]?.href,
+          dateFollowed: followRequest[0]?.timestamp,
         })
     );
 

@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { AudienceInsights } from "../models/audienceInsights";
+import { AudienceInsights } from "../models/audienceInsights.js";
 
 class AudienceInsightsJson extends JsonExtractor {
   async process() {
@@ -14,12 +14,12 @@ class AudienceInsightsJson extends JsonExtractor {
         // reliable parsing to Date. The relevant parser can be included in
         // DateTableValue object parsing.
         const dateRange =
-          audienceInsightsEntry["date range"].value.split(" - ");
+          audienceInsightsEntry["date range"]?.value?.split(" - ");
 
         return new AudienceInsights(
-          dateRange[0],
-          dateRange[1],
-          audienceInsightsEntry.followers.value
+          dateRange?.[0],
+          dateRange?.[1],
+          audienceInsightsEntry.followers?.value
         );
       }
     );

@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { RecentlyViewedShoppingItems } from "../models/recentlyViewedShoppingItems";
+import { RecentlyViewedShoppingItems } from "../models/recentlyViewedShoppingItems.js";
 
 class RecentlyViewedShoppingItemsJson extends JsonExtractor {
   async process() {
@@ -11,10 +11,10 @@ class RecentlyViewedShoppingItemsJson extends JsonExtractor {
     const processedRecentlyViewedItem = recentlyViewedItems.map(
       (viewedItem) =>
         new RecentlyViewedShoppingItems({
-          productId: viewedItem["product id"].value,
-          productName: viewedItem["product name"].value,
-          merchantId: viewedItem["merchant id"].value,
-          merchantName: viewedItem["merchant name"].value,
+          productId: viewedItem["product id"]?.value,
+          productName: viewedItem["product name"]?.value,
+          merchantId: viewedItem["merchant id"]?.value,
+          merchantName: viewedItem["merchant name"]?.value,
         })
     );
 

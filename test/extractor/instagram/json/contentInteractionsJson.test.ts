@@ -9,7 +9,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Content Interactions (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/past_instagram_insights/content_interactions.json"
+      "/json/instagram/past_instagram_insights/content_interactions.json"
     );
 
     contentInteractionsJson.setJsonDocument(data);

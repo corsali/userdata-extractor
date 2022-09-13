@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Removed Friends (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/friends_and_followers/removed_friends.json"
+      "/json/facebook/friends_and_followers/removed_friends.json"
     );
 
     removedFriendsJson.setJsonDocument(data);

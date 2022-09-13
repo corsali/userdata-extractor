@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Your Group Membership Activity (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.fb/groups/your_group_membership_activity.json"
+      "/json/facebook/groups/your_group_membership_activity.json"
     );
 
     yourGroupMembershipActivityJson.setJsonDocument(data);

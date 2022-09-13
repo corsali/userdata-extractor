@@ -6,7 +6,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Password Change History (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/login_and_account_creation/password_change_activity.json"
+      "/json/instagram/login_and_account_creation/password_change_activity.json"
     );
 
     passwordChangeHistoryJson.setJsonDocument(data);

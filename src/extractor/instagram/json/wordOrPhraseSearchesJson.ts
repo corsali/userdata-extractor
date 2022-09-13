@@ -9,8 +9,8 @@ class WordOrPhraseSearchesJson extends JsonExtractor {
     const processedSearches = searches.map(
       (searchEntry) =>
         new WordOrPhraseSearches(
-          searchEntry.search.value,
-          searchEntry.time.timestamp
+          searchEntry.search?.value,
+          searchEntry.time?.timestamp
         )
     );
 
