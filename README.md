@@ -78,7 +78,7 @@ When we're ready to release a new version of this package, visit [Github Release
 ### JSON
 
 ```
-.
+Instagram
 ├── account_information (see 2nd zip test file - these are in personal_information/)
 │   ├── account_information.json      ✅
 │   ├── linked_meta_accounts.json (from personal_information/) ✅
@@ -123,6 +123,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── close_friends.json ✅
 │   ├── followers.json  ✅
 │   ├── following.json  ✅
+│   ├── following_hashtags.json  ✅
 │   ├── pending_follow_requests.json
 │   ├── recent_follow_requests.json ✅
 │   ├── recently_unfollowed_accounts.json ✅
@@ -139,6 +140,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── liked_comments.json ✅
 │   └── liked_posts.json ✅
 ├── login_and_account_creation
+│   ├── account_privacy_changes.json ✅
 │   ├── login_activity.json   ✅
 │   ├── logout_activity.json  ✅
 │   ├── password_change_activity.json ✅
@@ -168,7 +170,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   └── content_interactions.json ✅
 ├── recent_searches
 │   ├── account_searches.json
-│   ├── tag_searches.json
+│   ├── tag_searches.json ✅
 │   └── word_or_phrase_searches.json ✅
 ├── reports
 │   └── no-data.txt
@@ -176,7 +178,7 @@ When we're ready to release a new version of this package, visit [Github Release
 │   ├── saved_collections.json ✅
 │   └── saved_posts.json ✅
 ├── shopping
-│   └── recently_viewed_items.json
+│   └── recently_viewed_items.json ✅
 ├── story_sticker_interactions
 │   ├── emoji_sliders.json
 │   ├── polls.json
@@ -185,6 +187,36 @@ When we're ready to release a new version of this package, visit [Github Release
 └── your_topics
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
+Facebook
+├── activity_messages
+│   ├── group_interactions.json ✅
+│   └── people_and_friends.json ✅
+├── ads_information
+│   ├── advertisers_using_your_activity_or_information.json ✅
+│   ├── advertisers_you've_interacted_with.json ✅
+│   ├── information_you've_submitted_to_advertisers.json ✅
+│   └── other_categories_used_to_reach_you.json ✅
+├── apps_and_websites_off_of_facebook
+│   ├── apps_and_websites.json ✅
+│   └── your_off-facebook_activity.json ✅
+├── comments_and_reactions
+│   ├── comments.json
+│   └── posts_and_comments.json
+├── events
+│   ├── event_invitations.json ✅
+│   ├── your_events.json ✅
+│   └── your_event_responses.json ✅
+├── facebook_marketplace
+│   └── marketplace_notifications.json ✅
+├── facebook_payments
+│   └── payment_history.json - not enough data
+├── friends_and_followers
+│   ├── friends.json
+│   ├── friend_requests_received.json
+│   ├── friend_requests_sent.json
+│   ├── rejected_friend_requests.json
+│   ├── removed_friends.json
+│   └── who_you_follow.json
 ```
 
 ### HTML

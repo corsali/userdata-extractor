@@ -1,0 +1,31 @@
+{
+  "group_interactions_v2": [
+    {
+      "name": "",
+      "description": "",
+      "entries": [
+        {
+          "data": {
+            "name": "Zwift Riders",
+            "value": "82 times",
+            "uri": "https://www.facebook.com/groups/zwiftriders/"
+          }
+        },
+        {
+          "data": {
+            "name": "Global Cycling Network Community",
+            "value": "62 times",
+            "uri": "https://www.facebook.com/groups/gcncommunity/"
+          }
+        },
+        {
+          "data": {
+            "name": "Eastgate Cycles",
+            "value": "4 times",
+            "uri": "https://www.facebook.com/groups/EastgateCycles/"
+          }
+        }
+      ]
+    }
+  ]
+}

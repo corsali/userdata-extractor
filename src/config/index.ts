@@ -16,4 +16,5 @@ export default {
 
   // Extractor
   SERVICE_INSTAGRAM: "instagram",
+  SERVICE_FACEBOOK: "facebook",
 };

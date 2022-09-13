@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Removed Suggestions (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/followers_and_following/removed_suggestions.json"
+      "/json/instagram/followers_and_following/removed_suggestions.json"
     );
 
     removedSuggestionsJson.setJsonDocument(data);

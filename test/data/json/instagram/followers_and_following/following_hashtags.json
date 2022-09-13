@@ -1,0 +1,30 @@
+{
+  "relationships_following_hashtags": [
+    {
+      "title": "",
+      "media_list_data": [
+        
+      ],
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/risograph",
+          "value": "risograph",
+          "timestamp": 1557600787
+        }
+      ]
+    },
+    {
+      "title": "",
+      "media_list_data": [
+        
+      ],
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/risographzine",
+          "value": "risographzine",
+          "timestamp": 1557590559
+        }
+      ]
+    }
+  ]
+}

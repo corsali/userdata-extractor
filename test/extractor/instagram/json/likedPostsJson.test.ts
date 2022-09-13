@@ -10,7 +10,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Liked Posts (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/likes/liked_posts.json"
+      "/json/instagram/likes/liked_posts.json"
     );
 
     likedPostsJson.setJsonDocument(data);

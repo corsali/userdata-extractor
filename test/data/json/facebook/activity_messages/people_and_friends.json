@@ -1,0 +1,24 @@
+{
+  "people_interactions_v2": [
+    {
+      "name": "",
+      "description": "",
+      "entries": [
+        {
+          "timestamp": 1658297344,
+          "data": {
+            "name": "Jack Sparrow",
+            "uri": "https://www.facebook.com/jack.sparrow"
+          }
+        },
+        {
+          "timestamp": 1585847976,
+          "data": {
+            "name": "Ben Burton",
+            "uri": "https://www.facebook.com/bentburton"
+          }
+        }
+      ]
+    }
+  ]
+}

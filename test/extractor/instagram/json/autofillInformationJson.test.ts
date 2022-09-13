@@ -5,7 +5,7 @@ import { loadTestFileAsJson } from "../../../helper";
 describe("Autofill information (JSON)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsJson(
-      "/json/carl.in.space/autofill_information/autofill_information.json"
+      "/json/instagram/autofill_information/autofill_information.json"
     );
 
     autofillInformationJson.setJsonDocument(data);
