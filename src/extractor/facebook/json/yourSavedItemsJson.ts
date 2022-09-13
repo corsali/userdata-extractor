@@ -1,5 +1,3 @@
-import jp from "jsonpath";
-
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
 import { YourSavedItems } from "../models/yourSavedItems.js";
@@ -9,9 +7,9 @@ class YourSavedItemsJson extends JsonExtractor {
     const yourSavedItems = this.query(`$.saves_v2.*`);
 
     yourSavedItems.forEach((savedItem) => {
-      const attachmentDataQueried = jp.query(
-        savedItem,
-        "$.attachments.*.data.*.external_context"
+      const attachmentDataQueried = this.query(
+        "$.attachments.*.data.*.external_context",
+        savedItem
       );
       const attachmentData =
         attachmentDataQueried?.length > 0 ? attachmentDataQueried : [{}];
