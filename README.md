@@ -188,9 +188,16 @@ Instagram
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
 Facebook
-└── activity_messages
-    ├── group_interactions.json
-    └── people_and_friends.json
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── your_interactions_on_facebook
+│   └── recently_visited.json
+│       ├── Profile visits ✅
+│       ├── Page visits ✅
+│       ├── Events visited ✅
+│       ├── Groups visited ✅
+│       ├── Marketplace Visits ✅
 ```
 
 ### HTML
