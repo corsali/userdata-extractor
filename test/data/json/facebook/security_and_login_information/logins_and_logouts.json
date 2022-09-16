@@ -1,0 +1,34 @@
+{
+  "account_accesses_v2": [
+    {
+      "action": "Login",
+      "timestamp": 1661325904,
+      "site": "www.facebook.com",
+      "ip_address": "24.48.125.10"
+    },
+    {
+      "action": "Login",
+      "timestamp": 1661324761,
+      "site": "www.facebook.com",
+      "ip_address": "24.48.125.10"
+    },
+    {
+      "action": "Login",
+      "timestamp": 1661324751,
+      "site": "www.facebook.com",
+      "ip_address": "24.48.125.10"
+    },
+    {
+      "action": "Log out",
+      "timestamp": 1661324631,
+      "site": "m.facebook.com",
+      "ip_address": "24.48.125.10"
+    },
+    {
+      "action": "Login",
+      "timestamp": 1603812826,
+      "site": "www.facebook.com",
+      "ip_address": "22ed:1bf:94d1:5a00:5529:149e:c1aa:94a1"
+    }
+  ]
+}
