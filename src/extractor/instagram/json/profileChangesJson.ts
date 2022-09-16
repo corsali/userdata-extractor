@@ -8,18 +8,12 @@ class ProfileChangesJson extends JsonExtractor {
 
     const processedChanges = changes
       .map((change) => {
-        const {
-          changed: { href: changedHref, value: changedValue },
-          "previous value": { href: prevHref, value: prevValue },
-          "new value": { href: newHref, value: newValue },
-          "change date": { timestamp: changeDate },
-        } = change;
-
         return {
-          changed: changedHref || changedValue,
-          previous_value: prevHref || prevValue,
-          new_value: newHref || newValue,
-          change_date: changeDate,
+          changed: change.changed?.href || change.changed?.value,
+          previous_value:
+            change["previous value"]?.href || change["previous value"]?.value,
+          new_value: change["new value"]?.href || change["new value"]?.value,
+          change_date: change["change date"]?.timestamp,
         };
       })
       .map((change) => new ProfileChanges(change));
