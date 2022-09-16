@@ -191,6 +191,16 @@ Instagram
 
 Facebook
 ├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── your_interactions_on_facebook
+│   └── recently_visited.json
+│       ├── Profile visits ✅
+│       ├── Page visits ✅
+│       ├── Events visited ✅
+│       ├── Groups visited ✅
+│       ├── Marketplace Visits ✅
+├── activity_messages
 │   ├── group_interactions.json ✅
 │   └── people_and_friends.json ✅
 ├── ads_information
