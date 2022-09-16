@@ -191,16 +191,6 @@ Instagram
 
 Facebook
 ├── activity_messages
-│   ├── group_interactions.json
-│   └── people_and_friends.json
-├── your_interactions_on_facebook
-│   └── recently_visited.json
-│       ├── Profile visits ✅
-│       ├── Page visits ✅
-│       ├── Events visited ✅
-│       ├── Groups visited ✅
-│       ├── Marketplace Visits ✅
-├── activity_messages
 │   ├── group_interactions.json ✅
 │   └── people_and_friends.json ✅
 ├── ads_information
@@ -227,18 +217,6 @@ Facebook
 │   ├── friend_requests_received.json ✅
 │   ├── friend_requests_sent.json ✅
 │   ├── rejected_friend_requests.json ✅
-├── groups
-│   ├── creator_badges.json ✅
-├── location
-│   ├── primary_location.json ✅
-│   ├── primary_public_location.json ✅
-│   └── timezone.json ✅
-├── notifications
-│   ├── notifications.json ✅
-│   └── notifications_of_meta_privacy_policy_update.json
-├── activity_messages
-│   ├── group_interactions.json
-│   └── people_and_friends.json
 ├── polls
 │   └── polls_you_voted_on.json
 ├── posts
@@ -261,14 +239,15 @@ Facebook
 │   ├── login_protection_data.json ✅
 │   ├── mobile_devices.json ✅
 │   └── record_details.json ✅
-├── activity_messages
-│   ├── group_interactions.json ✅
-│   └── people_and_friends.json ✅
-├── security_and_login_information
 │   ├── where_you're_logged_in.json ✅
 │   └── your_facebook_activity_history.json ✅
 ├── your_interactions_on_facebook
-│   ├── recently_viewed.json
+│   └── recently_visited.json
+│   │   ├── Profile visits ✅
+│   │   ├── Page visits ✅
+│   │   ├── Events visited ✅
+│   │   ├── Groups visited ✅
+│   │   ├── Marketplace Visits ✅
 │   │   ├── videos ✅
 │   │   ├── posts and articles ✅
 │   │   ├── marketplace interactions (not items) ✅
