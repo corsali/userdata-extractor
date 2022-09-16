@@ -31,6 +31,7 @@ describe("SQLite Database", () => {
       const query: QueryResult[] = database.runQuery(
         "select * from personal_information"
       );
+      console.log(JSON.stringify(query, null, 2));
       expect(query.length).toEqual(1);
       expect(query[0].queryResult[0].values.length).toEqual(2);
     });
@@ -41,6 +42,7 @@ describe("SQLite Database", () => {
          select AVG(age) from personal_information;
          select SUM(age) from personal_information;`
       );
+      console.log(JSON.stringify(query, null, 2));
       expect(query.length).toEqual(3);
     });
 
@@ -50,6 +52,7 @@ describe("SQLite Database", () => {
          select * from personal_information where non_existing_column = NULL;
          select * from non_existing_table;`
       );
+      console.log(JSON.stringify(query, null, 2));
       expect(query.length).toEqual(2);
     });
   });

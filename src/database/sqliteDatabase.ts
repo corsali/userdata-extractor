@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 import initSqlJs, { Database as SqlDatabase, SqlJsStatic } from "sql.js";
 
 import { Table, TableRow } from "../models/table/index.js";
@@ -110,29 +111,57 @@ export class SQLiteDatabase implements Database {
     const queryResults: QueryResult[] = [];
     try {
       const queryIterator = this.mainDatabase.iterateStatements(query);
+      let currentStatement = null;
 
       // Iterate through the query which possibly has multiple SQL statements
-      // eslint-disable-next-line no-restricted-syntax
-      for (const statement of queryIterator) {
+      while (!currentStatement || !currentStatement.done) {
         const queryResult: QueryResult = {};
         try {
-          queryResult.queryString = statement.getNormalizedSQL();
-          queryResult.queryResult = this.mainDatabase.exec(
-            queryResult.queryString
-          );
+          currentStatement = queryIterator.next();
+          if (!currentStatement.done) {
+            queryResult.queryString = currentStatement.value.getNormalizedSQL();
+          }
         } catch (singleQueryError) {
           queryResult.queryString = queryIterator.getRemainingSql();
-          queryResult.error = singleQueryError.toString();
+          queryResult.error = `Error executing SQL statement`;
         } finally {
-          queryResults.push(queryResult);
+          if (queryResult.queryString) {
+            queryResults.push(queryResult);
+          }
+        }
+      }
+
+      // Iterate through successfully parsed queries
+      for (const queryResult of queryResults) {
+        try {
+          if (queryResult.queryString) {
+            console.log("Executing: ", queryResult.queryString);
+            queryResult.queryResult = this.mainDatabase.exec(
+              queryResult.queryString
+            );
+          }
+        } catch (singleQueryError) {
+          queryResult.error = singleQueryError.toString();
         }
       }
     } catch (entireQueryError) {
       queryResults.push({
-        error: entireQueryError.toString(),
+        queryString: query,
+        error: `Entire query failed: ${entireQueryError.toString()}`,
       });
     }
 
     return queryResults;
+  }
+
+  /**
+   * Closes the database to free up memory.
+   * Note: prepared statements can't be run after DB is closed
+   */
+  close(): void {
+    Object.keys(this.databaseMap).forEach((dbKey: string) => {
+      this.databaseMap[dbKey].close();
+    });
+    this.mainDatabase.close();
   }
 }

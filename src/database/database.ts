@@ -10,6 +10,8 @@ export interface Database {
   exportDatabase(serviceName: string): Uint8Array;
 
   runQuery(query: string): QueryResult[];
+
+  close(): void;
 }
 
 export interface QueryResult {

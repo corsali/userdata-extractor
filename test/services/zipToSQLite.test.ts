@@ -15,7 +15,7 @@ describe("services/zipExporter", () => {
     });
   });
 
-  it("zipToSQLiteInstance() exports an sqlite file", async () => {
+  /* it("zipToSQLiteInstance() exports an sqlite file", async () => {
     const testFiles = {
       instagram: [
         "instagram_html_1",
@@ -30,24 +30,28 @@ describe("services/zipExporter", () => {
         "facebook_json_3",
         "facebook_json_4",
       ],
-    };
+    }; */
 
     /**
      * Loads a zip file, structures it and ensures the generated .sqlite file exists
      * @param serviceName (ie: instagram)
      * @param testFile (ie: instagram_json_1)
      */
-    const runTestAgainstFile = async (
+    /* const runTestAgainstFile = async (
       serviceName: string,
       testFile: string
     ): Promise<void> => {
       deleteFile(`zip/${serviceName}/${testFile}.sqlite`);
       const file = await loadTestFile(`zip/${serviceName}/${testFile}.zip`);
-      const database = await zipToSQLiteInstance(serviceName, file, false);
+      const database = await zipToSQLiteInstance(
+        [{ serviceName, file }],
+        false
+      );
       saveSqliteDump(
         database.exportDatabase(serviceName),
         `zip/${serviceName}/${testFile}.sqlite`
       );
+      database.close();
       expect(fileExists(`zip/${serviceName}/${testFile}.sqlite`)).toBeTruthy();
     };
 
@@ -61,5 +65,25 @@ describe("services/zipExporter", () => {
     });
 
     await Promise.all(testPromises);
+  }); */
+
+  it("zipToSQLiteInstance() can query with multiple services", async () => {
+    const fbFile = await loadTestFile(`zip/facebook/facebook_json_1.zip`);
+    const igFile = await loadTestFile(`zip/instagram/instagram_json_1.zip`);
+    const database = await zipToSQLiteInstance(
+      [
+        { serviceName: "facebook", file: fbFile },
+        { serviceName: "instagram", file: igFile },
+      ],
+      false
+    );
+    const results = database.runQuery(
+      `select * from facebook.off_facebook_activity;
+       select * from instagram.followers;`
+    );
+    database.close();
+
+    //console.log(JSON.stringify(results, null, 2));
+    expect(results).toBeTruthy();
   });
 });
