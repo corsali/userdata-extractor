@@ -1,0 +1,34 @@
+{
+  "events_invited_v2": [
+    {
+      "name": "Ultimate Frisbee",
+      "start_timestamp": 1661882400,
+      "end_timestamp": 1661887800
+    },
+    {
+      "name": "Festival spolo\u00c4\u008densk\u00c3\u00bdch hier",
+      "start_timestamp": 1661526000,
+      "end_timestamp": 0
+    },
+    {
+      "name": "Ultimate Frisbee",
+      "start_timestamp": 1661277600,
+      "end_timestamp": 1661283000
+    },
+    {
+      "name": "Ultimate Frisbee",
+      "start_timestamp": 1660672800,
+      "end_timestamp": 1660678200
+    },
+    {
+      "name": "Ultimate Frisbee",
+      "start_timestamp": 1660068000,
+      "end_timestamp": 1660073400
+    },
+    {
+      "name": "Ultimate Frisbee",
+      "start_timestamp": 1659463200,
+      "end_timestamp": 1659468600
+    }
+  ]
+}
