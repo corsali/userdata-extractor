@@ -15,7 +15,7 @@ describe("services/zipExporter", () => {
     });
   });
 
-  /* it("zipToSQLiteInstance() exports an sqlite file", async () => {
+  it("zipToSQLiteInstance() exports an sqlite file", async () => {
     const testFiles = {
       instagram: [
         "instagram_html_1",
@@ -30,14 +30,14 @@ describe("services/zipExporter", () => {
         "facebook_json_3",
         "facebook_json_4",
       ],
-    }; */
+    };
 
     /**
      * Loads a zip file, structures it and ensures the generated .sqlite file exists
      * @param serviceName (ie: instagram)
      * @param testFile (ie: instagram_json_1)
      */
-    /* const runTestAgainstFile = async (
+    const runTestAgainstFile = async (
       serviceName: string,
       testFile: string
     ): Promise<void> => {
@@ -65,7 +65,7 @@ describe("services/zipExporter", () => {
     });
 
     await Promise.all(testPromises);
-  }); */
+  });
 
   it("zipToSQLiteInstance() can query with multiple services", async () => {
     const fbFile = await loadTestFile(`zip/facebook/facebook_json_1.zip`);
@@ -77,13 +77,14 @@ describe("services/zipExporter", () => {
       ],
       false
     );
-    const results = database.runQuery(
-      `select * from facebook.off_facebook_activity;
-       select * from instagram.followers;`
-    );
+    const results = database.runQuery([
+      "select * from facebook.off_facebook_activity limit 5;",
+      "select * from instagram.followers limit 5;",
+    ]);
     database.close();
 
-    //console.log(JSON.stringify(results, null, 2));
-    expect(results).toBeTruthy();
+    expect(results?.length).toEqual(2);
+    expect(results[0].queryResult?.length).toBeGreaterThan(1);
+    expect(results[1].queryResult?.length).toBeGreaterThan(1);
   });
 });

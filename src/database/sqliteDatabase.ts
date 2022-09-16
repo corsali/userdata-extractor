@@ -107,47 +107,33 @@ export class SQLiteDatabase implements Database {
    * @param query Raw SQL query string
    * @returns an array of query results
    */
-  runQuery(query: string): QueryResult[] {
+  runQuery(queries: string[]): QueryResult[] {
     const queryResults: QueryResult[] = [];
     try {
-      const queryIterator = this.mainDatabase.iterateStatements(query);
-      let currentStatement = null;
-
-      // Iterate through the query which possibly has multiple SQL statements
-      while (!currentStatement || !currentStatement.done) {
+      for (const query of queries) {
         const queryResult: QueryResult = {};
-        try {
-          currentStatement = queryIterator.next();
-          if (!currentStatement.done) {
-            queryResult.queryString = currentStatement.value.getNormalizedSQL();
-          }
-        } catch (singleQueryError) {
-          queryResult.queryString = queryIterator.getRemainingSql();
-          queryResult.error = `Error executing SQL statement`;
-        } finally {
-          if (queryResult.queryString) {
-            queryResults.push(queryResult);
-          }
-        }
-      }
+        queryResult.queryString = query;
 
-      // Iterate through successfully parsed queries
-      for (const queryResult of queryResults) {
         try {
-          if (queryResult.queryString) {
-            console.log("Executing: ", queryResult.queryString);
-            queryResult.queryResult = this.mainDatabase.exec(
-              queryResult.queryString
-            );
+          for (const statement of this.mainDatabase.iterateStatements(query)) {
+            const results = [];
+            while (statement.step()) {
+              results.push(statement.getAsObject());
+            }
+            queryResult.queryResult = results; // statement.getAsObject();
           }
         } catch (singleQueryError) {
           queryResult.error = singleQueryError.toString();
+          queryResult.queryResult = [];
+        } finally {
+          queryResults.push(queryResult);
         }
       }
     } catch (entireQueryError) {
       queryResults.push({
-        queryString: query,
-        error: `Entire query failed: ${entireQueryError.toString()}`,
+        error: entireQueryError.toString(),
+        queryString: queries.toString(),
+        queryResult: [],
       });
     }
 

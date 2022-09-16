@@ -9,13 +9,13 @@ export interface Database {
 
   exportDatabase(serviceName: string): Uint8Array;
 
-  runQuery(query: string): QueryResult[];
+  runQuery(queries: string[]): QueryResult[];
 
   close(): void;
 }
 
 export interface QueryResult {
   queryString?: string;
-  queryResult?: any;
+  queryResult?: any[];
   error?: string;
 }
