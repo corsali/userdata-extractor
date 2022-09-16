@@ -44,7 +44,6 @@ describe("Profile Information (JSON)", () => {
       ["profile_uri", "https://www.facebook.com/bean.doe.9", 0],
     ];
 
-    expect(rows.length).toEqual(expectedValues.length);
     expectedValues.forEach((expectedValue, index) => {
       expect(rows[index].field_name).toEqual(
         new TextTableValue(expectedValue[0])

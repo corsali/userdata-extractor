@@ -13,7 +13,7 @@ class ProfileInformationJson extends JsonExtractor {
       "relationship",
       "family_members",
       "previous_relationships",
-      "work_experience",
+      "work_experiences",
       "education_experiences",
     ];
     const profileInformation = this.query(`$.profile_v2`)[0];

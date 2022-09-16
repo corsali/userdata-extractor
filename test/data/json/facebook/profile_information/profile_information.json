@@ -13,15 +13,9 @@
         "christieclayton2020@gmail.com",
         "janedoe1995@gmail.com"
       ],
-      "previous_emails": [
-
-      ],
-      "pending_emails": [
-
-      ],
-      "ad_account_emails": [
-
-      ]
+      "previous_emails": [],
+      "pending_emails": [],
+      "ad_account_emails": []
     },
     "birthday": {
       "year": 1995,
@@ -90,17 +84,85 @@
       }
     ],
     "education_experiences": [
-
+      {
+        "name": "Lake Erie College of Osteopathic Medicine",
+        "start_timestamp": 1505754480,
+        "graduated": false,
+        "concentrations": [],
+        "school_type": "College",
+        "timestamp": 1505754494
+      },
+      {
+        "name": "Uconn",
+        "start_timestamp": 1343804400,
+        "end_timestamp": 1420056000,
+        "graduated": true,
+        "concentrations": [
+          "Pre-Medicine/Biology"
+        ],
+        "school_type": "College",
+        "timestamp": 1338156573
+      },
+      {
+        "name": "Coginchaug Regional High School",
+        "start_timestamp": 1230796800,
+        "end_timestamp": 1325404800,
+        "graduated": true,
+        "concentrations": [],
+        "school_type": "High school",
+        "timestamp": 1315251664
+      }
     ],
     "work_experiences": [
-
+      {
+        "employer": "Full Time Mommy",
+        "description": "",
+        "start_timestamp": 1522857600,
+        "timestamp": 1583817323
+      },
+      {
+        "employer": "O'Reilly Auto Parts",
+        "title": "Delivery Driver",
+        "location": "Akron, Ohio",
+        "start_timestamp": 1464753600,
+        "end_timestamp": 1475251200,
+        "timestamp": 1485932542
+      },
+      {
+        "employer": "Autopart International",
+        "title": "Driver 1",
+        "location": "Norton, Massachusetts",
+        "start_timestamp": 1472702400,
+        "end_timestamp": 1513098000,
+        "timestamp": 1485932460
+      },
+      {
+        "employer": "Journeys",
+        "title": "Assistant Manager",
+        "start_timestamp": 1385010000,
+        "end_timestamp": 1388509200,
+        "timestamp": 1385135386
+      },
+      {
+        "employer": "AutoZone",
+        "title": "commercial driver",
+        "location": "Akron, Ohio",
+        "start_timestamp": 1362729600,
+        "end_timestamp": 1379228400,
+        "timestamp": 1368273034
+      },
+      {
+        "employer": "Servpro",
+        "title": "production crew member",
+        "start_timestamp": 1262332800,
+        "end_timestamp": 1306911600,
+        "timestamp": 1299007914
+      }
     ],
     "blood_info": {
       "blood_donor_status": "unregistered"
     },
-    "websites": [
-
-    ],
+    "websites": [],
     "phone_numbers": [
       {
         "phone_type": "Mobile",

@@ -198,8 +198,8 @@ Facebook
 │   └── profile_information.json
 │       ├── simple (1:1) data ✅
 │       ├── relationships ✅
-│       ├── work experience
-│       └── education experiences
+│       ├── work experience ✅
+│       └── education experiences ✅
 ├── your_topics
     └── your_topics.json ✅
 ```
