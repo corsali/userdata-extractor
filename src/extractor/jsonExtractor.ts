@@ -21,8 +21,8 @@ export class JsonExtractor extends FileExtractor {
     this.jsonDocument = caseInsensitiveWrapper(json);
   }
 
-  query(jsonPath: string) {
-    return jp.query(this.jsonDocument, jsonPath) ?? [];
+  query(jsonPath: string, document = this.jsonDocument) {
+    return jp.query(document, jsonPath) ?? [];
   }
 
   // eslint-disable-next-line class-methods-use-this

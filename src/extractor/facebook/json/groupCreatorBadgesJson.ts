@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { GroupCreatorBadges } from "../models/groupCreatorBadges";
+import { GroupCreatorBadges } from "../models/groupCreatorBadges.js";
 
 class GroupCreatorBadgesJson extends JsonExtractor {
   async process() {
