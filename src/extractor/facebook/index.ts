@@ -26,10 +26,17 @@ export * from "./json/peopleAndFriendsJson.js";
 export * from "./json/primaryLocationJson.js";
 export * from "./json/primaryPublicLocationJson.js";
 export * from "./json/profileUpdateHistoryJson.js";
+export * from "./json/recentlyViewedAdsJson.js";
+export * from "./json/recentlyViewedMarketplaceItemsJson.js";
+export * from "./json/recentlyViewedPostsAndArticlesJson.js";
+export * from "./json/recentlyViewedVideosJson.js";
+export * from "./json/recentMarketplaceInteractionsJson.js";
 export * from "./json/recordDetailsJson.js";
 export * from "./json/rejectedFriendRequestsJson.js";
+export * from "./json/whereYouAreLoggedInJson.js";
 export * from "./json/yourEventResponsesJson.js";
 export * from "./json/yourEventsJson.js";
+export * from "./json/yourFacebookActivityHistoryJson.js";
 export * from "./json/yourSavedItemsJson.js";
 export * from "./json/yourSearchHistoryJson.js";
 
