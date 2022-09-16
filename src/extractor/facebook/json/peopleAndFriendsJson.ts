@@ -4,12 +4,15 @@ import { PeopleAndFriends } from "../models/peopleAndFriends.js";
 
 class PeopleAndFriendsJson extends JsonExtractor {
   async process() {
-    const peopleAndFriends = this.query(
-      `$.people_interactions_v2.*.entries.*.data`
-    );
+    const peopleAndFriends = this.query(`$.people_interactions_v2.*.entries.*`);
 
     const processedPeopleAndFriends = peopleAndFriends.map(
-      (person) => new PeopleAndFriends(person.name, person.uri)
+      (person) =>
+        new PeopleAndFriends(
+          person.data?.name,
+          person.data?.uri,
+          person.timestamp
+        )
     );
 
     this.table.rows.push(...processedPeopleAndFriends);
