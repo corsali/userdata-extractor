@@ -213,12 +213,19 @@ Facebook
 ├── facebook_payments
 │   └── payment_history.json - not enough data
 ├── friends_and_followers
-│   ├── friends.json
-│   ├── friend_requests_received.json
-│   ├── friend_requests_sent.json
-│   ├── rejected_friend_requests.json
-│   ├── removed_friends.json
-│   └── who_you_follow.json
+│   ├── friends.json ✅
+│   ├── friend_requests_received.json ✅
+│   ├── friend_requests_sent.json ✅
+│   ├── rejected_friend_requests.json ✅
+├── groups
+│   ├── creator_badges.json ✅
+├── location
+│   ├── primary_location.json ✅
+│   ├── primary_public_location.json ✅
+│   └── timezone.json ✅
+├── notifications
+│   ├── notifications.json ✅
+│   └── notifications_of_meta_privacy_policy_update.json
 ├── activity_messages
 │   ├── group_interactions.json
 │   └── people_and_friends.json

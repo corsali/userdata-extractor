@@ -1,4 +1,8 @@
-import { DateTableValue, IntegerTableValue, TextTableValue } from "../../../models/table/index.js";
+import {
+  DateTableValue,
+  IntegerTableValue,
+  TextTableValue,
+} from "../../../models/table/index.js";
 import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class AppsAndWebsites extends FacebookBaseModel {
