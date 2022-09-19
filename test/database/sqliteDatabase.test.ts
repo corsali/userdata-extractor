@@ -26,6 +26,10 @@ describe("SQLite Database", () => {
     database.createTable("instagram", personalInformation);
   });
 
+  afterAll(() => {
+    database.close();
+  });
+
   describe("runQuery", () => {
     test("it should run a single query", async () => {
       const query: QueryResult[] = database.runQuery([
