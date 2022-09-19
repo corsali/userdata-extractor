@@ -6,7 +6,7 @@ import type { SQLiteDatabase } from "./database/sqliteDatabase.js";
 /**
  * Exported functions
  */
-import { zipToSQLiteInstance } from "./services/zipToSQLite.js";
+import { ServiceFile, zipToSQLiteInstance } from "./services/zipToSQLite.js";
 import { validateEmailIntegrationZip } from "./services/zipValidator.js";
 import { extractTablesFromSqlQuery } from "./utils/extractTablesFromSqlQuery.js";
 import { loadZipFile } from "./utils/loadZipFile.js";
@@ -22,4 +22,4 @@ export {
   zipToSQLiteInstance,
 };
 
-export type { Database, QueryResult, SQLiteDatabase };
+export type { Database, QueryResult, ServiceFile, SQLiteDatabase };

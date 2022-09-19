@@ -4,12 +4,15 @@ import initSqlJs, { Database as SqlDatabase, SqlJsStatic } from "sql.js";
 import { Table, TableRow } from "../models/table/index.js";
 import { Database, QueryResult } from "./database.js";
 
+// Redeclare type "SqlDatabase" because certain members are not exported from sql.js
+type SQLDatabase = SqlDatabase & { filename?: string };
+
 export class SQLiteDatabase implements Database {
   sql: SqlJsStatic;
 
-  databaseMap: { [key: string]: SqlDatabase };
+  databaseMap: { [key: string]: SQLDatabase };
 
-  mainDatabase: SqlDatabase;
+  mainDatabase: SQLDatabase;
 
   async initialize() {
     this.sql = await initSqlJs({
@@ -91,7 +94,7 @@ export class SQLiteDatabase implements Database {
     return columnNameType;
   }
 
-  getDatabase(): SqlDatabase {
+  getDatabase(): SQLDatabase {
     return this.mainDatabase;
   }
 
@@ -120,7 +123,7 @@ export class SQLiteDatabase implements Database {
             while (statement.step()) {
               results.push(statement.getAsObject());
             }
-            queryResult.queryResult = results; // statement.getAsObject();
+            queryResult.queryResult = results;
           }
         } catch (singleQueryError) {
           queryResult.error = singleQueryError.toString();

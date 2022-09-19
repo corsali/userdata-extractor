@@ -8,7 +8,7 @@ import { logger } from "../utils/logger.js";
 
 Extractors.register();
 
-type ServiceFile = {
+export type ServiceFile = {
   serviceName: string;
   file: File;
 };
