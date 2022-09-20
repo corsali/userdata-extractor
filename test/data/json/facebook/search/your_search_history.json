@@ -1,0 +1,76 @@
+{
+  "searches_v2": [
+    {
+      "timestamp": 1660675516,
+      "attachments": [
+        {
+          "data": [
+            {
+              "text": "\"Stephen Greg\""
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "text": "Stephen Greg"
+        }
+      ],
+      "title": "You searched Facebook"
+    },
+    {
+      "timestamp": 1661015130,
+      "attachments": [
+        {
+          "data": [
+            {
+              "text": "\"martin guard\""
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "text": "martin guard"
+        }
+      ],
+      "title": "You searched Facebook"
+    },
+    {
+      "timestamp": 1661325834,
+      "attachments": [
+        {
+          "data": [
+            {
+              "text": "\"instagram\""
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "text": "instagram"
+        }
+      ],
+      "title": "You searched Facebook"
+    },
+    {
+      "timestamp": 1661325837,
+      "attachments": [
+        {
+          "data": [
+            {
+              "text": "\"Instagram\""
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "text": "Instagram"
+        }
+      ],
+      "title": "You searched Facebook"
+    }
+  ]
+}

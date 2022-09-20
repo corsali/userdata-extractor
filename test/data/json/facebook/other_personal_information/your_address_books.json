@@ -1,0 +1,50 @@
+{
+  "address_book_v2": {
+    "address_book": [
+      {
+        "name": "Harrison Plenderleith",
+        "details": [
+          
+        ],
+        "created_timestamp": 1651146592,
+        "updated_timestamp": 1651146592
+      },
+      {
+        "name": "Snowie Raymonds",
+        "details": [
+          {
+            "contact_point": "+354486384255"
+          }
+        ],
+        "created_timestamp": 1609575513,
+        "updated_timestamp": 1609575513
+      },
+      {
+        "name": "Platt Harblood",
+        "details": [
+          {
+            "contact_point": "+241587435875"
+          },
+          {
+            "contact_point": "platt.h@gmail.com"
+          }
+        ],
+        "created_timestamp": 1609575513,
+        "updated_timestamp": 1609575513
+      },
+      {
+        "name": "Hadas R. Armedrobber",
+        "details": [
+          {
+            "contact_point": "+215485624907"
+          },
+          {
+            "contact_point": "+215748321475"
+          }
+        ],
+        "created_timestamp": 1608920058,
+        "updated_timestamp": 1608920058
+      }
+    ]
+  }
+}
