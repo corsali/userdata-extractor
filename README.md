@@ -188,9 +188,24 @@ Instagram
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
 Facebook
-└── activity_messages
-    ├── group_interactions.json
-    └── people_and_friends.json
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── apps_and_websites_off_of_facebook
+│   ├── your_apps.json ✅
+│   └── posts_from_apps_and_websites.json ✅
+├── facebook_accounts_center
+│   └── accounts_center.json ✅
+├── facebook_gaming
+│   ├── instant_games.json ✅
+│   └── gaming_profile.json ✅
+├── facebook_marketplace
+│   ├── buyer_and_seller_ratings.json ✅
+│   ├── items_sold.json ✅
+│   └── seller_information.json ✅
+├── facebook_news
+│   ├── time_spent.json ✅
+│   ├── your_locations.json ✅
 ```
 
 ### HTML

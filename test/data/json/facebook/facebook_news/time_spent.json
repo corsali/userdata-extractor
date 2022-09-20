@@ -1,0 +1,48 @@
+{
+  "news_time_spent_v2": [
+    {
+      "timestamp": 1647930269,
+      "event_type": "outbound_click",
+      "post_id": 0,
+      "media_id": 5015149798528732,
+      "url": "https://wegotthiscovered.com/movies/a-monotonous-crime-thriller-that-spent-years-on-the-shelf-turns-the-tables-on-netflix/"
+    },
+    {
+      "timestamp": 1647935284,
+      "event_type": "outbound_click",
+      "post_id": 0,
+      "media_id": 4914562711992378,
+      "url": "https://thetakeout.com/cherry-flavor-in-candy-food-tastes-better-thanks-to-sc-1848680305"
+    },
+    {
+      "timestamp": 1647935375,
+      "event_type": "view_duration",
+      "post_id": 0,
+      "media_id": 0,
+      "web_view_duration": 88
+    },
+    {
+      "timestamp": 1647935375,
+      "event_type": "view_duration",
+      "post_id": 0,
+      "media_id": 4914562711992378,
+      "url": "https://thetakeout.com/cherry-flavor-in-candy-food-tastes-better-thanks-to-sc-1848680305",
+      "web_view_duration": 91
+    },
+    {
+      "timestamp": 1647935163,
+      "event_type": "view_duration",
+      "post_id": 0,
+      "media_id": 0,
+      "web_view_duration": 132
+    },
+    {
+      "timestamp": 1647935163,
+      "event_type": "view_duration",
+      "post_id": 0,
+      "media_id": 5015149798528732,
+      "url": "https://wegotthiscovered.com/movies/a-monotonous-crime-thriller-that-spent-years-on-the-shelf-turns-the-tables-on-netflix/",
+      "web_view_duration": 4892
+    }
+  ]
+}

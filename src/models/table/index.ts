@@ -4,6 +4,7 @@ export * from "./dateTableValue.js";
 export * from "./emailTableValue.js";
 export * from "./floatTableValue.js";
 export * from "./integerTableValue.js";
+export * from "./jsonTableValue.js";
 export * from "./phoneNumberValue.js";
 export * from "./table.js";
 export * from "./tableRow.js";
