@@ -1,7 +1,7 @@
 /**
  * Extract the table names from an SQL query
  * @param query Raw SQL query string
- * @returns set of table names in the query
+ * @returns A mapping from integration names to a list of table names for that integration
  */
 const extractTablesFromSqlQuery = (
   queries: string[]
@@ -23,6 +23,8 @@ const extractTablesFromSqlQuery = (
             uniqueTables[database].push(table);
           }
         } else {
+          // Tables that are not namespaced fall under "uncategorized"
+          // Ex: namespaced: instagram.ads_clicked vs non-namespaced: ads_clicked
           if (!uniqueTables.uncategorized) {
             uniqueTables.uncategorized = [];
           }
