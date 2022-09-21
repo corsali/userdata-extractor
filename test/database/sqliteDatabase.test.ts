@@ -23,34 +23,38 @@ describe("SQLite Database", () => {
     });
 
     await database.initialize();
-    database.createTable(personalInformation);
+    database.createTable("instagram", personalInformation);
+  });
+
+  afterAll(() => {
+    database.close();
   });
 
   describe("runQuery", () => {
     test("it should run a single query", async () => {
-      const query: QueryResult[] = database.runQuery(
-        "select * from personal_information"
-      );
+      const query: QueryResult[] = database.runQuery([
+        "select * from personal_information",
+      ]);
       expect(query.length).toEqual(1);
-      expect(query[0].queryResult[0].values.length).toEqual(2);
+      expect(query[0]?.queryResult?.length).toEqual(2);
     });
 
     test("it should run multiple queries", async () => {
-      const query: QueryResult[] = database.runQuery(
-        `select * from personal_information;
-         select AVG(age) from personal_information;
-         select SUM(age) from personal_information;`
-      );
+      const query: QueryResult[] = database.runQuery([
+        "select * from personal_information;",
+        "select AVG(age) from personal_information;",
+        "select SUM(age) from personal_information;",
+      ]);
       expect(query.length).toEqual(3);
     });
 
     test("it should run partial queries when error occurs", async () => {
-      const query: QueryResult[] = database.runQuery(
-        `select * from personal_information;
-         select * from personal_information where non_existing_column = NULL;
-         select * from non_existing_table;`
-      );
-      expect(query.length).toEqual(2);
+      const query: QueryResult[] = database.runQuery([
+        "select * from personal_information;",
+        "select * from personal_information where non_existing_column = NULL;",
+        "select * from non_existing_table;",
+      ]);
+      expect(query.length).toEqual(3);
     });
   });
 });
