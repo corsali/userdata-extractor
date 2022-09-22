@@ -1,0 +1,716 @@
+{
+  "location_history_v2": [
+    {
+      "name": "Volta",
+      "coordinate": {
+        "latitude": 37.055088043213,
+        "longitude": -121.00704956055
+      },
+      "creation_timestamp": 1650097863
+    },
+    {
+      "name": "Gustine",
+      "coordinate": {
+        "latitude": 37.193119049072,
+        "longitude": -121.08290863037
+      },
+      "creation_timestamp": 1648349773
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322101593018,
+        "longitude": -121.0170211792
+      },
+      "creation_timestamp": 1628201972
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322158813477,
+        "longitude": -121.01704406738
+      },
+      "creation_timestamp": 1628062129
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32207,
+        "longitude": -121.01705
+      },
+      "creation_timestamp": 1598588697
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32162,
+        "longitude": -121.01797
+      },
+      "creation_timestamp": 1598455466
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3221,
+        "longitude": -121.01713
+      },
+      "creation_timestamp": 1597891414
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32225,
+        "longitude": -121.01706
+      },
+      "creation_timestamp": 1586803083
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32205,
+        "longitude": -121.01702
+      },
+      "creation_timestamp": 1586753459
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32206,
+        "longitude": -121.01703
+      },
+      "creation_timestamp": 1577825746
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32203,
+        "longitude": -121.01705
+      },
+      "creation_timestamp": 1574756464
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32208,
+        "longitude": -121.01701
+      },
+      "creation_timestamp": 1574505390
+    },
+    {
+      "name": "Empire",
+      "coordinate": {
+        "latitude": 37.66774,
+        "longitude": -120.87881
+      },
+      "creation_timestamp": 1573172904
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.33093,
+        "longitude": -120.92449
+      },
+      "creation_timestamp": 1573094699
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32144,
+        "longitude": -120.91468
+      },
+      "creation_timestamp": 1573094572
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32191,
+        "longitude": -121.01725
+      },
+      "creation_timestamp": 1572637972
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32034,
+        "longitude": -121.01792
+      },
+      "creation_timestamp": 1572593602
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32201,
+        "longitude": -121.01716
+      },
+      "creation_timestamp": 1572573054
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32203,
+        "longitude": -121.01701
+      },
+      "creation_timestamp": 1572531458
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32223,
+        "longitude": -121.01725
+      },
+      "creation_timestamp": 1572395059
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.31795,
+        "longitude": -121.02165
+      },
+      "creation_timestamp": 1572105316
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.31738,
+        "longitude": -121.01964
+      },
+      "creation_timestamp": 1572105131
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.316589355469,
+        "longitude": -121.01921081543
+      },
+      "creation_timestamp": 1564621532
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322078704834,
+        "longitude": -121.01702880859
+      },
+      "creation_timestamp": 1564615177
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.31583404541,
+        "longitude": -121.01975250244
+      },
+      "creation_timestamp": 1564611133
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.318309783936,
+        "longitude": -121.01909637451
+      },
+      "creation_timestamp": 1564611073
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.319103240967,
+        "longitude": -121.0191116333
+      },
+      "creation_timestamp": 1564610003
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.316722869873,
+        "longitude": -121.02236938477
+      },
+      "creation_timestamp": 1564608773
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.318405151367,
+        "longitude": -121.02033996582
+      },
+      "creation_timestamp": 1564608713
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322078704834,
+        "longitude": -121.0170211792
+      },
+      "creation_timestamp": 1564083750
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.31681060791,
+        "longitude": -121.01947021484
+      },
+      "creation_timestamp": 1563992821
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322074890137,
+        "longitude": -121.01703643799
+      },
+      "creation_timestamp": 1563495177
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.29838,
+        "longitude": -121.01404
+      },
+      "creation_timestamp": 1563494857
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322090148926,
+        "longitude": -121.01699829102
+      },
+      "creation_timestamp": 1563309679
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322101593018,
+        "longitude": -121.0170135498
+      },
+      "creation_timestamp": 1562728897
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.315273284912,
+        "longitude": -121.01854705811
+      },
+      "creation_timestamp": 1562696735
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.31713104248,
+        "longitude": -121.01931762695
+      },
+      "creation_timestamp": 1562694210
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.322086334229,
+        "longitude": -121.01699829102
+      },
+      "creation_timestamp": 1562200822
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.321951800034,
+        "longitude": -121.01709469864
+      },
+      "creation_timestamp": 1562200698
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3147829396,
+        "longitude": -121.02240409638
+      },
+      "creation_timestamp": 1562199330
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3221174,
+        "longitude": -121.0170244
+      },
+      "creation_timestamp": 1562197052
+    },
+    {
+      "name": "Modesto",
+      "coordinate": {
+        "latitude": 37.6660572,
+        "longitude": -120.9972733
+      },
+      "creation_timestamp": 1562128686
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220518,
+        "longitude": -121.0171015
+      },
+      "creation_timestamp": 1560749340
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3201059,
+        "longitude": -121.0186349
+      },
+      "creation_timestamp": 1560746247
+    },
+    {
+      "name": "Gustine",
+      "coordinate": {
+        "latitude": 37.2099972,
+        "longitude": -121.0122728
+      },
+      "creation_timestamp": 1560744982
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.28895905,
+        "longitude": -121.01046685
+      },
+      "creation_timestamp": 1560742967
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220268,
+        "longitude": -121.0171151
+      },
+      "creation_timestamp": 1560738500
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.315483161786,
+        "longitude": -121.01864889271
+      },
+      "creation_timestamp": 1560735950
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220444,
+        "longitude": -121.0170603
+      },
+      "creation_timestamp": 1560734824
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32648,
+        "longitude": -120.86263
+      },
+      "creation_timestamp": 1559865363
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220875,
+        "longitude": -121.0170093
+      },
+      "creation_timestamp": 1558860135
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220803,
+        "longitude": -121.0169974
+      },
+      "creation_timestamp": 1558853900
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220594,
+        "longitude": -121.0171452
+      },
+      "creation_timestamp": 1558833034
+    },
+    {
+      "name": "Gustine",
+      "coordinate": {
+        "latitude": 37.25337203817,
+        "longitude": -121.01217391265
+      },
+      "creation_timestamp": 1558831712
+    },
+    {
+      "name": "Los Banos",
+      "coordinate": {
+        "latitude": 37.029718015403,
+        "longitude": -120.89185169915
+      },
+      "creation_timestamp": 1558829813
+    },
+    {
+      "name": "Los Banos",
+      "coordinate": {
+        "latitude": 37.0312886,
+        "longitude": -120.8921861
+      },
+      "creation_timestamp": 1558825307
+    },
+    {
+      "name": "Los Banos",
+      "coordinate": {
+        "latitude": 37.029718807856,
+        "longitude": -120.89185326969
+      },
+      "creation_timestamp": 1558825247
+    },
+    {
+      "name": "Los Banos",
+      "coordinate": {
+        "latitude": 37.0312886,
+        "longitude": -120.8921861
+      },
+      "creation_timestamp": 1558824756
+    },
+    {
+      "name": "Los Banos",
+      "coordinate": {
+        "latitude": 37.0297103,
+        "longitude": -120.891861
+      },
+      "creation_timestamp": 1558820344
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3220964,
+        "longitude": -121.0170035
+      },
+      "creation_timestamp": 1558771001
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32209,
+        "longitude": -121.01699
+      },
+      "creation_timestamp": 1558755716
+    },
+    {
+      "name": "Gustine",
+      "coordinate": {
+        "latitude": 37.25996,
+        "longitude": -121.01339
+      },
+      "creation_timestamp": 1558752683
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32068,
+        "longitude": -120.91147
+      },
+      "creation_timestamp": 1558645686
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.34691,
+        "longitude": -120.93413
+      },
+      "creation_timestamp": 1557743895
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.32538,
+        "longitude": -121.01143
+      },
+      "creation_timestamp": 1557743682
+    },
+    {
+      "name": "Newman",
+      "coordinate": {
+        "latitude": 37.3221,
+        "longitude": -121.01702
+      },
+      "creation_timestamp": 1557718431
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32427,
+        "longitude": -120.87842
+      },
+      "creation_timestamp": 1548870002
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32101,
+        "longitude": -120.91698
+      },
+      "creation_timestamp": 1548794630
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.317,
+        "longitude": -120.90543
+      },
+      "creation_timestamp": 1548033256
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.33546,
+        "longitude": -120.90306
+      },
+      "creation_timestamp": 1547671848
+    },
+    {
+      "name": "Denair",
+      "coordinate": {
+        "latitude": 37.48066,
+        "longitude": -120.77634
+      },
+      "creation_timestamp": 1547435714
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32117,
+        "longitude": -120.91637
+      },
+      "creation_timestamp": 1547255634
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.36712,
+        "longitude": -120.85455
+      },
+      "creation_timestamp": 1547254580
+    },
+    {
+      "name": "Anton Chico",
+      "coordinate": {
+        "latitude": 34.99198,
+        "longitude": -105.30048
+      },
+      "creation_timestamp": 1540856201
+    },
+    {
+      "name": "Anton Chico",
+      "coordinate": {
+        "latitude": 34.99184,
+        "longitude": -105.29799
+      },
+      "creation_timestamp": 1540856195
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32111,
+        "longitude": -120.91146
+      },
+      "creation_timestamp": 1539178781
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.36357,
+        "longitude": -120.85474
+      },
+      "creation_timestamp": 1539118064
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.3679,
+        "longitude": -120.85546
+      },
+      "creation_timestamp": 1539103870
+    },
+    {
+      "name": "Delhi",
+      "coordinate": {
+        "latitude": 37.45886,
+        "longitude": -120.81382
+      },
+      "creation_timestamp": 1539070929
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.38067,
+        "longitude": -120.85387
+      },
+      "creation_timestamp": 1539056586
+    },
+    {
+      "name": "Delhi",
+      "coordinate": {
+        "latitude": 37.43122,
+        "longitude": -120.78582
+      },
+      "creation_timestamp": 1539053389
+    },
+    {
+      "name": "Delhi",
+      "coordinate": {
+        "latitude": 37.42852,
+        "longitude": -120.78626
+      },
+      "creation_timestamp": 1539048938
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.38067,
+        "longitude": -120.85387
+      },
+      "creation_timestamp": 1539044938
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.38067,
+        "longitude": -120.85387
+      },
+      "creation_timestamp": 1539027485
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32111,
+        "longitude": -120.91146
+      },
+      "creation_timestamp": 1538966088
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.38073,
+        "longitude": -120.85402
+      },
+      "creation_timestamp": 1538948501
+    },
+    {
+      "name": "Stevinson",
+      "coordinate": {
+        "latitude": 37.32111,
+        "longitude": -120.91146
+      },
+      "creation_timestamp": 1538930230
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.38073,
+        "longitude": -120.85402
+      },
+      "creation_timestamp": 1538926401
+    },
+    {
+      "name": "Hilmar",
+      "coordinate": {
+        "latitude": 37.38073,
+        "longitude": -120.85402
+      },
+      "creation_timestamp": 1538862884
+    }
+  ]
+}
