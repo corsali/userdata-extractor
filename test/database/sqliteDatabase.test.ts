@@ -56,5 +56,14 @@ describe("SQLite Database", () => {
       ]);
       expect(query.length).toEqual(3);
     });
+
+    test("it should return empty array when error ocurrs", async () => {
+      const query: QueryResult[] = database.runQuery([
+        "select * from non_existent_table;",
+        "select fake_field from personal_information;",
+      ]);
+      expect(query[0]?.queryResult).toEqual([]);
+      expect(query[1]?.queryResult).toEqual([]);
+    });
   });
 });
