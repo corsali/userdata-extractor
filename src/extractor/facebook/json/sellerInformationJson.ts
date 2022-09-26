@@ -16,9 +16,9 @@ class SellerInformationJson extends JsonExtractor {
         return new SellerInformation({
           fieldName: infoEntry.field_name,
           fieldDate: new Date(
-            dateMatch.groups.year,
-            dateMatch.groups.month - 1,
-            dateMatch.groups.day
+            +dateMatch.groups.year,
+            +dateMatch.groups.month - 1,
+            +dateMatch.groups.day
           ),
         });
       }
