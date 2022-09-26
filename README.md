@@ -110,8 +110,10 @@ Instagram
 ├── contacts
 │   └── synced_contacts.json
 ├── content
+│   ├── archived_posts.json
 │   ├── posts_1.json
 │   ├── profile_photos.json  ✅
+│   ├── recently_deleted_content.json  ✅
 │   └── stories.json  ✅
 ├── device_information
 │   ├── camera_information.json ✅
@@ -135,6 +137,7 @@ Instagram
 ├── information_about_you
 │   ├── account_based_in.json ✅
 │   ├── ads_interests.json    ✅
+│   ├── possible_emails.json    ✅
 │   └── possible_phone_numbers.json ✅
 ├── likes
 │   ├── liked_comments.json ✅
@@ -180,10 +183,11 @@ Instagram
 ├── shopping
 │   └── recently_viewed_items.json ✅
 ├── story_sticker_interactions
-│   ├── emoji_sliders.json
-│   ├── polls.json
-│   ├── questions.json
-│   └── quizzes.json
+│   ├── emoji_sliders.json ✅
+│   ├── polls.json ✅
+│   ├── questions.json ✅
+│   ├── quizzes.json ✅
+│   └── story_likes.json ✅
 └── your_topics
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
