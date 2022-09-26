@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { YourCommentsInGroups } from "../models/yourCommentsInGroups";
+import { YourCommentsInGroups } from "../models/yourCommentsInGroups.js";
 
 class YourCommentsInGroupsJson extends JsonExtractor {
   async process() {

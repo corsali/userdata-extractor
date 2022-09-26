@@ -293,6 +293,40 @@ Facebook
 │   ├── rejected_friend_requests.json ✅
 │   ├── removed_friends.json ✅
 │   └── who_you_follow.json ✅
+├── groups
+│   ├── creator_badges.json ✅
+│   ├── your_comments_in_groups.json ✅
+│   └── your_group_membership_activity.json ✅
+├── location
+│   ├── primary_location.json ✅
+│   ├── primary_public_location.json ✅
+│   └── timezone.json ✅
+├── notifications
+│   ├── notifications.json ✅
+│   └── notifications_of_meta_privacy_policy_update.json
+├── other_logged_information
+│   ├── ads_interests.json ✅
+│   └── friend_peer_group.json
+├── other_personal_information
+│   └── your_address_books.json ✅
+├── pages_and_profiles
+│   ├── pages_and_profiles_you_follow.json ✅
+│   ├── pages_you've_liked.json ✅
+│   └── your_pages_and_profiles.json ✅
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── comments_and_reactions
+│   ├── comments.json ✅
+│   └── posts_and_comments.json ✅
+├── profile_information
+│   └── profile_information.json
+│       ├── simple (1:1) data ✅
+│       ├── relationships ✅
+│       ├── work experience ✅
+│       └── education experiences ✅
+├── your_topics
+    └── your_topics.json ✅
 ```
 
 ### HTML
