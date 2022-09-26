@@ -1,0 +1,29 @@
+{
+  "contact_verifications_v2": [
+    {
+      "contact": "janedoe76@gmail.com",
+      "contact_type": 2,
+      "verification_time": 1649709605
+    },
+    {
+      "contact": "inumaganasiyoyo219@outlook.com",
+      "contact_type": 2,
+      "verification_time": 1631326564
+    },
+    {
+      "contact": "christieclayton2020@gmail.com",
+      "contact_type": 2,
+      "verification_time": 1607465408
+    },
+    {
+      "contact": "janedoe1995@gmail.com",
+      "contact_type": 2,
+      "verification_time": 1507659503
+    },
+    {
+      "contact": "+12095968144",
+      "contact_type": 1,
+      "verification_time": 1646344920
+    }
+  ]
+}

@@ -228,12 +228,16 @@ Facebook
 │   └── profile_update_history.json ✅
 ├── saved_items_and_collections
 │   ├── collections.json - not enough data
+│   ├── your_local_lists.json ✅
 │   └── your_saved_items.json ✅
 ├── search
 │   └── your_search_history.json ✅
 ├── security_and_login_information
 │   ├── account_activity.json ✅
+│   ├── account_status_changes.json ✅
+│   ├── authorized_logins.json ✅
 │   ├── browser_cookies - later
+│   ├── email_address_verifications ✅
 │   ├── ip_address_activity.json ✅
 │   ├── logins_and_logouts.json ✅
 │   ├── login_protection_data.json ✅
@@ -241,6 +245,9 @@ Facebook
 │   └── record_details.json ✅
 │   ├── where_you're_logged_in.json ✅
 │   └── your_facebook_activity_history.json ✅
+├── security_and_login_information
+│   ├── archived_stories.json ✅
+│   └── story_reactions.json ✅
 ├── your_interactions_on_facebook
 │   └── recently_visited.json
 │   │   ├── Profile visits ✅
@@ -262,6 +269,7 @@ Facebook
 ├── groups
 │   ├── creator_badges.json ✅
 │   ├── your_comments_in_groups.json ✅
+│   ├── your_posts_in_groups.json ✅
 │   └── your_group_membership_activity.json ✅
 ├── location
 │   ├── primary_location.json ✅
@@ -279,6 +287,11 @@ Facebook
 │   ├── pages_and_profiles_you_follow.json ✅
 │   ├── pages_you've_liked.json ✅
 │   └── your_pages_and_profiles.json ✅
+├── voting_location_and_reminders
+│   ├── location.json ✅
+│   └── voting_reminders.json ✅
+├── your_problem_reports
+│   └── your_problem_reports.json ✅
 ```
 
 ### HTML

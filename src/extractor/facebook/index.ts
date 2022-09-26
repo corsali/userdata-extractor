@@ -2,10 +2,14 @@
  * JSON Extractors
  */
 export * from "./json/accountActivityJson.js";
+export * from "./json/accountStatusChangesJson.js";
 export * from "./json/adsInterestsJson.js";
 export * from "./json/advertisersUsingYourActivityOrInformationJson.js";
 export * from "./json/advertisersYouInteractedWithJson.js";
 export * from "./json/appsAndWebsitesJson.js";
+export * from "./json/archivedStoriesJson.js";
+export * from "./json/authorizedLoginsJson.js";
+export * from "./json/emailAddressVerificationsJson.js";
 export * from "./json/eventInvitationsJson.js";
 export * from "./json/friendRequestsReceivedJson.js";
 export * from "./json/friendRequestsSentJson.js";
@@ -42,6 +46,9 @@ export * from "./json/recentMarketplaceVisitsJson.js";
 export * from "./json/recordDetailsJson.js";
 export * from "./json/rejectedFriendRequestsJson.js";
 export * from "./json/removedFriendsJson.js";
+export * from "./json/storyReactionsJson.js";
+export * from "./json/votingLocationJson.js";
+export * from "./json/votingRemindersJson.js";
 export * from "./json/whereYouAreLoggedInJson.js";
 export * from "./json/whoYouFollowJson.js";
 export * from "./json/yourAddressBooksJson.js";
@@ -50,7 +57,10 @@ export * from "./json/yourEventResponsesJson.js";
 export * from "./json/yourEventsJson.js";
 export * from "./json/yourFacebookActivityHistoryJson.js";
 export * from "./json/yourGroupMembershipActivityJson.js";
+export * from "./json/yourLocalListsJson.js";
 export * from "./json/yourPagesAndProfilesJson.js";
+export * from "./json/yourPostsInGroupsJson.js";
+export * from "./json/yourProblemReportsJson.js";
 export * from "./json/yourSavedItemsJson.js";
 export * from "./json/yourSearchHistoryJson.js";
 

@@ -1,0 +1,76 @@
+{
+  "account_status_changes_v2": [
+    {
+      "status": "Account reactivated",
+      "timestamp": 1505049656
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1504922938
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1501303413
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1501302960
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1500618448
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1500149619
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1500149066
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1500133436
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1499490184
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1499363383
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1499363174
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1499257250
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1499256980
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1499159664
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1399060288
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1398971205
+    },
+    {
+      "status": "Account reactivated",
+      "timestamp": 1355624328
+    },
+    {
+      "status": "Account deactivated",
+      "timestamp": 1355615478
+    }
+  ]
+}
