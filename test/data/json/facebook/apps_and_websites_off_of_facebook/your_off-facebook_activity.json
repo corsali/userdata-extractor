@@ -1,0 +1,104 @@
+{
+  "off_facebook_activity_v2": [
+    {
+      "name": "formula1.com",
+      "events": [
+        {
+          "id": 1290508261050914,
+          "type": "PAGE_VIEW",
+          "timestamp": 1661805660
+        },
+        {
+          "id": 1290508261050914,
+          "type": "PAGE_VIEW",
+          "timestamp": 1661670780
+        },
+        {
+          "id": 1290508261050914,
+          "type": "PAGE_VIEW",
+          "timestamp": 1647807240
+        },
+        {
+          "id": 1290508261050914,
+          "type": "PAGE_VIEW",
+          "timestamp": 1639318320
+        },
+        {
+          "id": 1290508261050914,
+          "type": "PAGE_VIEW",
+          "timestamp": 1638681300
+        },
+        {
+          "id": 1290508261050914,
+          "type": "PAGE_VIEW",
+          "timestamp": 1618753800
+        }
+      ]
+    },
+    {
+      "name": "pocket-lint.com",
+      "events": [
+        {
+          "id": 379461843790745,
+          "type": "PAGE_VIEW",
+          "timestamp": 1661791200
+        },
+        {
+          "id": 379461843790745,
+          "type": "PAGE_VIEW",
+          "timestamp": 1661672700
+        }
+      ]
+    },
+    {
+      "name": "usnews.com",
+      "events": [
+        {
+          "id": 1565037830173715,
+          "type": "PAGE_VIEW",
+          "timestamp": 1661522100
+        }
+      ]
+    },
+    {
+      "name": "gamesround.com",
+      "events": [
+        {
+          "id": 1963878823888637,
+          "type": "PAGE_VIEW",
+          "timestamp": 1638388500
+        },
+        {
+          "id": 1963878823888637,
+          "type": "PAGE_VIEW",
+          "timestamp": 1638387360
+        },
+        {
+          "id": 1963878823888637,
+          "type": "PAGE_VIEW",
+          "timestamp": 1635082680
+        }
+      ]
+    },
+    {
+      "name": "svgator.com",
+      "events": [
+        {
+          "id": 133734537235235,
+          "type": "VIEW_CONTENT",
+          "timestamp": 1638066660
+        }
+      ]
+    },
+    {
+      "name": "gpxeditor.co.uk",
+      "events": [
+        {
+          "id": 2630655600494324,
+          "type": "PAGE_VIEW",
+          "timestamp": 1609669800
+        }
+      ]
+    }
+  ]
+}

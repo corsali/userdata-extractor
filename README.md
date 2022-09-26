@@ -187,7 +187,98 @@ Instagram
 └── your_topics
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
+
+
 Facebook
+├── activity_messages
+│   ├── group_interactions.json ✅
+│   └── people_and_friends.json ✅
+├── ads_information
+│   ├── advertisers_using_your_activity_or_information.json ✅
+│   ├── advertisers_you've_interacted_with.json ✅
+│   ├── information_you've_submitted_to_advertisers.json ✅
+│   └── other_categories_used_to_reach_you.json ✅
+├── apps_and_websites_off_of_facebook
+│   ├── apps_and_websites.json ✅
+│   └── your_off-facebook_activity.json ✅
+├── comments_and_reactions
+│   ├── comments.json
+│   └── posts_and_comments.json
+├── events
+│   ├── event_invitations.json ✅
+│   ├── your_events.json ✅
+│   └── your_event_responses.json ✅
+├── facebook_marketplace
+│   └── marketplace_notifications.json ✅
+├── facebook_payments
+│   └── payment_history.json - not enough data
+├── friends_and_followers
+│   ├── friends.json ✅
+│   ├── friend_requests_received.json ✅
+│   ├── friend_requests_sent.json ✅
+│   ├── rejected_friend_requests.json ✅
+├── polls
+│   └── polls_you_voted_on.json
+├── posts
+│   └── too complex - figure out which data we want
+├── preferences
+│   └── language_and_locale.json ✅
+├── profile_information
+│   ├── profile_information.json - complex, might require multiple tables
+│   └── profile_update_history.json ✅
+├── saved_items_and_collections
+│   ├── collections.json - not enough data
+│   └── your_saved_items.json ✅
+├── search
+│   └── your_search_history.json ✅
+├── security_and_login_information
+│   ├── account_activity.json ✅
+│   ├── browser_cookies - later
+│   ├── ip_address_activity.json ✅
+│   ├── logins_and_logouts.json ✅
+│   ├── login_protection_data.json ✅
+│   ├── mobile_devices.json ✅
+│   └── record_details.json ✅
+│   ├── where_you're_logged_in.json ✅
+│   └── your_facebook_activity_history.json ✅
+├── your_interactions_on_facebook
+│   └── recently_visited.json
+│   │   ├── Profile visits ✅
+│   │   ├── Page visits ✅
+│   │   ├── Events visited ✅
+│   │   ├── Groups visited ✅
+│   │   ├── Marketplace Visits ✅
+│   │   ├── videos ✅
+│   │   ├── posts and articles ✅
+│   │   ├── marketplace interactions (not items) ✅
+│   │   ├── marketplace items ✅
+│   │   ├── ads ✅
+│   ├── friends.json ✅
+│   ├── friend_requests_received.json ✅
+│   ├── friend_requests_sent.json ✅
+│   ├── rejected_friend_requests.json ✅
+│   ├── removed_friends.json ✅
+│   └── who_you_follow.json ✅
+├── groups
+│   ├── creator_badges.json ✅
+│   ├── your_comments_in_groups.json ✅
+│   └── your_group_membership_activity.json ✅
+├── location
+│   ├── primary_location.json ✅
+│   ├── primary_public_location.json ✅
+│   └── timezone.json ✅
+├── notifications
+│   ├── notifications.json ✅
+│   └── notifications_of_meta_privacy_policy_update.json
+├── other_logged_information
+│   ├── ads_interests.json ✅
+│   └── friend_peer_group.json
+├── other_personal_information
+│   └── your_address_books.json ✅
+├── pages_and_profiles
+│   ├── pages_and_profiles_you_follow.json ✅
+│   ├── pages_you've_liked.json ✅
+│   └── your_pages_and_profiles.json ✅
 ├── activity_messages
 │   ├── group_interactions.json
 │   └── people_and_friends.json

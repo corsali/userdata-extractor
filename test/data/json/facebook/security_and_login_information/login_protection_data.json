@@ -1,0 +1,32 @@
+{
+  "login_protection_data_v2": [
+    {
+      "name": "Cookie: hSv4********************",
+      "session": {
+        "created_timestamp": 1660431242,
+        "updated_timestamp": 1661773213
+      }
+    },
+    {
+      "name": "IP Address: 51.219.86.162",
+      "session": {
+        "created_timestamp": 1661773213,
+        "ip_address": "51.219.86.162"
+      }
+    },
+    {
+      "name": "Estimated location inferred from IP 50.728, -1.808",
+      "session": {
+        "created_timestamp": 1661773213
+      }
+    },
+    {
+      "name": "Estimated location inferred from IP 51.254, 15.286",
+      "session": {
+        "created_timestamp": 1544162439,
+        "updated_timestamp": 1661582613,
+        "ip_address": "71.157.221.4"
+      }
+    }
+  ]
+}
