@@ -39,7 +39,7 @@ export class PersonalInformation extends InstagramBaseModel {
     super();
     this.bio = new TextTableValue(valueMap.bio);
     this.date_of_birth = new DateTableValue(valueMap.date_of_birth);
-    this.email = new EmailTableValue(valueMap.email);
+    this.email = new EmailTableValue(valueMap.email || valueMap.email_address);
     this.gender = new TextTableValue(valueMap.gender);
     this.has_shared_live_video = new BoolTableValue(
       valueMap.has_shared_live_video
