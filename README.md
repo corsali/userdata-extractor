@@ -218,12 +218,11 @@ Facebook
 ├── facebook_marketplace
 │   ├── buyer_and_seller_ratings.json ✅
 │   ├── items_sold.json ✅
+│   ├── marketplace_notifications.json ✅
 │   └── seller_information.json ✅
 ├── facebook_news
 │   ├── time_spent.json ✅
 │   ├── your_locations.json ✅
-├── facebook_marketplace
-│   └── marketplace_notifications.json ✅
 ├── facebook_payments
 │   └── payment_history.json - not enough data
 ├── friends_and_followers
@@ -287,10 +286,6 @@ Facebook
 │   │   ├── marketplace interactions (not items) ✅
 │   │   ├── marketplace items ✅
 │   │   ├── ads ✅
-│   ├── friends.json ✅
-│   ├── friend_requests_received.json ✅
-│   ├── friend_requests_sent.json ✅
-│   ├── rejected_friend_requests.json ✅
 │   ├── removed_friends.json ✅
 │   └── who_you_follow.json ✅
 ├── groups

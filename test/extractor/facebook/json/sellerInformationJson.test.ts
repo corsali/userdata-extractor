@@ -15,7 +15,7 @@ describe("Seller Information (JSON)", () => {
 
     const expectedValues: [string, string, number][] = [
       ["Legal name", "Georgianne Cleone Gotko", 0],
-      ["Date of birth", "", 550882800],
+      ["Date of birth", "", 550900800000],
       ["Shipping address", "1197 FLORIDA AVE\nAKRON, OH 44314", 0],
     ];
 

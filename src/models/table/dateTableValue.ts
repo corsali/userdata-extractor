@@ -13,10 +13,10 @@ export class DateTableValue extends ColumnTableValue {
       if (input instanceof Date) {
         return input.getTime();
       }
-      else if (typeof input === "string") {
+      if (typeof input === "string") {
         return Date.parse(input);
       }
-      else if (typeof input === "number") {
+      if (typeof input === "number") {
         // This is necessary for early dates - like birthdays
         if (input.toString().length <= 10) {
           return new Date(input * 1000).getTime();
