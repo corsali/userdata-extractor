@@ -22,7 +22,7 @@ describe("Profile Information (JSON)", () => {
       ["emails.emails.1", "inumaganasiyoyo219@outlook.com", 0],
       ["emails.emails.2", "christieclayton2020@gmail.com", 0],
       ["emails.emails.3", "janedoe1995@gmail.com", 0],
-      ["birthday", "", 815702400000],
+      ["birthday", "", 815720400000],
       ["gender.gender_option", "FEMALE", 0],
       ["gender.pronoun", "FEMALE", 0],
       ["previous_names.0.name", "Janie Clayton", 0],

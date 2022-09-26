@@ -40,7 +40,7 @@ describe("Profile Information - Relationships (JSON)", () => {
       },
       {
         person_name: "Zyan Coyle",
-        relationship_type: "previous relationship",
+        relationship_type: "Previous Relationship",
         date_added: 0,
         anniversary_date: 0,
       },

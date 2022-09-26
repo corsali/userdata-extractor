@@ -24,6 +24,6 @@ export class DateTableValue extends ColumnTableValue {
         return input.getTime();
       }
     }
-    return 0;
+    return null;
   }
 }

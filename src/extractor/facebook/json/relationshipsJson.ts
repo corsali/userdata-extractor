@@ -14,7 +14,7 @@ class RelationshipsJson extends JsonExtractor {
       );
       this.table.rows.push(
         new Relationships(
-          relationship.status ?? "partner",
+          relationship.status ?? "Partner",
           relationship.partner,
           relationship.timestamp,
           anniversary
@@ -27,7 +27,7 @@ class RelationshipsJson extends JsonExtractor {
     familyMembers.forEach((familyMember) => {
       this.table.rows.push(
         new Relationships(
-          familyMember.relation ?? "family member",
+          familyMember.relation ?? "Family Member",
           familyMember.name,
           familyMember.timestamp
         )
@@ -41,7 +41,7 @@ class RelationshipsJson extends JsonExtractor {
     previousRelationships.forEach((previousRelationship) => {
       this.table.rows.push(
         new Relationships(
-          "previous relationship",
+          "Previous Relationship",
           previousRelationship.name,
           previousRelationship.timestamp
         )
