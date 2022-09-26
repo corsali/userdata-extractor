@@ -279,6 +279,20 @@ Facebook
 │   ├── pages_and_profiles_you_follow.json ✅
 │   ├── pages_you've_liked.json ✅
 │   └── your_pages_and_profiles.json ✅
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── comments_and_reactions
+│   ├── comments.json ✅
+│   └── posts_and_comments.json ✅
+├── profile_information
+│   └── profile_information.json
+│       ├── simple (1:1) data ✅
+│       ├── relationships ✅
+│       ├── work experience ✅
+│       └── education experiences ✅
+├── your_topics
+    └── your_topics.json ✅
 ```
 
 ### HTML
