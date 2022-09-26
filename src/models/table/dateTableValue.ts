@@ -18,6 +18,9 @@ export class DateTableValue extends ColumnTableValue {
         if (input.toString().length <= 10) {
           return new Date(input * 1000).getTime();
         }
+        if (input.toString().length === 13) {
+          return new Date(input).getTime();
+        }
         return new Date(input).getTime();
       }
       if (input instanceof Date) {

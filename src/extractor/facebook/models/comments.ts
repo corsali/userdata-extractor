@@ -1,4 +1,8 @@
-import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
+import {
+  DateTableValue,
+  JsonTableValue,
+  TextTableValue,
+} from "../../../models/table/index.js";
 import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class Comments extends FacebookBaseModel {
@@ -8,7 +12,7 @@ export class Comments extends FacebookBaseModel {
 
   date_commented?: DateTableValue;
 
-  attachments?: TextTableValue;
+  attachments?: JsonTableValue;
 
   constructor(
     commentTitle: string,
@@ -20,10 +24,6 @@ export class Comments extends FacebookBaseModel {
     this.comment_title = new TextTableValue(commentTitle);
     this.comment_text = new TextTableValue(commentText);
     this.date_commented = new DateTableValue(dateCommented);
-    this.attachments = new TextTableValue(
-      typeof attachments === "object"
-        ? JSON.stringify(attachments)
-        : attachments
-    );
+    this.attachments = new JsonTableValue(attachments);
   }
 }
