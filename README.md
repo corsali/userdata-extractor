@@ -262,10 +262,12 @@ Facebook
 ├── posts
 │   └── too complex - figure out which data we want
 ├── preferences
-│   └── language_and_locale.json ✅
+│   ├── language_and_locale.json ✅
+│   └── facebook_watch.json ✅
 ├── profile_information
 │   ├── profile_information.json - complex, might require multiple tables
-│   └── profile_update_history.json ✅
+│   ├── profile_update_history.json ✅
+│   └── your_music.json ✅
 ├── saved_items_and_collections
 │   ├── collections.json - not enough data
 │   └── your_saved_items.json ✅
@@ -307,18 +309,26 @@ Facebook
 │   ├── device_location.json ✅
 │   ├── primary_location.json ✅
 │   ├── primary_public_location.json ✅
+│   ├── last_location.json ✅
+│   ├── location_history.json ✅
 │   └── timezone.json ✅
 ├── notifications
 │   ├── notifications.json ✅
 │   └── notifications_of_meta_privacy_policy_update.json
+├── other_activities
+│   ├── notes.json ✅
+│   └── pokes.json ✅
 ├── other_logged_information
 │   ├── ads_interests.json ✅
 │   └── friend_peer_group.json
 ├── other_personal_information
 │   └── your_address_books.json ✅
-├── pages_and_profiles
+├── pages_and_profiles (and pages/*)
 │   ├── pages_and_profiles_you_follow.json ✅
 │   ├── pages_you've_liked.json ✅
+│   ├── pages_you've_recommended.json ✅
+│   ├── pages_you've_unfollowed.json ✅
+│   ├── pages_you_follow.json ✅
 │   └── your_pages_and_profiles.json ✅
 ├── activity_messages
 │   ├── group_interactions.json
@@ -334,6 +344,7 @@ Facebook
 │       └── education experiences ✅
 ├── your_topics
     └── your_topics.json ✅
+│   └── your_pages.json ✅
 ```
 
 ### HTML
