@@ -243,7 +243,7 @@ Facebook
 │   └── notifications_of_meta_privacy_policy_update.json
 ├── other_logged_information
 │   ├── ads_interests.json ✅
-│   └── friend_peer_group.json
+│   └── friend_peer_group.json ✅
 ├── other_personal_information
 │   └── your_address_books.json ✅
 ├── pages_and_profiles
@@ -251,8 +251,10 @@ Facebook
 │   ├── pages_you've_liked.json ✅
 │   └── your_pages_and_profiles.json ✅
 ├── polls
-│   └── polls_you_voted_on.json
+│   └── polls_you_voted_on.json ✅
 ├── posts
+│   ├── your_uncategorized_photos.json ✅
+│   ├── your_videos.json ✅
 │   └── too complex - figure out which data we want
 ├── preferences
 │   └── language_and_locale.json ✅
@@ -260,13 +262,13 @@ Facebook
 │   ├── profile_information.json - complex, might require multiple tables
 │   └── profile_update_history.json ✅
 ├── saved_items_and_collections
-│   ├── collections.json - not enough data
+│   ├── collections.json ✅
 │   └── your_saved_items.json ✅
 ├── search
 │   └── your_search_history.json ✅
 ├── security_and_login_information
 │   ├── account_activity.json ✅
-│   ├── browser_cookies - later
+│   ├── browser_cookies ✅
 │   ├── ip_address_activity.json ✅
 │   ├── logins_and_logouts.json ✅
 │   ├── login_protection_data.json ✅
@@ -287,7 +289,10 @@ Facebook
 │   │   ├── marketplace items ✅
 │   │   ├── ads ✅
 │   ├── removed_friends.json ✅
+│   ├── survey_responses.json ✅
 │   └── who_you_follow.json ✅
+├── your_places
+│   └── places_you've_created.json ✅
 ├── groups
 │   ├── creator_badges.json ✅
 │   ├── your_comments_in_groups.json ✅
