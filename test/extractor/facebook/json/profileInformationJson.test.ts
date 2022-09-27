@@ -1,5 +1,5 @@
 import { profileInformationJson } from "../../../../src/extractor/facebook/json/profileInformationJson";
-import { TextTableValue } from "../../../../src/models/table";
+import { DateTableValue, TextTableValue } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Profile Information (JSON)", () => {
@@ -13,7 +13,7 @@ describe("Profile Information (JSON)", () => {
 
     const { rows } = profileInformationJson.table;
 
-    const expectedValues: [string, string | boolean, number][] = [
+    const expectedValues: [string, string | boolean, number | Date][] = [
       ["name.full_name", "Jane Doe", 0],
       ["name.first_name", "Jane", 0],
       ["name.middle_name", "", 0],
@@ -22,7 +22,7 @@ describe("Profile Information (JSON)", () => {
       ["emails.emails.1", "inumaganasiyoyo219@outlook.com", 0],
       ["emails.emails.2", "christieclayton2020@gmail.com", 0],
       ["emails.emails.3", "janedoe1995@gmail.com", 0],
-      ["birthday", "", 815720400000],
+      ["birthday", "", new Date(1995, 10, 7)],
       ["gender.gender_option", "FEMALE", 0],
       ["gender.pronoun", "FEMALE", 0],
       ["previous_names.0.name", "Janie Clayton", 0],
@@ -51,9 +51,9 @@ describe("Profile Information (JSON)", () => {
       expect(rows[index].field_text).toEqual(
         new TextTableValue(expectedValue[1])
       );
-      // expect(rows[index].field_date).toEqual(
-      //   new DateTableValue(expectedValue[2])
-      // );
+      expect(rows[index].field_date).toEqual(
+        new DateTableValue(expectedValue[2])
+      );
     });
   });
 });

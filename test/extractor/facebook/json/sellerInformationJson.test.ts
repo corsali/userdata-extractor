@@ -1,5 +1,5 @@
 import { sellerInformationJson } from "../../../../src/extractor/facebook/json/sellerInformationJson";
-import { TextTableValue } from "../../../../src/models/table";
+import { DateTableValue, TextTableValue } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Seller Information (JSON)", () => {
@@ -13,9 +13,9 @@ describe("Seller Information (JSON)", () => {
 
     const { rows } = sellerInformationJson.table;
 
-    const expectedValues: [string, string, number][] = [
+    const expectedValues: [string, string, number | Date][] = [
       ["Legal name", "Georgianne Cleone Gotko", 0],
-      ["Date of birth", "", 550900800000],
+      ["Date of birth", "", new Date(1987, 5, 17)],
       ["Shipping address", "1197 FLORIDA AVE\nAKRON, OH 44314", 0],
     ];
 
@@ -27,10 +27,9 @@ describe("Seller Information (JSON)", () => {
       expect(rows[index].field_value).toEqual(
         new TextTableValue(expectedValue[1])
       );
-      // TODO: don't hard code timestamps here because it will fail on different machines depending on their timezone
-      // expect(rows[index].field_date).toEqual(
-      //   new DateTableValue(expectedValue[2])
-      // );
+      expect(rows[index].field_date).toEqual(
+        new DateTableValue(expectedValue[2])
+      );
     });
   });
 });
