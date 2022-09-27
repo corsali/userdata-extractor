@@ -224,7 +224,9 @@ Facebook
 │   ├── time_spent.json ✅
 │   ├── your_locations.json ✅
 ├── facebook_payments
-│   └── payment_history.json - not enough data
+│   └── payment_history.json ✅
+├── feed
+│   └── feed.json ✅
 ├── friends_and_followers
 │   ├── friends.json ✅
 │   ├── friend_requests_received.json ✅
@@ -250,6 +252,11 @@ Facebook
 │   ├── pages_and_profiles_you_follow.json ✅
 │   ├── pages_you've_liked.json ✅
 │   └── your_pages_and_profiles.json ✅
+│   ├── friend_you_see_less.json ✅
+│   ├── people_who_follow_you.json ✅
+│   └── rejected_friend_requests.json ✅
+├── fundraisers
+│   └── fundraisers.json ✅
 ├── polls
 │   └── polls_you_voted_on.json
 ├── posts
@@ -291,8 +298,13 @@ Facebook
 ├── groups
 │   ├── creator_badges.json ✅
 │   ├── your_comments_in_groups.json ✅
-│   └── your_group_membership_activity.json ✅
+│   ├── your_group_membership_activity.json ✅
+│   ├── your_answers_to_membership_questions.json ✅
+│   ├── your_answers_to_participation_questions.json ✅
+│   ├── your_pending_posts_in_groups.json ✅
+│   └── your_groups.json ✅
 ├── location
+│   ├── device_location.json ✅
 │   ├── primary_location.json ✅
 │   ├── primary_public_location.json ✅
 │   └── timezone.json ✅

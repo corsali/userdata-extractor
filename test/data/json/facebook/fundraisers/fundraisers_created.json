@@ -1,0 +1,24 @@
+{
+  "fundraisers_created_v2": [
+    {
+      "timestamp": 1580048560,
+      "attachments": [
+        {
+          "data": [
+            {
+              "fundraiser": {
+                "title": "Georgianne's Pets/Animal Fundraiser",
+                "start_timestamp": 1580048403,
+                "end_timestamp": 1581310740,
+                "goal_amount": "$250.00",
+                "raised_amount": "$0.00",
+                "donated_amount": "$0.00"
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Georgianne Cleone Gotko created a fundraiser."
+    }
+  ]
+}
