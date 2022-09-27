@@ -17,13 +17,13 @@ describe("Facebook Watch (JSON)", () => {
       {
         video_title: "Disruptive man removed from a flight",
         user_action: "See Less",
-        action_time: 1645045140,
+        action_time: new Date("Wed, Feb 16, 2022, 8:59 PM"),
         feedback_collection: "",
       },
       {
         video_title: "",
         user_action: "See Less",
-        action_time: 1632951360,
+        action_time: new Date("Wed, Sep 29, 2021, 10:36 PM"),
         feedback_collection: "",
       },
     ];
