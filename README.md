@@ -200,7 +200,9 @@ Facebook
 │   └── other_categories_used_to_reach_you.json ✅
 ├── apps_and_websites_off_of_facebook
 │   ├── apps_and_websites.json ✅
-│   └── your_off-facebook_activity.json ✅
+│   ├── your_apps.json ✅
+│   ├── your_off-facebook_activity.json ✅
+│   └── posts_from_apps_and_websites.json ✅
 ├── comments_and_reactions
 │   ├── comments.json
 │   └── posts_and_comments.json
@@ -208,8 +210,19 @@ Facebook
 │   ├── event_invitations.json ✅
 │   ├── your_events.json ✅
 │   └── your_event_responses.json ✅
+├── facebook_accounts_center
+│   └── accounts_center.json ✅
+├── facebook_gaming
+│   ├── instant_games.json ✅
+│   └── gaming_profile.json ✅
 ├── facebook_marketplace
-│   └── marketplace_notifications.json ✅
+│   ├── buyer_and_seller_ratings.json ✅
+│   ├── items_sold.json ✅
+│   ├── marketplace_notifications.json ✅
+│   └── seller_information.json ✅
+├── facebook_news
+│   ├── time_spent.json ✅
+│   ├── your_locations.json ✅
 ├── facebook_payments
 │   └── payment_history.json ✅
 ├── feed
@@ -218,6 +231,27 @@ Facebook
 │   ├── friends.json ✅
 │   ├── friend_requests_received.json ✅
 │   ├── friend_requests_sent.json ✅
+│   ├── rejected_friend_requests.json ✅
+├── groups
+│   ├── creator_badges.json ✅
+│   ├── your_comments_in_groups.json ✅
+│   └── your_group_membership_activity.json ✅
+├── location
+│   ├── primary_location.json ✅
+│   ├── primary_public_location.json ✅
+│   └── timezone.json ✅
+├── notifications
+│   ├── notifications.json ✅
+│   └── notifications_of_meta_privacy_policy_update.json
+├── other_logged_information
+│   ├── ads_interests.json ✅
+│   └── friend_peer_group.json
+├── other_personal_information
+│   └── your_address_books.json ✅
+├── pages_and_profiles
+│   ├── pages_and_profiles_you_follow.json ✅
+│   ├── pages_you've_liked.json ✅
+│   └── your_pages_and_profiles.json ✅
 │   ├── friend_you_see_less.json ✅
 │   ├── people_who_follow_you.json ✅
 │   └── rejected_friend_requests.json ✅
@@ -259,10 +293,6 @@ Facebook
 │   │   ├── marketplace interactions (not items) ✅
 │   │   ├── marketplace items ✅
 │   │   ├── ads ✅
-│   ├── friends.json ✅
-│   ├── friend_requests_received.json ✅
-│   ├── friend_requests_sent.json ✅
-│   ├── rejected_friend_requests.json ✅
 │   ├── removed_friends.json ✅
 │   └── who_you_follow.json ✅
 ├── groups
@@ -290,6 +320,20 @@ Facebook
 │   ├── pages_and_profiles_you_follow.json ✅
 │   ├── pages_you've_liked.json ✅
 │   └── your_pages_and_profiles.json ✅
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── comments_and_reactions
+│   ├── comments.json ✅
+│   └── posts_and_comments.json ✅
+├── profile_information
+│   └── profile_information.json
+│       ├── simple (1:1) data ✅
+│       ├── relationships ✅
+│       ├── work experience ✅
+│       └── education experiences ✅
+├── your_topics
+    └── your_topics.json ✅
 ```
 
 ### HTML

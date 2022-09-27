@@ -43,11 +43,15 @@ describe("services/zipExporter", () => {
     ): Promise<void> => {
       deleteFile(`zip/${serviceName}/${testFile}.sqlite`);
       const file = await loadTestFile(`zip/${serviceName}/${testFile}.zip`);
-      const database = await zipToSQLiteInstance(serviceName, file, false);
+      const database = await zipToSQLiteInstance(
+        [{ serviceName, file }],
+        false
+      );
       saveSqliteDump(
-        database.exportDatabase(),
+        database.exportDatabase(serviceName),
         `zip/${serviceName}/${testFile}.sqlite`
       );
+      database.close();
       expect(fileExists(`zip/${serviceName}/${testFile}.sqlite`)).toBeTruthy();
     };
 
@@ -61,5 +65,26 @@ describe("services/zipExporter", () => {
     });
 
     await Promise.all(testPromises);
+  });
+
+  it("zipToSQLiteInstance() can query with multiple services", async () => {
+    const fbFile = await loadTestFile(`zip/facebook/facebook_json_1.zip`);
+    const igFile = await loadTestFile(`zip/instagram/instagram_json_1.zip`);
+    const database = await zipToSQLiteInstance(
+      [
+        { serviceName: "facebook", file: fbFile },
+        { serviceName: "instagram", file: igFile },
+      ],
+      false
+    );
+    const results = database.runQuery([
+      "select * from facebook.off_facebook_activity limit 5;",
+      "select * from instagram.followers limit 5;",
+    ]);
+    database.close();
+
+    expect(results?.length).toEqual(2);
+    expect(results[0].queryResult?.length).toBeGreaterThan(1);
+    expect(results[1].queryResult?.length).toBeGreaterThan(1);
   });
 });
