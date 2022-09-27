@@ -1,0 +1,17 @@
+{
+  "group_membership_questions_answers_v2": {
+    "group_answers": [
+      {
+        "answers": [
+          {
+            "question": "Promise to always attach your referral link",
+            "answer": "Yes",
+            "timestamp": 1648603320
+          }
+        ],
+        "rules_agreement": true,
+        "group_name": "Referral Links"
+      }
+    ]
+  }
+}
