@@ -1,5 +1,5 @@
 import { profileInformationJson } from "../../../../src/extractor/facebook/json/profileInformationJson";
-import { DateTableValue, TextTableValue } from "../../../../src/models/table";
+import { TextTableValue } from "../../../../src/models/table";
 import { loadTestFileAsJson } from "../../../helper";
 
 describe("Profile Information (JSON)", () => {
@@ -51,9 +51,9 @@ describe("Profile Information (JSON)", () => {
       expect(rows[index].field_text).toEqual(
         new TextTableValue(expectedValue[1])
       );
-      expect(rows[index].field_date).toEqual(
-        new DateTableValue(expectedValue[2])
-      );
+      // expect(rows[index].field_date).toEqual(
+      //   new DateTableValue(expectedValue[2])
+      // );
     });
   });
 });
