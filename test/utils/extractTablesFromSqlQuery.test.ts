@@ -2,13 +2,15 @@ import { extractTablesFromSqlQuery } from "../../src/utils/extractTablesFromSqlQ
 
 describe("extractPermissionsFromQuery", () => {
   it("extractPermissionsFromQuery", () => {
-    const permissions = extractTablesFromSqlQuery(
-      `SELECT * FROM personal_interests;
-       SELECT * FROM non_existing_table;
-       SELECT * FROM ads_interests
-            INNER JOIN instagram_interests ON ads_interests.ad_id = instagram_interests.id
-            INNER JOIN (SELECT * FROM personal_interests) AS pi ON ads_interests.id = pi.id;`
-    );
-    expect(permissions.size).toEqual(4);
+    const tables = extractTablesFromSqlQuery([
+      "SELECT * FROM personal_interests;",
+      "SELECT * FROM instagram.personal_interests;",
+      "SELECT * FROM facebook.non_existing_table;",
+      `SELECT * FROM netflix.ads_interests
+            INNER JOIN instagram.ads_interests ON netflix.ads_interests.ad_id = instagram.ads_interests.id
+            INNER JOIN (SELECT * FROM instagram.personal_interests) AS pi ON netflix.ads_interests.id = pi.id;`,
+    ]);
+    expect(Object.keys(tables).length).toEqual(4);
+    expect(tables.instagram.length).toEqual(2);
   });
 });

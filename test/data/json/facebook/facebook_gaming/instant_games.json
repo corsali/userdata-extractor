@@ -1,0 +1,64 @@
+{
+  "instant_games_played_v2": [
+    {
+      "name": "WOW",
+      "added_timestamp": 1558892442,
+      "user_app_scoped_id": 1960211210680967,
+      "category": "inactive"
+    },
+    {
+      "name": "OMG",
+      "added_timestamp": 1558810325,
+      "user_app_scoped_id": 2413874421973740,
+      "category": "inactive"
+    },
+    {
+      "name": "Nametests",
+      "added_timestamp": 1558223963,
+      "user_app_scoped_id": 2100802603320911,
+      "category": "inactive"
+    },
+    {
+      "name": "EverWing",
+      "added_timestamp": 1553043393,
+      "user_app_scoped_id": 1772278346178355,
+      "category": "inactive"
+    },
+    {
+      "name": "Quiz Planet",
+      "added_timestamp": 1550952222,
+      "user_app_scoped_id": 2491471197590871,
+      "category": "inactive"
+    },
+    {
+      "name": "Words With Friends",
+      "added_timestamp": 1550000287,
+      "user_app_scoped_id": 1926934350720691,
+      "category": "inactive"
+    },
+    {
+      "name": "BAM",
+      "added_timestamp": 1544250955,
+      "user_app_scoped_id": 1770921066346855,
+      "category": "inactive"
+    },
+    {
+      "name": "BATTLESHIP",
+      "added_timestamp": 1528609630,
+      "user_app_scoped_id": 2134053653276263,
+      "category": "inactive"
+    },
+    {
+      "name": "2020 Connect",
+      "added_timestamp": 1509065770,
+      "user_app_scoped_id": 1691859954200097,
+      "category": "inactive"
+    },
+    {
+      "name": "Super Bowling",
+      "added_timestamp": 1509064688,
+      "user_app_scoped_id": 1731889776835665,
+      "category": "inactive"
+    }
+  ]
+}
