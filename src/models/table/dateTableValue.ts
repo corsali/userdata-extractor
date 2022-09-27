@@ -17,14 +17,19 @@ export class DateTableValue extends ColumnTableValue {
         return Date.parse(input);
       }
       if (typeof input === "number") {
-        if (input.toString().length === 10) {
+        // This is necessary for early dates - like birthdays
+        if (input.toString().length <= 10) {
           return new Date(input * 1000).getTime();
         }
         if (input.toString().length === 13) {
           return new Date(input).getTime();
         }
+        return new Date(input).getTime();
+      }
+      if (input instanceof Date) {
+        return input.getTime();
       }
     }
-    return 0;
+    return null;
   }
 }
