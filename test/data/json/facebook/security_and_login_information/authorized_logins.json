@@ -1,0 +1,43 @@
+{
+  "recognized_devices_v2": [
+    {
+      "name": "Facebook Messenger for Android on moto g stylus 5G",
+      "created_timestamp": 1649948485,
+      "updated_timestamp": 1650766563,
+      "ip_address": "2607:fb91:1f00:4dc2:2cc1:e6ff:fe7b:4e20",
+      "user_agent": "[FBAN/FB4A;FBAV/360.0.0.30.113;FBBV/359953993;FBDM/{density=2.5,width=1080,height=2177};FBLC/en_US;FBRV/362221362;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBPN/com.facebook.katana;FBDV/moto g stylus 5G;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]",
+      "datr_cookie": "_JYRYgjQtNlvfmhSFlj7padN"
+    },
+    {
+      "name": "Chrome on Motorola Moto G Stylus 5G",
+      "created_timestamp": 1649981045,
+      "ip_address": "2607:fb91:1f89:971c:76:98ff:fe32:d052",
+      "user_agent": "Mozilla/5.0 (Linux; Android 11; moto g stylus 5G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36",
+      "datr_cookie": "QrZYYsO7oLON-9qgHr6Mj2Cs"
+    },
+    {
+      "name": "Facebook for Android",
+      "created_timestamp": 1649926123,
+      "updated_timestamp": 1649926137,
+      "ip_address": "2607:fb91:1f00:4dc2:2cc1:e6ff:fe7b:4e20",
+      "user_agent": "Dalvik/2.1.0 (Linux; U; Android 11; moto g stylus 5G Build/RRES31.Q3-60-47-2-2-1) [FBAN/FB4A;FBAV/360.0.0.30.113;FBPN/com.facebook.katana;FBLC/en_US;FBBV/359953993;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBDV/moto g stylus 5G;FBSV/11;FBCA/arm64-v8a:null;FBDM/{density=2.5,width=1080,height=2177};FB_FW/1;FBRV/362221362;]",
+      "datr_cookie": "cCoTYgWmCHHcl7Pz0NJfc73Q"
+    },
+    {
+      "name": "Chrome on Linux",
+      "created_timestamp": 1649920417,
+      "updated_timestamp": 1649920473,
+      "ip_address": "2607:fb91:1f8d:84bc:20:66ff:feb7:36e7",
+      "user_agent": "[FBAN/FB4A;FBAV/360.0.0.30.113;FBBV/359953993;FBDM/{density=2.5,width=2177,height=1080};FBLC/en_US;FBRV/362221362;FBCR/Metro by T-Mobile;FBMF/motorola;FBBD/motorola;FBPN/com.facebook.katana;FBDV/moto g stylus 5G;FBSV/11;FBOP/1;FBCA/arm64-v8a:;]",
+      "datr_cookie": "NisTYuszuSURerUxouZK3BIR"
+    },
+    {
+      "name": "Chrome on Windows",
+      "created_timestamp": 1647883241,
+      "updated_timestamp": 1649026727,
+      "ip_address": "73.115.240.83",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36",
+      "datr_cookie": "Kw4pYYan1RaR0oQGYeYsD8lW"
+    }
+  ]
+}

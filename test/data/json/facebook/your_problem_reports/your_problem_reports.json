@@ -1,0 +1,12 @@
+{
+  "messenger_bug_reports": [
+    {
+      "bug_description": "Hi! I just lost my phone number used for 2FA verification. I can still access my account but I can't generate new 2FA codes now. Please help me. Thank you!",
+      "submission_time": 1646410163
+    },
+    {
+      "bug_description": "Not letting me use pay",
+      "submission_time": 1636848128
+    }
+  ]
+}
