@@ -87,6 +87,7 @@ export * from "./json/yourLocationsJson.js";
 export * from "./json/yourMusicJson.js";
 export * from "./json/yourPagesAndProfilesJson.js";
 export * from "./json/yourPagesJson.js";
+export * from "./json/yourPostsJson.js";
 export * from "./json/yourSavedItemsJson.js";
 export * from "./json/yourSearchHistoryJson.js";
 export * from "./json/yourTopicsJson.js";

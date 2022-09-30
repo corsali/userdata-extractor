@@ -260,7 +260,7 @@ Facebook
 ├── polls
 │   └── polls_you_voted_on.json
 ├── posts
-│   └── too complex - figure out which data we want
+│   └── your_posts_1.json ✅
 ├── preferences
 │   ├── language_and_locale.json ✅
 │   └── facebook_watch.json ✅
