@@ -1,6 +1,6 @@
 {
   "name": "@corsali/userdata-extractor",
-  "version": "0.2.1",
+  "version": "0.3.0-beta1",
   "author": "Vana",
   "type": "module",
   "scripts": {
@@ -24,6 +24,7 @@
     "@types/jsonpath": "^0.2.0",
     "@types/lodash.mapvalues": "^4.6.7",
     "@types/node": "^16.11.6",
+    "@types/papaparse": "^5.3.5",
     "@types/sql.js": "^1.4.3",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
@@ -50,6 +51,7 @@
     "axios": "^0.27.2",
     "jsonpath": "^1.1.1",
     "lodash.mapvalues": "^4.6.0",
+    "papaparse": "^5.3.2",
     "sql.js": "^1.8.0"
   }
 }
