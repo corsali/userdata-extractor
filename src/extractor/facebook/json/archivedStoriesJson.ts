@@ -8,9 +8,9 @@ class ArchivedStoriesJson extends JsonExtractor {
 
     const processedArchivedStories = archivedStories.map((archivedStory) => {
       const attachmentDescriptions = archivedStory.attachments
-        ?.flatMap((data) => {
+        ?.flatMap((data: any) => {
           return data?.data?.map?.(
-            (media) => media?.media?.description as string
+            (media: any) => media?.media?.description as string
           );
         })
         ?.join(";");

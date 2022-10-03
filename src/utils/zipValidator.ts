@@ -1,7 +1,9 @@
 import config from "../config/index.js";
-import { getEmailIntegrationConfig } from "../utils/getEmailIntegrationConfig.js";
-import { validateEmailIntegrationFolders } from "../utils/validateEmailIntegrationFolders.js";
-import { ZipFile } from "../utils/zipFile.js";
+import {
+  getEmailIntegrationConfig,
+  validateEmailIntegrationFolders,
+  ZipFile,
+} from "./index.js";
 
 /**
  * Checks if a file is a valid module

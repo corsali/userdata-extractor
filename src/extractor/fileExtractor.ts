@@ -2,7 +2,7 @@ import * as zip from "@zip.js/zip.js";
 
 import { Database } from "../database/database.js";
 import { Table } from "../models/table/table.js";
-import { logger } from "../utils/logger.js";
+import { logger } from "../utils/index.js";
 
 interface FileExtractorEntry {
   filePattern: string;
@@ -35,10 +35,10 @@ export class FileExtractor {
     this.serviceName = serviceName;
 
     // Register the extractor
-    if (!FileExtractor.registeredExtractors[serviceName]) {
-      FileExtractor.registeredExtractors[serviceName] = [];
+    if (!FileExtractor.registeredExtractors[serviceName.toLowerCase()]) {
+      FileExtractor.registeredExtractors[serviceName.toLowerCase()] = [];
     }
-    FileExtractor.registeredExtractors[serviceName].push({
+    FileExtractor.registeredExtractors[serviceName.toLowerCase()].push({
       filePattern,
       extractor: this,
     });

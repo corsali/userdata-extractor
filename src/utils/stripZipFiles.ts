@@ -1,5 +1,4 @@
-import { loadZipFile } from "./loadZipFile.js";
-import { logger } from "./logger.js";
+import { loadZipFile, logger } from "./index.js";
 
 /**
  * Extract zip contents in memory, and strip out any file types that are not allowed

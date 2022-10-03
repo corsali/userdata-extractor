@@ -2,7 +2,7 @@
 import * as zip from "@zip.js/zip.js";
 
 import config from "../config/index.js";
-import { logger } from "./logger.js";
+import { logger } from "./index.js";
 
 // TODO: may need to make this blacklist service specific in the future
 const IGNORE_FILEPATHS = [/__MACOSX\/\.*/, /\.DS_Store/, /.*\/messages\/.*/]; // Ignore private messages for now
@@ -106,5 +106,27 @@ export class ZipFile {
     }
 
     return helper(this.getRoot());
+  }
+
+  /**
+   * Creates a zip (File object) of all input files
+   * @param files
+   * @param options
+   */
+  static async createZipFromFiles(
+    files: File[],
+    zipFileName: string,
+    options?: zip.ZipWriterAddDataOptions
+  ): Promise<File> {
+    const zipWriter = new zip.ZipWriter(new zip.BlobWriter("application/zip"), {
+      bufferedWrite: true,
+    });
+    await Promise.all(
+      files.map(async (file) => {
+        await zipWriter.add(file.name, new zip.BlobReader(file), options);
+      })
+    );
+    const zipBlob = await zipWriter.close();
+    return new File([zipBlob], zipFileName);
   }
 }

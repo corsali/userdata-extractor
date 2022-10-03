@@ -21,7 +21,7 @@ class YourLocalListsJson extends JsonExtractor {
           })
         );
       } else {
-        localList.places?.forEach((place) => {
+        localList.places?.forEach((place: any) => {
           this.table.rows.push(
             new YourLocalLists({
               listTitle: localList.title,
