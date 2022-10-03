@@ -115,7 +115,7 @@ export class ZipFile {
    */
   static async createZipFromFiles(
     files: File[],
-    zipFileName: string,
+    zipFileName = "data.zip",
     options?: zip.ZipWriterAddDataOptions
   ): Promise<File> {
     const zipWriter = new zip.ZipWriter(new zip.BlobWriter("application/zip"), {

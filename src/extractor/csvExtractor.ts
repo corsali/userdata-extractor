@@ -1,5 +1,5 @@
 import * as zip from "@zip.js/zip.js";
-import { parse as parseCsv, ParseResult, ParseWorkerConfig } from "papaparse";
+import * as csvParser from "papaparse";
 
 import { caseInsensitiveWrapper, logger } from "../utils/index.js";
 import { FileExtractor } from "./fileExtractor.js";
@@ -11,13 +11,13 @@ export class CsvExtractor extends FileExtractor {
     await super.loadFileContents(zipEntry);
   }
 
-  public async parse(options?: ParseWorkerConfig): Promise<void> {
+  public async parse(options?: csvParser.ParseWorkerConfig): Promise<void> {
     return new Promise((resolve) => {
-      const csvConfig: ParseWorkerConfig = {
+      const csvConfig: csvParser.ParseWorkerConfig = {
         // Default CSV parsing options
         header: true,
         worker: true,
-        complete: (results: ParseResult<any>) => {
+        complete: (results: csvParser.ParseResult<any>) => {
           if (results.errors?.length > 0) {
             logger.warn(
               `Error parsing ${this.zipEntry.data.filename}`,
@@ -32,7 +32,7 @@ export class CsvExtractor extends FileExtractor {
         ...options,
       };
 
-      parseCsv(this.fileContents, csvConfig);
+      csvParser.parse(this.fileContents, csvConfig);
     });
   }
 
