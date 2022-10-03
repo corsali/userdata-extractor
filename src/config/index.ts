@@ -24,5 +24,5 @@ export default {
   // Extractor
   SERVICE_INSTAGRAM: "instagram",
   SERVICE_FACEBOOK: "facebook",
-  SERVICE_NETFLIX_LIGHT: "netflix_light",
+  SERVICE_NETFLIX_VIEWING_HISTORY: "netflix_viewing_history",
 };

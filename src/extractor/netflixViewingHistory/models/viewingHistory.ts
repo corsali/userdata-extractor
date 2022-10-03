@@ -1,7 +1,7 @@
 import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
-import { NetflixLightBaseModel } from "./netflixLightBaseModel.js";
+import { NetflixViewingHistoryBaseModel } from "./netflixViewingHistoryBaseModel.js";
 
-export class ViewingHistory extends NetflixLightBaseModel {
+export class ViewingHistory extends NetflixViewingHistoryBaseModel {
   title?: TextTableValue;
 
   date?: DateTableValue;
