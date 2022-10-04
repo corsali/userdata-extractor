@@ -1,0 +1,52 @@
+{
+  "items_selling_v2": [
+    {
+      "title": "Wedding Dress",
+      "price": "$750",
+      "seller": "Shelby Garrity",
+      "created_timestamp": 1546023243,
+      "updated_timestamp": 1546024775,
+      "category": "Women's clothing & shoes",
+      "marketplace": "CT Wedding Tag Sale",
+      "location": {
+        "coordinate": {
+          "latitude": 42.13748,
+          "longitude": -80.01419
+        }
+      },
+      "description": "Looking to sell my wedding dress that was only worn for around 4 hours during my reception. It's absolutely beautiful and I want to give someone else the chance to love it as much as I did! Retails for $1950, the style is 2042 from Essense of Australia in the color Ivory with Stone tulle. Tag size is 12 but it has been tailored to fit 34C bust, 27 waist, and 40 hip. It is more open toward the hip so the bust and waist measurements are the most important. A gorgeous bustle has been added for the long train. All my family is from CT so I can ship or arrange a pickup. I will include the veil shown in the photos at no extra charge if you like it!"
+    },
+    {
+      "title": "Past Box Items",
+      "price": "$15",
+      "seller": "Shelby Garrity",
+      "created_timestamp": 1529437620,
+      "updated_timestamp": 1529437620,
+      "category": "Sports & Outdoors",
+      "marketplace": "Barbella Family Sales & Trades",
+      "location": {
+        "coordinate": {
+          "latitude": 42.13751,
+          "longitude": -80.01428
+        }
+      },
+      "description": "I really wanted to like these items, but they've both been in a pocket of my gym bag unused since I got them.\n$15 each: I can put them in an envelope to make shipping cheaper since they're both flat items\n\nEleiko Lifting Straps- Never used, but didn't come with packaging\n\nEXO Elbow Wraps- Very soft comfortable material, I tried them on but never wore them to work out. I don't have the plastic bag they came in but I kept the rubber bands that hold them when wrapped up"
+    },
+    {
+      "title": "Foam Roller from September box",
+      "price": "$15",
+      "seller": "Shelby Garrity",
+      "created_timestamp": 1506026504,
+      "updated_timestamp": 1506027341,
+      "category": "Health & beauty",
+      "marketplace": "Barbella Family Sales & Trades",
+      "location": {
+        "coordinate": {
+          "latitude": 42.08017,
+          "longitude": -80.13011
+        }
+      },
+      "description": "I just bought the exact same foam roller that's in the September box, but I tossed the receipt so I can't return it. It's a really good and compact roller, I just don't need two of them!\n\nI bought it for $16, I am selling the one that came in the box which is unused and in the plastic packaging"
+    }
+  ]
+}

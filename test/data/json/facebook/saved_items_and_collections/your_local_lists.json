@@ -1,0 +1,55 @@
+{
+  "local_lists_v2": [
+    {
+      "title": "Places I've been",
+      "create_timestamp": 1535020263,
+      "description": "",
+      "places": [
+        {
+          "name": "CHC Addiction Services",
+          "coordinate": {
+            "latitude": 41.076001336587,
+            "longitude": -81.494597955298
+          },
+          "address": "725 E Market St, Akron, OH 44305"
+        }
+      ]
+    },
+    {
+      "title": "My Guide to Akron, Ohio",
+      "create_timestamp": 1535020149,
+      "description": ""
+    },
+    {
+      "title": "Interested",
+      "create_timestamp": 1535020149,
+      "description": "",
+      "places": [
+        {
+          "name": "O'Reilly Auto Parts",
+          "coordinate": {
+            "latitude": 41.037963,
+            "longitude": -81.490601
+          },
+          "address": "1253 S Arlington St, Akron, OH 44306"
+        },
+        {
+          "name": "Summit Ridge",
+          "coordinate": {
+            "latitude": 41.113217113357,
+            "longitude": -81.47430780663
+          },
+          "address": "1111 Independence Ave, Akron, OH 44310"
+        },
+        {
+          "name": "CHC Addiction Services",
+          "coordinate": {
+            "latitude": 41.076001336587,
+            "longitude": -81.494597955298
+          },
+          "address": "725 E Market St, Akron, OH 44305"
+        }
+      ]
+    }
+  ]
+}

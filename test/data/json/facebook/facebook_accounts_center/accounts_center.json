@@ -1,0 +1,21 @@
+{
+  "accounts_center_v2": [
+    {
+      "service_name": "Instagram",
+      "native_app_id": 47870148017,
+      "username": "texan_girlie",
+      "email": "christieclayton2020@gmail.com",
+      "name": "Jane Doe",
+      "linked_time": 1621485301
+    },
+    {
+      "service_name": "Facebook",
+      "native_app_id": 100022493016397,
+      "username": "bean.doe.9",
+      "email": "janedoe1995@gmail.com",
+      "phone_number": "+12095968144",
+      "name": "Jane Doe",
+      "linked_time": 1621485301
+    }
+  ]
+}

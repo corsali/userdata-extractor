@@ -204,7 +204,9 @@ Facebook
 │   └── other_categories_used_to_reach_you.json ✅
 ├── apps_and_websites_off_of_facebook
 │   ├── apps_and_websites.json ✅
-│   └── your_off-facebook_activity.json ✅
+│   ├── your_apps.json ✅
+│   ├── your_off-facebook_activity.json ✅
+│   └── posts_from_apps_and_websites.json ✅
 ├── comments_and_reactions
 │   ├── comments.json
 │   └── posts_and_comments.json
@@ -212,57 +214,28 @@ Facebook
 │   ├── event_invitations.json ✅
 │   ├── your_events.json ✅
 │   └── your_event_responses.json ✅
+├── facebook_accounts_center
+│   └── accounts_center.json ✅
+├── facebook_gaming
+│   ├── instant_games.json ✅
+│   └── gaming_profile.json ✅
 ├── facebook_marketplace
-│   └── marketplace_notifications.json ✅
+│   ├── buyer_and_seller_ratings.json ✅
+│   ├── items_sold.json ✅
+│   ├── marketplace_notifications.json ✅
+│   └── seller_information.json ✅
+├── facebook_news
+│   ├── time_spent.json ✅
+│   ├── your_locations.json ✅
 ├── facebook_payments
-│   └── payment_history.json - not enough data
+│   └── payment_history.json ✅
+├── feed
+│   └── feed.json ✅
 ├── friends_and_followers
 │   ├── friends.json ✅
 │   ├── friend_requests_received.json ✅
 │   ├── friend_requests_sent.json ✅
 │   ├── rejected_friend_requests.json ✅
-├── polls
-│   └── polls_you_voted_on.json
-├── posts
-│   └── too complex - figure out which data we want
-├── preferences
-│   └── language_and_locale.json ✅
-├── profile_information
-│   ├── profile_information.json - complex, might require multiple tables
-│   └── profile_update_history.json ✅
-├── saved_items_and_collections
-│   ├── collections.json - not enough data
-│   └── your_saved_items.json ✅
-├── search
-│   └── your_search_history.json ✅
-├── security_and_login_information
-│   ├── account_activity.json ✅
-│   ├── browser_cookies - later
-│   ├── ip_address_activity.json ✅
-│   ├── logins_and_logouts.json ✅
-│   ├── login_protection_data.json ✅
-│   ├── mobile_devices.json ✅
-│   └── record_details.json ✅
-│   ├── where_you're_logged_in.json ✅
-│   └── your_facebook_activity_history.json ✅
-├── your_interactions_on_facebook
-│   └── recently_visited.json
-│   │   ├── Profile visits ✅
-│   │   ├── Page visits ✅
-│   │   ├── Events visited ✅
-│   │   ├── Groups visited ✅
-│   │   ├── Marketplace Visits ✅
-│   │   ├── videos ✅
-│   │   ├── posts and articles ✅
-│   │   ├── marketplace interactions (not items) ✅
-│   │   ├── marketplace items ✅
-│   │   ├── ads ✅
-│   ├── friends.json ✅
-│   ├── friend_requests_received.json ✅
-│   ├── friend_requests_sent.json ✅
-│   ├── rejected_friend_requests.json ✅
-│   ├── removed_friends.json ✅
-│   └── who_you_follow.json ✅
 ├── groups
 │   ├── creator_badges.json ✅
 │   ├── your_comments_in_groups.json ✅
@@ -283,6 +256,112 @@ Facebook
 │   ├── pages_and_profiles_you_follow.json ✅
 │   ├── pages_you've_liked.json ✅
 │   └── your_pages_and_profiles.json ✅
+│   ├── friend_you_see_less.json ✅
+│   ├── people_who_follow_you.json ✅
+│   └── rejected_friend_requests.json ✅
+├── fundraisers
+│   └── fundraisers.json ✅
+├── polls
+│   └── polls_you_voted_on.json
+├── posts
+│   └── too complex - figure out which data we want
+├── preferences
+│   ├── language_and_locale.json ✅
+│   └── facebook_watch.json ✅
+├── profile_information
+│   ├── profile_information.json - complex, might require multiple tables
+│   ├── profile_update_history.json ✅
+│   └── your_music.json ✅
+├── saved_items_and_collections
+│   ├── collections.json - not enough data
+│   ├── your_local_lists.json ✅
+│   └── your_saved_items.json ✅
+├── search
+│   └── your_search_history.json ✅
+├── security_and_login_information
+│   ├── account_activity.json ✅
+│   ├── account_status_changes.json ✅
+│   ├── authorized_logins.json ✅
+│   ├── browser_cookies - later
+│   ├── email_address_verifications ✅
+│   ├── ip_address_activity.json ✅
+│   ├── logins_and_logouts.json ✅
+│   ├── login_protection_data.json ✅
+│   ├── mobile_devices.json ✅
+│   └── record_details.json ✅
+│   ├── where_you're_logged_in.json ✅
+│   └── your_facebook_activity_history.json ✅
+├── security_and_login_information
+│   ├── archived_stories.json ✅
+│   └── story_reactions.json ✅
+├── your_interactions_on_facebook
+│   └── recently_visited.json
+│   │   ├── Profile visits ✅
+│   │   ├── Page visits ✅
+│   │   ├── Events visited ✅
+│   │   ├── Groups visited ✅
+│   │   ├── Marketplace Visits ✅
+│   │   ├── videos ✅
+│   │   ├── posts and articles ✅
+│   │   ├── marketplace interactions (not items) ✅
+│   │   ├── marketplace items ✅
+│   │   ├── ads ✅
+│   ├── removed_friends.json ✅
+│   └── who_you_follow.json ✅
+├── groups
+│   ├── creator_badges.json ✅
+│   ├── your_comments_in_groups.json ✅
+│   ├── your_posts_in_groups.json ✅
+│   ├── your_group_membership_activity.json ✅
+│   ├── your_answers_to_membership_questions.json ✅
+│   ├── your_answers_to_participation_questions.json ✅
+│   ├── your_pending_posts_in_groups.json ✅
+│   └── your_groups.json ✅
+├── location
+│   ├── device_location.json ✅
+│   ├── primary_location.json ✅
+│   ├── primary_public_location.json ✅
+│   ├── last_location.json ✅
+│   ├── location_history.json ✅
+│   └── timezone.json ✅
+├── notifications
+│   ├── notifications.json ✅
+│   └── notifications_of_meta_privacy_policy_update.json
+├── other_activities
+│   ├── notes.json ✅
+│   └── pokes.json ✅
+├── other_logged_information
+│   ├── ads_interests.json ✅
+│   └── friend_peer_group.json
+├── other_personal_information
+│   └── your_address_books.json ✅
+├── pages_and_profiles (and pages/*)
+│   ├── pages_and_profiles_you_follow.json ✅
+│   ├── pages_you've_liked.json ✅
+│   ├── pages_you've_recommended.json ✅
+│   ├── pages_you've_unfollowed.json ✅
+│   ├── pages_you_follow.json ✅
+│   └── your_pages_and_profiles.json ✅
+├── activity_messages
+│   ├── group_interactions.json
+│   └── people_and_friends.json
+├── comments_and_reactions
+│   ├── comments.json ✅
+│   └── posts_and_comments.json ✅
+├── profile_information
+│   └── profile_information.json
+│       ├── simple (1:1) data ✅
+│       ├── relationships ✅
+│       ├── work experience ✅
+│       └── education experiences ✅
+├── your_topics
+    └── your_topics.json ✅
+│   └── your_pages.json ✅
+├── voting_location_and_reminders
+│   ├── location.json ✅
+│   └── voting_reminders.json ✅
+├── your_problem_reports
+│   └── your_problem_reports.json ✅
 ```
 
 ### HTML

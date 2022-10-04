@@ -1,0 +1,52 @@
+{
+  "reactions_v2": [
+    {
+      "timestamp": 1567322326,
+      "data": [
+        {
+          "reaction": {
+            "reaction": "LIKE",
+            "actor": "Jack Langdon"
+          }
+        }
+      ],
+      "title": "Jack Langdon likes Ester Short's photo."
+    },
+    {
+      "timestamp": 1567340059,
+      "data": [
+        {
+          "reaction": {
+            "reaction": "LIKE",
+            "actor": "Jack Langdon"
+          }
+        }
+      ],
+      "title": "Jack Langdon likes Miriam Yam's photo."
+    },
+    {
+      "timestamp": 1567363169,
+      "data": [
+        {
+          "reaction": {
+            "reaction": "LIKE",
+            "actor": "Jack Langdon"
+          }
+        }
+      ],
+      "title": "Jack Langdon likes Naomi Nay's post."
+    },
+    {
+      "timestamp": 1567408432,
+      "data": [
+        {
+          "reaction": {
+            "reaction": "SORRY",
+            "actor": "Jack Langdon"
+          }
+        }
+      ],
+      "title": "Jack Langdon reacted to Lenka Ley's post."
+    }
+  ]
+}

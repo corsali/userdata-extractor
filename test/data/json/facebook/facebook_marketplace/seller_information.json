@@ -1,0 +1,18 @@
+{
+  "seller_onboarding_information": [
+    {
+      "legal_name": {
+        "field_name": "Legal name",
+        "field_value": "Georgianne Cleone Gotko"
+      },
+      "date_of_birth": {
+        "field_name": "Date of birth",
+        "field_value": "1987-06-17"
+      },
+      "shipping_address": {
+        "field_name": "Shipping address",
+        "field_value": "1197 FLORIDA AVE\nAKRON, OH 44314"
+      }
+    }
+  ]
+}
