@@ -1,7 +1,7 @@
 import * as zip from "@zip.js/zip.js";
 import jp from "jsonpath";
 
-import { caseInsensitiveWrapper } from "../utils/caseInsensitiveWrapper.js";
+import { caseInsensitiveWrapper } from "../utils/index.js";
 import { FileExtractor } from "./fileExtractor.js";
 
 export class JsonExtractor extends FileExtractor {
