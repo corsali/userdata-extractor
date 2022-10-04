@@ -7,7 +7,7 @@ class GroupYourPendingPostsJson extends JsonExtractor {
     const pendingPosts = this.query(`$.pending_posts_v2.*`);
 
     pendingPosts.forEach((pendingPost) => {
-      pendingPost?.data?.forEach((postData) => {
+      pendingPost?.data?.forEach((postData: any) => {
         this.table.rows.push(
           new GroupYourPendingPosts(postData?.post, pendingPost.timestamp)
         );

@@ -1,4 +1,4 @@
-import { extractTablesFromSqlQuery } from "../../src/utils/extractTablesFromSqlQuery.js";
+import { extractTablesFromSqlQuery } from "../../src/utils/index.js";
 
 describe("extractPermissionsFromQuery", () => {
   it("extractPermissionsFromQuery", () => {
