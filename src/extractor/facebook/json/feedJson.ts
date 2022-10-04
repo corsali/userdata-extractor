@@ -7,7 +7,7 @@ class FeedJson extends JsonExtractor {
     const feedsByCategory = this.query(`$.people_and_friends_v2.*`);
 
     feedsByCategory.forEach((feedCategory) => {
-      feedCategory?.entries?.forEach((feed) => {
+      feedCategory?.entries?.forEach((feed: any) => {
         this.table.rows.push(
           new Feed({
             category: feedCategory.name,

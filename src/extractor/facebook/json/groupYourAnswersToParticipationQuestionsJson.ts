@@ -9,7 +9,7 @@ class GroupYourAnswersToParticipationQuestionsJson extends JsonExtractor {
     );
 
     groups.forEach((group) =>
-      group.answers?.forEach((answer) => {
+      group.answers?.forEach((answer: any) => {
         this.table.rows.push(
           new GroupYourAnswersToParticipationQuestions({
             groupName: group.group_name,

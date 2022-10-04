@@ -1,5 +1,5 @@
 import config from "../../../config/index.js";
-import { flattenWithDotNotation } from "../../../utils/flattenObjectToDotNotation.js";
+import { flattenWithDotNotation } from "../../../utils/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
 import { ProfileInformation } from "../models/profileInformation.js";
 

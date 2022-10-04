@@ -13,7 +13,7 @@ class NotesJson extends JsonExtractor {
           content: note.text,
           dateCreated: note.created_timestamp,
           dateUpdated: note.updated_timestamp,
-          tags: note.tags?.map((tag) => tag?.name).join(";"),
+          tags: note.tags?.map((tag: any) => tag?.name).join(";"),
         })
     );
 
