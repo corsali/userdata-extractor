@@ -1,6 +1,6 @@
 import config from "../../../config/index.js";
 import { JsonExtractor } from "../../jsonExtractor.js";
-import { RecentlyDeletedContent } from "../models/recentlyDeletedContent";
+import { RecentlyDeletedContent } from "../models/recentlyDeletedContent.js";
 
 class RecentlyDeletedContentJson extends JsonExtractor {
   async process() {

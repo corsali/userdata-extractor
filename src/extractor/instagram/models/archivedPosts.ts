@@ -3,7 +3,7 @@ import {
   JsonTableValue,
   TextTableValue,
 } from "../../../models/table/index.js";
-import { InstagramBaseModel } from "./instagramBaseModel";
+import { InstagramBaseModel } from "./instagramBaseModel.js";
 
 export class ArchivedPosts extends InstagramBaseModel {
   title?: TextTableValue;
