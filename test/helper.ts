@@ -13,6 +13,15 @@ const loadTestFile = async (fileName: string): Promise<File> => {
 };
 
 /**
+ * Loads a test file into a string
+ * @param fileName
+ * @returns
+ */
+const loadTestFileAsText = async (fileName: string): Promise<string> => {
+  return fs.readFileSync(getFilePath(fileName), { encoding: "utf8" });
+};
+
+/**
  * Loads a test file into a json object
  * @param fileName Name of the file from the /test/data/. directory
  * @returns
@@ -54,7 +63,8 @@ export {
   deleteFile,
   fileExists,
   loadTestFile,
-  loadTestFileAsJson,
   loadTestFileAsHtmlDocument,
+  loadTestFileAsJson,
+  loadTestFileAsText,
   saveSqliteDump,
 };
