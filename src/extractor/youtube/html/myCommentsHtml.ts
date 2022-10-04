@@ -9,10 +9,10 @@ class MyCommentsHtml extends HtmlExtractor {
       const commentLink = xpathEvaluateIntoArray(
         ".//a[text()='comment']",
         node
-      )?.[0]?.attributes?.["href"]?.value;
+      )?.[0]?.attributes?.href?.value;
 
       const commentedContentLink = xpathEvaluateIntoArray(".//a[2]", node)?.[0]
-        ?.attributes?.["href"]?.value;
+        ?.attributes?.href?.value;
 
       const textContent = node.innerHTML
         .replaceAll(/<a[^>]*>([^<]*)<\/a>/g, "$1")
