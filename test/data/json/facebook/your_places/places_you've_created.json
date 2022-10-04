@@ -1,0 +1,34 @@
+{
+  "your_places_v2": [
+    {
+      "name": "Citgo",
+      "coordinate": {
+        "latitude": 40.426693274677,
+        "longitude": -79.93840659976
+      },
+      "address": "Pittsburgh, PA 15217",
+      "url": "https://www.facebook.com/337651782993172",
+      "creation_timestamp": 1345302577
+    },
+    {
+      "name": "Arlington Rd",
+      "coordinate": {
+        "latitude": 41.028280821667,
+        "longitude": -81.491551715957
+      },
+      "address": "Akron, OH",
+      "url": "https://www.facebook.com/254141801372137",
+      "creation_timestamp": 1344980927
+    },
+    {
+      "name": "Seasons Rd",
+      "coordinate": {
+        "latitude": 41.202914714813,
+        "longitude": -81.478112339973
+      },
+      "address": "Stow, OH",
+      "url": "https://www.facebook.com/150312568326554",
+      "creation_timestamp": 1283425803
+    }
+  ]
+}

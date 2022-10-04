@@ -1,0 +1,44 @@
+{
+  "poll_votes_v2": [
+    {
+      "timestamp": 1552265357,
+      "attachments": [
+        {
+          "data": [
+            {
+              "poll": {
+                "options": [
+                  {
+                    "option": "Donatello",
+                    "voted": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Jane Doe voted on Carson Michaelangelo Odle's poll."
+    },
+    {
+      "timestamp": 1547618803,
+      "attachments": [
+        {
+          "data": [
+            {
+              "poll": {
+                "options": [
+                  {
+                    "option": "November",
+                    "voted": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Jane Doe voted on Jamie McCannon's poll."
+    }
+  ]
+}

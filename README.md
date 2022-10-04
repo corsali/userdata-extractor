@@ -110,8 +110,10 @@ Instagram
 ├── contacts
 │   └── synced_contacts.json
 ├── content
+│   ├── archived_posts.json
 │   ├── posts_1.json
 │   ├── profile_photos.json  ✅
+│   ├── recently_deleted_content.json  ✅
 │   └── stories.json  ✅
 ├── device_information
 │   ├── camera_information.json ✅
@@ -135,6 +137,7 @@ Instagram
 ├── information_about_you
 │   ├── account_based_in.json ✅
 │   ├── ads_interests.json    ✅
+│   ├── possible_emails.json    ✅
 │   └── possible_phone_numbers.json ✅
 ├── likes
 │   ├── liked_comments.json ✅
@@ -180,10 +183,11 @@ Instagram
 ├── shopping
 │   └── recently_viewed_items.json ✅
 ├── story_sticker_interactions
-│   ├── emoji_sliders.json
-│   ├── polls.json
-│   ├── questions.json
-│   └── quizzes.json
+│   ├── emoji_sliders.json ✅
+│   ├── polls.json ✅
+│   ├── questions.json ✅
+│   ├── quizzes.json ✅
+│   └── story_likes.json ✅
 └── your_topics
     ├── your_reels_sentiments.json  ✅
     └── your_reels_topics.json      ✅
@@ -245,7 +249,7 @@ Facebook
 │   └── notifications_of_meta_privacy_policy_update.json
 ├── other_logged_information
 │   ├── ads_interests.json ✅
-│   └── friend_peer_group.json
+│   └── friend_peer_group.json ✅
 ├── other_personal_information
 │   └── your_address_books.json ✅
 ├── pages_and_profiles
@@ -258,8 +262,10 @@ Facebook
 ├── fundraisers
 │   └── fundraisers.json ✅
 ├── polls
-│   └── polls_you_voted_on.json
+│   └── polls_you_voted_on.json ✅
 ├── posts
+│   ├── your_uncategorized_photos.json ✅
+│   ├── your_videos.json ✅
 │   └── your_posts_1.json ✅
 ├── preferences
 │   ├── language_and_locale.json ✅
@@ -269,13 +275,18 @@ Facebook
 │   ├── profile_update_history.json ✅
 │   └── your_music.json ✅
 ├── saved_items_and_collections
-│   ├── collections.json - not enough data
+│   ├── your_local_lists.json ✅
+│   ├── collections.json ✅
 │   └── your_saved_items.json ✅
 ├── search
 │   └── your_search_history.json ✅
 ├── security_and_login_information
 │   ├── account_activity.json ✅
+│   ├── browser_cookies ✅
+│   ├── account_status_changes.json ✅
+│   ├── authorized_logins.json ✅
 │   ├── browser_cookies - later
+│   ├── email_address_verifications ✅
 │   ├── ip_address_activity.json ✅
 │   ├── logins_and_logouts.json ✅
 │   ├── login_protection_data.json ✅
@@ -283,6 +294,9 @@ Facebook
 │   └── record_details.json ✅
 │   ├── where_you're_logged_in.json ✅
 │   └── your_facebook_activity_history.json ✅
+├── security_and_login_information
+│   ├── archived_stories.json ✅
+│   └── story_reactions.json ✅
 ├── your_interactions_on_facebook
 │   └── recently_visited.json
 │   │   ├── Profile visits ✅
@@ -296,10 +310,14 @@ Facebook
 │   │   ├── marketplace items ✅
 │   │   ├── ads ✅
 │   ├── removed_friends.json ✅
+│   ├── survey_responses.json ✅
 │   └── who_you_follow.json ✅
+├── your_places
+│   └── places_you've_created.json ✅
 ├── groups
 │   ├── creator_badges.json ✅
 │   ├── your_comments_in_groups.json ✅
+│   ├── your_posts_in_groups.json ✅
 │   ├── your_group_membership_activity.json ✅
 │   ├── your_answers_to_membership_questions.json ✅
 │   ├── your_answers_to_participation_questions.json ✅
@@ -345,6 +363,11 @@ Facebook
 ├── your_topics
     └── your_topics.json ✅
 │   └── your_pages.json ✅
+├── voting_location_and_reminders
+│   ├── location.json ✅
+│   └── voting_reminders.json ✅
+├── your_problem_reports
+│   └── your_problem_reports.json ✅
 ```
 
 ### HTML

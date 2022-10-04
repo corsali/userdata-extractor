@@ -1,7 +1,6 @@
 /* eslint-disable no-restricted-syntax */
 import { EmailIntegrationConfig } from "../config/emailIntegrations.js";
-import { logger } from "./logger.js";
-import { ZipFile } from "./zipFile.js";
+import { logger, ZipFile } from "./index.js";
 
 /**
  * A module is considered valid if the zip contains any of the

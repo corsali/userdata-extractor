@@ -7,8 +7,8 @@ class FundraisersCreatedJson extends JsonExtractor {
     const fundraisers = this.query(`$.fundraisers_created_v2.*`);
 
     fundraisers.forEach((fundraiserData) => {
-      fundraiserData.attachments?.forEach((attachment) => {
-        attachment?.data?.forEach((data) => {
+      fundraiserData.attachments?.forEach((attachment: any) => {
+        attachment?.data?.forEach((data: any) => {
           this.table.rows.push(
             new FundraisersCreated({
               fundraiserTitle: data?.fundraiser?.title,

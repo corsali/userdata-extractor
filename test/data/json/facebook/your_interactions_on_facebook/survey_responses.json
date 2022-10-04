@@ -1,0 +1,14 @@
+{
+  "ace_survey_responses_v2": [
+    {
+      "rating": "neutral",
+      "raw_timestamp": 1603302758,
+      "user_name": "Shawn Hagene",
+      "business_name": "Tovala",
+      "questionnaire_data": [
+        "product_quality",
+        "not_as_advertised"
+      ]
+    }
+  ]
+}
