@@ -4,7 +4,7 @@ import {
   TextTableValue,
   UrlTableValue,
 } from "../../../models/table/index.js";
-import { FacebookBaseModel } from "./facebookBaseModel";
+import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class YourVideos extends FacebookBaseModel {
   video_title?: TextTableValue;

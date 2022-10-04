@@ -1,5 +1,5 @@
 import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
-import { FacebookBaseModel } from "./facebookBaseModel";
+import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class SurveyResponse extends FacebookBaseModel {
   // @todo Very small sample available, the data might not be accurate

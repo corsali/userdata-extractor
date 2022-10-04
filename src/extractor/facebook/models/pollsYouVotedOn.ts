@@ -4,7 +4,7 @@ import {
   JsonTableValue,
   TextTableValue,
 } from "../../../models/table/index.js";
-import { FacebookBaseModel } from "./facebookBaseModel";
+import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class PollsYouVotedOn extends FacebookBaseModel {
   poll_title?: TextTableValue;

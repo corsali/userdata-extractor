@@ -1,5 +1,5 @@
 import { DateTableValue, TextTableValue } from "../../../models/table/index.js";
-import { FacebookBaseModel } from "./facebookBaseModel";
+import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class BrowserCookies extends FacebookBaseModel {
   datr_cookie?: TextTableValue;
