@@ -22,6 +22,14 @@ const loadTestFileAsJson = async (fileName: string): Promise<object> => {
   return JSON.parse(file);
 };
 
+const loadTestFileAsHtmlDocument = async (
+  fileName: string
+): Promise<Document> => {
+  const file = await readFile(getFilePath(fileName), "utf8");
+  const parser = new DOMParser();
+  return parser.parseFromString(file, "text/html");
+};
+
 const saveSqliteDump = (data: Uint8Array, outputFileName: string) => {
   const buffer = Buffer.from(data);
   fs.writeFileSync(getFilePath(outputFileName), buffer);
@@ -47,5 +55,6 @@ export {
   fileExists,
   loadTestFile,
   loadTestFileAsJson,
+  loadTestFileAsHtmlDocument,
   saveSqliteDump,
 };
