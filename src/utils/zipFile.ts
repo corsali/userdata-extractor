@@ -5,7 +5,12 @@ import config from "../config/index.js";
 import { logger } from "./index.js";
 
 // TODO: may need to make this blacklist service specific in the future
-const IGNORE_FILEPATHS = [/__MACOSX\/\.*/, /\.DS_Store/, /.*\/messages\/.*/]; // Ignore private messages for now
+const IGNORE_FILEPATHS = [
+  /__MACOSX\/\.*/, // Ignore mac specific files after extracting a zip
+  /\.DS_Store/,
+  /.*\/messages\/.*/, // Ignore private messages for now
+  /.*\/no-data.txt/, // Facebook and Instagram dummy file when no data is available
+];
 
 /**
  * Class used for managing Zip files.
