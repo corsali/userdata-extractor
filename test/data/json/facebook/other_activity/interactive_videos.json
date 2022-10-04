@@ -1,0 +1,40 @@
+{
+  "video_polls_v2": [
+    {
+      "timestamp": 1564154740,
+      "data": [
+        {
+          "text": "Pineapple, Mango & Peach"
+        }
+      ],
+      "title": "Shelby Garrity took the poll Which Fruits Would You Choose For Your Smoothie?? with response Pineapple, Mango & Peach on an ad."
+    },
+    {
+      "timestamp": 1566007131,
+      "data": [
+        {
+          "text": "From Scratch"
+        }
+      ],
+      "title": "Shelby Garrity took the poll How will you make your Pi\u00c3\u00b1ata Cupcakes? with response From Scratch on an ad."
+    },
+    {
+      "timestamp": 1582668815,
+      "data": [
+        {
+          "text": "Left"
+        }
+      ],
+      "title": "Shelby Garrity took the poll If You Could Choose One,  Which Ring is Your Fav? with response Left on an ad."
+    },
+    {
+      "timestamp": 1602300241,
+      "data": [
+        {
+          "text": "Not lately..."
+        }
+      ],
+      "title": "Shelby Garrity took the poll Hey, have checked your bra size recently? with response Not lately... on an ad."
+    }
+  ]
+}

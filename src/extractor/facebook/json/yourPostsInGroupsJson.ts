@@ -14,7 +14,7 @@ class YourPostsInGroupsJson extends JsonExtractor {
           attachments: postInGroup.attachments,
           post: postInGroup.data?.[0]?.post,
           data: postInGroup.data,
-          tags: postInGroup.tags?.map?.((tag) => tag?.name)?.join(";"),
+          tags: postInGroup.tags?.map?.((tag: any) => tag?.name)?.join(";"),
         })
     );
 

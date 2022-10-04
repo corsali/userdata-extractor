@@ -1,4 +1,4 @@
-import { ZipFile } from "./zipFile.js";
+import { ZipFile } from "./index.js";
 
 const loadZipFile = async (
   file: File,
