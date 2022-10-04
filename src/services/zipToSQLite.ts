@@ -3,8 +3,7 @@ import { Database } from "../database/database.js";
 import { SQLiteDatabase } from "../database/sqliteDatabase.js";
 import { FileExtractor } from "../extractor/fileExtractor.js";
 import * as Extractors from "../extractor/index.js";
-import { loadZipFile } from "../utils/loadZipFile.js";
-import { logger } from "../utils/logger.js";
+import { loadZipFile, logger } from "../utils/index.js";
 
 Extractors.register();
 
@@ -47,7 +46,7 @@ const zipToSQLiteInstance = async (
       }
     }
 
-    if (unprocessedFiles) {
+    if (unprocessedFiles.length > 0) {
       logger.warn(
         `No extractor found for the following files:`,
         unprocessedFiles

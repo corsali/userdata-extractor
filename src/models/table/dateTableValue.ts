@@ -10,9 +10,6 @@ export class DateTableValue extends ColumnTableValue {
   // eslint-disable-next-line class-methods-use-this
   private toDate(input: string | number | Date): number {
     if (input) {
-      if (input instanceof Date) {
-        return input.getTime();
-      }
       if (typeof input === "string") {
         return Date.parse(input);
       }

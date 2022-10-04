@@ -1,6 +1,6 @@
 import * as zip from "@zip.js/zip.js";
 
-import { loadZipFile } from "../../src/utils/loadZipFile.js";
+import { loadZipFile } from "../../src/utils/index.js";
 import { loadTestFile } from "../helper.js";
 
 describe("utils/loadZipFromFile", () => {

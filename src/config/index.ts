@@ -3,6 +3,13 @@ export default {
   appName: "@corsali/userdata-extractor",
 
   // Zip config
+  zipMimeTypes: [
+    "zip",
+    "application/octet-stream",
+    "application/zip",
+    "application/x-zip",
+    "application/x-zip-compressed",
+  ],
   whitelistedFileMimeTypes: [
     "text/csv",
     "text/html",
@@ -17,5 +24,6 @@ export default {
   // Extractor
   SERVICE_INSTAGRAM: "instagram",
   SERVICE_FACEBOOK: "facebook",
+  SERVICE_NETFLIX_VIEWING_HISTORY: "netflix_viewing_history",
   SERVICE_YOUTUBE: "youtube",
 };
