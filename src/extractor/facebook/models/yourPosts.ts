@@ -12,8 +12,14 @@ export class YourPosts extends FacebookBaseModel {
 
   attachments?: JsonTableValue;
 
-  constructor(datePosted: number, postText: string, attachments: object) {
+  constructor(
+    title: string,
+    datePosted: number,
+    postText: string,
+    attachments: object
+  ) {
     super();
+    this.title = new TextTableValue(title);
     this.date_posted = new DateTableValue(datePosted);
     this.post_text = new TextTableValue(postText);
     this.attachments = new JsonTableValue(attachments);

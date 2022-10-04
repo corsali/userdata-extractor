@@ -7,10 +7,11 @@ class YourPostsJson extends JsonExtractor {
     const yourPosts = this.query(`$.*`);
 
     const processedPosts = yourPosts.map(
-      (yourPost) =>
+      (yourPost: any) =>
         new YourPosts(
+          yourPost.title,
           yourPost.timestamp,
-          yourPost.data?.find((entry) => "post" in entry)?.post,
+          yourPost.data?.find((entry: any) => "post" in entry)?.post,
           yourPost.attachments
         )
     );
@@ -22,5 +23,5 @@ class YourPostsJson extends JsonExtractor {
 export const yourPostsJson = new YourPostsJson(
   config.SERVICE_FACEBOOK,
   ".*/your_posts_1.json",
-  "your_posts_1"
+  "your_posts"
 );
