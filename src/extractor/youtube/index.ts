@@ -2,7 +2,7 @@
  * CSV Extractors
  */
 export * from "./csv/musicLibrarySongsCsv.js";
-export * from "./csv/playlistsCsv.js";
+export * from "./csv/subscriptionsCsv.js";
 
 /**
  * HTML Extractors

@@ -2,7 +2,7 @@ import { musicLibrarySongsCsv } from "../../../../src/extractor/youtube/csv/musi
 import { TextTableValue, UrlTableValue } from "../../../../src/models/table";
 import { loadTestFileAsText } from "../../../helper";
 
-describe("Music Library Songs (JSON)", () => {
+describe("Music Library Songs (CSV)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsText(
       "/csv/youtube/Takeout/YouTube and YouTube Music/music-library-songs/music-library-songs.csv"
