@@ -225,8 +225,11 @@ Facebook
 │   ├── marketplace_notifications.json ✅
 │   └── seller_information.json ✅
 ├── facebook_news
+│   ├── articles_viewed.json ✅
+│   ├── see_less_like_this.json ✅
+│   ├── see_more_like_this.json ✅
 │   ├── time_spent.json ✅
-│   ├── your_locations.json ✅
+│   └── your_locations.json ✅
 ├── facebook_payments
 │   └── payment_history.json ✅
 ├── feed
@@ -334,6 +337,7 @@ Facebook
 │   ├── notifications.json ✅
 │   └── notifications_of_meta_privacy_policy_update.json
 ├── other_activities
+│   ├── interactive_videos.json ✅
 │   ├── notes.json ✅
 │   └── pokes.json ✅
 ├── other_logged_information
