@@ -1,5 +1,5 @@
 import { UrlTableValue } from "../../../models/table/index.js";
-import { FacebookBaseModel } from "./facebookBaseModel";
+import { FacebookBaseModel } from "./facebookBaseModel.js";
 
 export class SeeMoreLikeThis extends FacebookBaseModel {
   news_url?: UrlTableValue;
