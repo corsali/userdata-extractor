@@ -30,6 +30,7 @@ describe("services/zipExporter", () => {
         "facebook_json_3",
         "facebook_json_4",
       ],
+      youtube: ["youtube_1", "youtube_2", "youtube_3", "youtube_4"],
     };
 
     /**
