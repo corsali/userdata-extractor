@@ -20,7 +20,7 @@ class SurveyResponseJson extends JsonExtractor {
           })
         );
       } else {
-        questionnaireData.forEach((questionnaireSingleData) => {
+        questionnaireData.forEach((questionnaireSingleData: any) => {
           this.table.rows.push(
             new SurveyResponse({
               rating: surveyResponse.rating,
