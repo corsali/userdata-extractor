@@ -1,0 +1,108 @@
+{
+  "group_participation_questions_answers_v2": {
+    "group_answers": [
+      {
+        "answers": [
+          {
+            "question": "What is your favorite 90s Nickelodeon show?",
+            "answer": "Rugrats",
+            "timestamp": 1646788369
+          },
+          {
+            "question": "What 90s Nickelodeon show is overrated?",
+            "answer": "All that",
+            "timestamp": 1646788369
+          }
+        ],
+        "rules_agreement": true,
+        "group_name": "90s Nickelodeon Gang"
+      },
+      {
+        "answers": [
+          {
+            "question": "Why do you want to join the group?",
+            "answer": "To adopt a pet.",
+            "timestamp": 1646430768
+          }
+        ],
+        "rules_agreement": false,
+        "group_name": "Rehoming and Rescue: NE Ohio and Surrounding Areas"
+      },
+      {
+        "answers": [
+          {
+            "question": "Will You Behave and Not Bully Anyone?",
+            "answer": "Yes",
+            "timestamp": 1646430737
+          },
+          {
+            "question": "Will You Not Post Spam or Lies?",
+            "answer": "Yes",
+            "timestamp": 1646430737
+          }
+        ],
+        "rules_agreement": true,
+        "group_name": "Apps that pay \u00f0\u009f\u0092\u00b0\u00f0\u009f\u0092\u00b0\u00f0\u009f\u0092\u00b0"
+      },
+      {
+        "answers": [
+          {
+            "question": "Why Do You Want to Participate in This Group?",
+            "answer": "To see what\u00e2\u0080\u0099s it\u00e2\u0080\u0099s all about",
+            "timestamp": 1644908379
+          }
+        ],
+        "rules_agreement": true,
+        "group_name": "Famous Graves"
+      },
+      {
+        "answers": [
+          {
+            "question": "",
+            "answer": "NO",
+            "timestamp": 1642233931
+          },
+          {
+            "question": "",
+            "answer": "YES I WILL READ, AGREE AND FOLLOW THE RULES",
+            "timestamp": 1642233931
+          },
+          {
+            "question": "",
+            "answer": "NO! I AM NOT ALLOWED TO SPAM MY LINKS ON MEMBERS POST!",
+            "timestamp": 1642233931
+          }
+        ],
+        "rules_agreement": false,
+        "group_name": "Apps That pay u"
+      },
+      {
+        "answers": [
+          {
+            "question": "What is your favourite County in Ireland",
+            "answer": "I\u00e2\u0080\u0099m actually from United States of America, but I absolutely love ireland",
+            "timestamp": 1638435435
+          },
+          {
+            "question": "Do you agree to stay within the rules of the group",
+            "answer": "Yes",
+            "timestamp": 1638435435
+          }
+        ],
+        "rules_agreement": true,
+        "group_name": "My Heart is in Ireland"
+      },
+      {
+        "answers": [
+          {
+            "question": "GROUP JOIN!!\nMUST JOIN A PROGRAM!!!",
+            "answer": "Ok",
+            "timestamp": 1635069937
+          }
+        ],
+        "rules_agreement": false,
+        "group_name": "Instant  Pay"
+      }
+    ]
+  }
+}
