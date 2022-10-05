@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Orders (CSV) it should load file correctly 1`] = `
+Array [
+  Orders {
+    "asin_isbn": TextTableValue {
+      "type": "text",
+      "value": "B09JR24YYW",
+    },
+    "buyer_name": TextTableValue {
+      "type": "text",
+      "value": "Z Hay",
+    },
+    "carrier_name_and_tracking_number": TextTableValue {
+      "type": "text",
+      "value": "AMZN_US(TBA154327887604)",
+    },
+    "category": TextTableValue {
+      "type": "text",
+      "value": "CHARGING_ADAPTER",
+    },
+    "condition": TextTableValue {
+      "type": "text",
+      "value": "new",
+    },
+    "currency": TextTableValue {
+      "type": "text",
+      "value": "USD",
+    },
+    "exemption_opt_out": BoolTableValue {
+      "type": "bool",
+      "value": false,
+    },
+    "group_name": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "item_subtotal": FloatTableValue {
+      "type": "float",
+      "value": 59,
+    },
+    "item_subtotal_tax": FloatTableValue {
+      "type": "float",
+      "value": 5.22,
+    },
+    "item_total": FloatTableValue {
+      "type": "float",
+      "value": 64.22,
+    },
+    "list_price_per_unit": FloatTableValue {
+      "type": "float",
+      "value": 59,
+    },
+    "order_date": DateTableValue {
+      "type": "date",
+      "value": 1641859200000,
+    },
+    "order_id": TextTableValue {
+      "type": "text",
+      "value": "113-9614127-1313059",
+    },
+    "order_status": TextTableValue {
+      "type": "text",
+      "value": "Shipped",
+    },
+    "ordering_customer_email": EmailTableValue {
+      "type": "email",
+      "value": "zach@gmail.com",
+    },
+    "payment_instrument_type": TextTableValue {
+      "type": "text",
+      "value": "Visa - 5843",
+    },
+    "po_line_number": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "purchase_order_number": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "purchase_price_per_unit": FloatTableValue {
+      "type": "float",
+      "value": 59,
+    },
+    "quantity": IntegerTableValue {
+      "type": "integer",
+      "value": 1,
+    },
+    "release_date": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "seller": TextTableValue {
+      "type": "text",
+      "value": "Amazon.com",
+    },
+    "seller_credentials": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "shipment_date": DateTableValue {
+      "type": "date",
+      "value": 1642032000000,
+    },
+    "shipping_address_city": TextTableValue {
+      "type": "text",
+      "value": "BLOOMINGTON",
+    },
+    "shipping_address_name": TextTableValue {
+      "type": "text",
+      "value": "Z Hay",
+    },
+    "shipping_address_state": TextTableValue {
+      "type": "text",
+      "value": "CO",
+    },
+    "shipping_address_street_1": TextTableValue {
+      "type": "text",
+      "value": "123 Street APT B",
+    },
+    "shipping_address_street_2": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "shipping_address_zip": TextTableValue {
+      "type": "text",
+      "value": "80305-6267",
+    },
+    "tax_exemption_applied": BoolTableValue {
+      "type": "bool",
+      "value": false,
+    },
+    "tax_exemption_type": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Apple 67W USB-C Power Adapter",
+    },
+    "unspsc_code": TextTableValue {
+      "type": "text",
+      "value": "26111704",
+    },
+    "website": UrlTableValue {
+      "type": "url",
+      "value": "Amazon.com",
+    },
+  },
+  Orders {
+    "asin_isbn": TextTableValue {
+      "type": "text",
+      "value": "B01MQ5Z080",
+    },
+    "buyer_name": TextTableValue {
+      "type": "text",
+      "value": "Z Hay",
+    },
+    "carrier_name_and_tracking_number": TextTableValue {
+      "type": "text",
+      "value": "AMZN_US(TBA154327887604)",
+    },
+    "category": TextTableValue {
+      "type": "text",
+      "value": "ELECTRONIC_CABLE",
+    },
+    "condition": TextTableValue {
+      "type": "text",
+      "value": "new",
+    },
+    "currency": TextTableValue {
+      "type": "text",
+      "value": "USD",
+    },
+    "exemption_opt_out": BoolTableValue {
+      "type": "bool",
+      "value": false,
+    },
+    "group_name": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "item_subtotal": FloatTableValue {
+      "type": "float",
+      "value": 18.48,
+    },
+    "item_subtotal_tax": FloatTableValue {
+      "type": "float",
+      "value": 1.63,
+    },
+    "item_total": FloatTableValue {
+      "type": "float",
+      "value": 20.11,
+    },
+    "list_price_per_unit": FloatTableValue {
+      "type": "float",
+      "value": 19,
+    },
+    "order_date": DateTableValue {
+      "type": "date",
+      "value": 1641859200000,
+    },
+    "order_id": TextTableValue {
+      "type": "text",
+      "value": "113-9614127-1313059",
+    },
+    "order_status": TextTableValue {
+      "type": "text",
+      "value": "Shipped",
+    },
+    "ordering_customer_email": EmailTableValue {
+      "type": "email",
+      "value": "zach@gmail.com",
+    },
+    "payment_instrument_type": TextTableValue {
+      "type": "text",
+      "value": "Visa - 5843",
+    },
+    "po_line_number": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "purchase_order_number": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "purchase_price_per_unit": FloatTableValue {
+      "type": "float",
+      "value": 18.48,
+    },
+    "quantity": IntegerTableValue {
+      "type": "integer",
+      "value": 1,
+    },
+    "release_date": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "seller": TextTableValue {
+      "type": "text",
+      "value": "Amazon.com",
+    },
+    "seller_credentials": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "shipment_date": DateTableValue {
+      "type": "date",
+      "value": 1642032000000,
+    },
+    "shipping_address_city": TextTableValue {
+      "type": "text",
+      "value": "BLOOMINGTON",
+    },
+    "shipping_address_name": TextTableValue {
+      "type": "text",
+      "value": "Z Hay",
+    },
+    "shipping_address_state": TextTableValue {
+      "type": "text",
+      "value": "CO",
+    },
+    "shipping_address_street_1": TextTableValue {
+      "type": "text",
+      "value": "123 Street DR APT B",
+    },
+    "shipping_address_street_2": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "shipping_address_zip": TextTableValue {
+      "type": "text",
+      "value": "80305-6267",
+    },
+    "tax_exemption_applied": BoolTableValue {
+      "type": "bool",
+      "value": false,
+    },
+    "tax_exemption_type": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Apple USB-C Charge Cable (2m)",
+    },
+    "unspsc_code": TextTableValue {
+      "type": "text",
+      "value": "26111700",
+    },
+    "website": UrlTableValue {
+      "type": "url",
+      "value": "Amazon.com",
+    },
+  },
+]
+`;

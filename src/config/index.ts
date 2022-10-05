@@ -22,6 +22,7 @@ export default {
   minFileSizeInBytes: 10240,
 
   // Extractor
+  SERVICE_AMAZON_ORDERS: "amazon_orders",
   SERVICE_INSTAGRAM: "instagram",
   SERVICE_FACEBOOK: "facebook",
   SERVICE_NETFLIX_VIEWING_HISTORY: "netflix_viewing_history",
