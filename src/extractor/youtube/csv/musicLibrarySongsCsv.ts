@@ -4,7 +4,7 @@ import { MusicLibrarySongs } from "../models/musicLibrarySongs.js";
 
 class MusicLibrarySongsCsv extends CsvExtractor {
   async process() {
-    this.parse({ skipEmptyLines: true });
+    this.parse();
 
     const mappedRow = this.csvDocument.map(
       (row: any) =>

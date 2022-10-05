@@ -11,12 +11,15 @@ export class CsvExtractor extends FileExtractor {
     await super.loadFileContents(zipEntry);
   }
 
-  public async parse(options?: csvParser.ParseWorkerConfig): Promise<void> {
+  public async parse(
+    options?: Partial<csvParser.ParseWorkerConfig>
+  ): Promise<void> {
     return new Promise((resolve) => {
       const csvConfig: csvParser.ParseWorkerConfig = {
         // Default CSV parsing options
         header: true,
         worker: true,
+        skipEmptyLines: true,
         complete: (results: csvParser.ParseResult<any>) => {
           if (results.errors?.length > 0) {
             logger.warn(
