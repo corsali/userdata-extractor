@@ -2,7 +2,7 @@ import { subscriptionsCsv } from "../../../../src/extractor/youtube/csv/subscrip
 import { TextTableValue, UrlTableValue } from "../../../../src/models/table";
 import { loadTestFileAsText } from "../../../helper";
 
-describe("Subscriptions (JSON)", () => {
+describe("Subscriptions (CSV)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsText(
       "/csv/youtube/Takeout/YouTube and YouTube Music/subscriptions/subscriptions.csv"
@@ -10,7 +10,7 @@ describe("Subscriptions (JSON)", () => {
 
     subscriptionsCsv.fileContents = data;
 
-    subscriptionsCsv.process();
+    await subscriptionsCsv.process();
     const { rows } = subscriptionsCsv.table;
 
     expect(rows.length).toEqual(5);

@@ -1,0 +1,1098 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Videos (CSV) it should load file correctly 1`] = `
+Array [
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "News & Politics",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "OFallon Missouri Walmart. This story aired on FOX 2 KTVI in 2004",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "138 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 3,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "Walmart Supercenter",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1360726900000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": 1360732836000,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "I was interviewed by FOX 2 KTVI St. Louis.",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "5ocjEDUyC3E",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 325,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Public",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "Ethan dancing, this will be good to show his first girlfriend!",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "33 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 2,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1423235417000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": 1423235743000,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Ethan dancing",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "JavYYZ960-s",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 26,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Public",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "Please note that I have no type of video editing knowledge. This footage is unedited. This mall is located in Chesterfield, Missouri",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "543 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 16,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "Chesterfield Mall",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1568472059000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": 1568472996000,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Video tour of nearly vacant Chesterfield Mall. Chesterfield, Missouri DEAD MALL September 2019.",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "SiNkkdrjJ6Q",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 1180,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Public",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "Last Sears in the St. Louis area is closing. It was very busy on the Sunday afternoon I was there.",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "585 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 2,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "Mid Rivers Mall",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1569788892000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": 1569789380000,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Video tour of a closing Sears store at Mid Rivers Mall September 2019",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "rUmIEpGmY5I",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 172,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Public",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "104 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "St Peters Condominium Association",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1575397717000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "784 Del Ray Dr",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "LIJoNu2-Uew",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 25,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "Great job Ethan!",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "24 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 1,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "Philadelphia",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1595100635000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": 1595101161000,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Ethan learning to drive",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "JNGdUh7hwRw",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 24,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Public",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "53 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1605913504000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "November 20, 2020",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "38kyNPbDdGw",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 1,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "114 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "St Peters Condominium Association",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1622772818000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "789 Boca Raton Dr",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "fRnpHyup9gE",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 7,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "51 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1623970545000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "2278 Highland Hill Dr",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "6u0XuXI8J7M",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 6,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "31 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1625188452000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "July 1, 2021",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "UTKqRmxYecQ",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 4,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "789 Boca Raton Dr",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "268 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "St Peters Condominium Association",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1626052223000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "July 11, 2021",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "hqHOZ0woPX0",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 11,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "35 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1628248337000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "Razor review",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "2sXKpQwAZ6Y",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 3,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "68 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1628808022000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "2200 Willott F",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "R_YcAF8o0zE",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 4,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+  Videos {
+    "category": TextTableValue {
+      "type": "text",
+      "value": "People & Blogs",
+    },
+    "channel_id": TextTableValue {
+      "type": "text",
+      "value": "UCoY-bu7ZpUhCOd2sJpLGQ2w",
+    },
+    "description": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "dislike_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "duration": TextTableValue {
+      "type": "text",
+      "value": "20 seconds",
+    },
+    "embeddable": TextTableValue {
+      "type": "text",
+      "value": "allowed",
+    },
+    "license": TextTableValue {
+      "type": "text",
+      "value": "standard YouTube",
+    },
+    "like_count": IntegerTableValue {
+      "type": "integer",
+      "value": 0,
+    },
+    "location_address": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "location_country": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "status": TextTableValue {
+      "type": "text",
+      "value": "processed",
+    },
+    "syndication": TextTableValue {
+      "type": "text",
+      "value": "all platforms",
+    },
+    "time_created": DateTableValue {
+      "type": "date",
+      "value": 1628808169000,
+    },
+    "time_published": DateTableValue {
+      "type": "date",
+      "value": null,
+    },
+    "time_recorded": TextTableValue {
+      "type": "text",
+      "value": "",
+    },
+    "title": TextTableValue {
+      "type": "text",
+      "value": "2200 Willott F",
+    },
+    "video_id": TextTableValue {
+      "type": "text",
+      "value": "DlqSVM9_R9c",
+    },
+    "view_count": IntegerTableValue {
+      "type": "integer",
+      "value": 4,
+    },
+    "visibility": TextTableValue {
+      "type": "text",
+      "value": "Unlisted",
+    },
+  },
+]
+`;
