@@ -25,4 +25,5 @@ export default {
   SERVICE_INSTAGRAM: "instagram",
   SERVICE_FACEBOOK: "facebook",
   SERVICE_NETFLIX_VIEWING_HISTORY: "netflix_viewing_history",
+  SERVICE_YOUTUBE: "youtube",
 };

@@ -11,6 +11,14 @@ export class HtmlExtractor extends FileExtractor {
     this.htmlDocument = parser.parseFromString(this.fileContents, "text/html");
   }
 
+  /**
+   * Used mainly for testing to directly set the html document
+   * @param htmlDocument
+   */
+  public async setHtmlDocument(htmlDocument: Document) {
+    this.htmlDocument = htmlDocument;
+  }
+
   // eslint-disable-next-line class-methods-use-this
   async process() {
     throw new Error("HtmlMapper.process() not implemented");
