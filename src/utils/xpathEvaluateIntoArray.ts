@@ -5,7 +5,10 @@
  * @param contextNode Context for the XPath to search within
  * @returns Array of selected Nodes
  */
-const xpathEvaluateIntoArray = (expression: string, contextNode: Node) => {
+const xpathEvaluateIntoArray = (
+  expression: string,
+  contextNode: Node
+): Node[] => {
   const result = document.evaluate(
     expression,
     contextNode,
