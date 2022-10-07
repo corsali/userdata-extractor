@@ -12,7 +12,7 @@ export class HtmlExtractor extends FileExtractor {
   }
 
   /**
-   * Used mainly for testing to directly set the json document
+   * Used mainly for testing to directly set the html document
    * @param htmlDocument
    */
   public async setHtmlDocument(htmlDocument: Document) {
