@@ -10,7 +10,7 @@ describe("Music Library Songs (CSV)", () => {
 
     musicLibrarySongsCsv.fileContents = data;
 
-    musicLibrarySongsCsv.process();
+    await musicLibrarySongsCsv.process();
 
     const { rows } = musicLibrarySongsCsv.table;
 

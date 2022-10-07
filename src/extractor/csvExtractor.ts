@@ -11,10 +11,11 @@ export class CsvExtractor extends FileExtractor {
     await super.loadFileContents(zipEntry);
   }
 
-  public async parse(
+  public async parseText(
+    text: string,
     options?: Partial<csvParser.ParseWorkerConfig>
-  ): Promise<void> {
-    return new Promise((resolve) => {
+  ) {
+    return new Promise<object[]>((resolve) => {
       const csvConfig: csvParser.ParseWorkerConfig = {
         // Default CSV parsing options
         header: true,
@@ -27,16 +28,22 @@ export class CsvExtractor extends FileExtractor {
               results.errors
             );
           }
-          this.csvDocument = caseInsensitiveWrapper(results.data) as [];
-          resolve();
+
+          resolve(caseInsensitiveWrapper(results.data) as []);
         },
 
         // Override default options if needed
         ...options,
       };
 
-      csvParser.parse(this.fileContents, csvConfig);
+      csvParser.parse(text, csvConfig);
     });
+  }
+
+  public async parse(options?: Partial<csvParser.ParseWorkerConfig>) {
+    this.csvDocument = await this.parseText(this.fileContents, options);
+
+    return this.csvDocument;
   }
 
   // eslint-disable-next-line class-methods-use-this

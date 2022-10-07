@@ -4,7 +4,7 @@ import { Subscriptions } from "../models/subscriptions.js";
 
 class SubscriptionsCsv extends CsvExtractor {
   async process() {
-    this.parse();
+    await this.parse();
 
     const mappedRow = this.csvDocument.map(
       (row: any) =>
