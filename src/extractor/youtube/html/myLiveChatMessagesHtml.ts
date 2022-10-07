@@ -20,7 +20,7 @@ class MyLiveChatMessagesHtml extends HtmlExtractor {
         new MyLiveChatMessages({
           messageTitle: textContent[0],
           datePosted,
-          contentUrl: node.querySelector("a")?.attributes?.href?.value,
+          contentUrl: node.querySelector("a")?.getAttribute("href"),
           messageText: textContent.slice(1).join("\n"),
         })
       );

@@ -6,13 +6,16 @@ import { MyComments } from "../models/myComments.js";
 class MyCommentsHtml extends HtmlExtractor {
   async process() {
     this.htmlDocument.querySelectorAll("body > ul > li").forEach((node) => {
-      const commentLink = xpathEvaluateIntoArray(
-        ".//a[text()='comment']",
-        node
-      )?.[0]?.attributes?.href?.value;
+      const commentLink = (
+        xpathEvaluateIntoArray(
+          ".//a[text()='comment']",
+          node
+        )?.[0] as HTMLElement
+      )?.getAttribute("href");
 
-      const commentedContentLink = xpathEvaluateIntoArray(".//a[2]", node)?.[0]
-        ?.attributes?.href?.value;
+      const commentedContentLink = (
+        xpathEvaluateIntoArray(".//a[2]", node)?.[0] as HTMLElement
+      )?.getAttribute("href");
 
       const textContent = node.innerHTML
         .replaceAll(/<a[^>]*>([^<]*)<\/a>/g, "$1")

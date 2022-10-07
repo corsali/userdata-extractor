@@ -45,9 +45,9 @@ class WatchHistoryHtml extends HtmlExtractor {
             new WatchHistory({
               platform,
               videoTitle: videoNode.textContent?.trim?.(),
-              videoUrl: videoNode.attributes?.href?.value,
+              videoUrl: videoNode?.getAttribute("href"),
               channelName: channelNode?.textContent.trim?.(),
-              channelUrl: channelNode?.attributes?.href?.value,
+              channelUrl: channelNode?.getAttribute("href"),
               dateWatched,
               // watchedTimes,
               products,

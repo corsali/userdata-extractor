@@ -1,6 +1,6 @@
 {
   "name": "@corsali/userdata-extractor",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Vana",
   "type": "module",
   "scripts": {

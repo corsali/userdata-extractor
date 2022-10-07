@@ -42,8 +42,6 @@ export class CsvExtractor extends FileExtractor {
 
   public async parse(options?: Partial<csvParser.ParseWorkerConfig>) {
     this.csvDocument = await this.parseText(this.fileContents, options);
-
-    return this.csvDocument;
   }
 
   // eslint-disable-next-line class-methods-use-this
