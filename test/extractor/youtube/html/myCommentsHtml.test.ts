@@ -6,7 +6,7 @@ import {
 } from "../../../../src/models/table";
 import { loadTestFileAsHtmlDocument } from "../../../helper";
 
-describe("My Comments (JSON)", () => {
+describe("My Comments (HTML)", () => {
   test("it should load file correctly", async () => {
     const data = await loadTestFileAsHtmlDocument(
       "/html/youtube/Takeout/YouTube and YouTube Music/my-comments/my-comments.html"
