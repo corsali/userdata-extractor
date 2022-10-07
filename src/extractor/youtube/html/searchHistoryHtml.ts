@@ -48,7 +48,7 @@ class SearchHistoryHtml extends HtmlExtractor {
               platform,
               actionType,
               videoTitle: videoNode.textContent?.trim?.(),
-              videoUrl: videoNode.attributes?.href?.value,
+              videoUrl: videoNode.getAttribute("href"),
               actionDate,
               // watchedTimes,
               products,

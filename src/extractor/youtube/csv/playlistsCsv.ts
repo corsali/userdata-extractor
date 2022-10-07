@@ -4,7 +4,7 @@ import { Playlists } from "../models/playlists.js";
 
 class PlaylistsCsv extends CsvExtractor {
   async process() {
-    const playlistHeader = await this.parseText(
+    const playlistHeader: any = await this.parseText(
       this.fileContents.split("\n").slice(0, 2).join("\n")
     );
 

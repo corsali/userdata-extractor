@@ -16,6 +16,6 @@ class ViewingHistoryCsv extends CsvExtractor {
 
 export const viewingHistoryCsv = new ViewingHistoryCsv(
   config.SERVICE_NETFLIX_VIEWING_HISTORY,
-  ".*NetflixViewingHistory.csv",
+  ".*\\.csv",
   "viewing_history"
 );
