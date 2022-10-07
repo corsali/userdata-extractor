@@ -18,16 +18,16 @@ describe("services/zipExporter", () => {
   it("zipToSQLiteInstance() exports an sqlite file", async () => {
     const testFiles = {
       instagram: [
-        "instagram_html_1",
-        "instagram_json_1",
-        "instagram_json_2",
-        "instagram_json_3",
+        // "instagram_html_1",
+        // "instagram_json_1",
+        // "instagram_json_2",
+        // "instagram_json_3",
         "instagram_json_4",
       ],
       facebook: [
-        "facebook_json_1",
-        "facebook_json_2",
-        "facebook_json_3",
+        // "facebook_json_1",
+        // "facebook_json_2",
+        // "facebook_json_3",
         "facebook_json_4",
       ],
       youtube: ["youtube_1", "youtube_2", "youtube_3", "youtube_4"],

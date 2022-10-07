@@ -4,7 +4,7 @@ module.exports = {
     "^.+\\.(t|j)s$": "esbuild-jest",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
-  testTimeout: 600000,
+  testTimeout: 3600000,
   moduleFileExtensions: ["ts", "js", "json", "node"],
   transformIgnorePatterns: ["node_modules/(?!(@zip.js/zip.js))"],
   moduleNameMapper: {
