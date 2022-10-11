@@ -7,10 +7,14 @@ const extractPrice = (price: string) =>
 
 class OrdersCsv extends CsvExtractor {
   async process() {
+    if (this.fileContents.includes("No data found for this time period")) {
+      return;
+    }
+
     await this.parse();
 
     if (this.csvDocument) {
-      const mappedRow = this.csvDocument.map(
+      const mappedRows = this.csvDocument.map(
         (order: any) =>
           new Orders({
             orderDate: order["order date"],
@@ -55,7 +59,7 @@ class OrdersCsv extends CsvExtractor {
           })
       );
 
-      this.table.rows.push(...mappedRow);
+      this.table.rows.push(...mappedRows);
     }
   }
 }
