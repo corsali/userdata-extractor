@@ -16,6 +16,9 @@ const filesToZip = async (
     files,
     `${files[0].name}.zip`,
     {
+      onprogress: (progress: number, total: number) => {
+        console.log(`adding zip file, progress:${progress}, total:${total}`);
+      },
       useWebWorkers,
     }
   );
