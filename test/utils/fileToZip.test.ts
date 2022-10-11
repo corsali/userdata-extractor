@@ -22,7 +22,7 @@ describe("utils/fileToZip", () => {
       [config.SERVICE_NETFLIX_VIEWING_HISTORY]: ["NetflixViewingHistory"],
       [config.SERVICE_AMAZON_ORDERS]: [
         "01-Aug-2022_to_07-Oct-2022",
-        "01-Jan-2010_to_08-Oct-2010",
+        // "01-Jan-2010_to_08-Oct-2010",
         "Amazon_Orders_csv",
       ],
     };
