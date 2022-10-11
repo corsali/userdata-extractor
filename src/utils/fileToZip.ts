@@ -13,7 +13,7 @@ const filesToZip = async (
 ): Promise<ServiceFile> => {
   const file: File = await ZipFile.createZipFromFiles(
     files,
-    `${serviceName}.zip`
+    `${files[0].name}.zip`
   );
   return {
     serviceName,
