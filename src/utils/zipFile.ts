@@ -128,12 +128,9 @@ export class ZipFile {
     });
     console.log(`Adding files for zip file ${zipFileName}`);
     await Promise.all(
-      files.map(async (file) => {
-        try {
-          await zipWriter.add(file.name, new zip.BlobReader(file), options);
-        } catch (e) {
-          console.error(`Unable to add file ${file.name}`);
-        }
+      files.map((file) => {
+        console.log(`adding file ${file.name} from ${zipFileName}`);
+        return zipWriter.add(file.name, new zip.BlobReader(file), options);
       })
     );
     console.log(`Added all files for zip file ${zipFileName}`);
