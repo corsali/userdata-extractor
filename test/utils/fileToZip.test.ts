@@ -41,7 +41,7 @@ describe("utils/fileToZip", () => {
       console.log(`Loading test file csv/${serviceName}/${testFile}.csv`);
       const file = await loadTestFile(`csv/${serviceName}/${testFile}.csv`);
       console.log(`Creating service files`);
-      const serviceFile = await filesToZip(serviceName, [file]);
+      const serviceFile = await filesToZip(serviceName, [file], false);
       console.log(`Structuring data`);
       const database = await zipToSQLiteInstance([serviceFile], false);
       console.log(`Saving SQLite csv/${serviceName}/${testFile}.sqlite`);

@@ -9,11 +9,15 @@ import { ZipFile } from "./index.js";
  */
 const filesToZip = async (
   serviceName: string,
-  files: File[]
+  files: File[],
+  useWebWorkers = true
 ): Promise<ServiceFile> => {
   const file: File = await ZipFile.createZipFromFiles(
     files,
-    `${files[0].name}.zip`
+    `${files[0].name}.zip`,
+    {
+      useWebWorkers,
+    }
   );
   return {
     serviceName,
