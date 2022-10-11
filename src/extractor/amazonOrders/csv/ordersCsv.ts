@@ -11,7 +11,9 @@ class OrdersCsv extends CsvExtractor {
       return;
     }
 
+    console.log(`parsing file ${this.zipEntry.data.filename}`);
     await this.parse();
+    console.log(`CSV DOC:`, this.csvDocument);
 
     if (this.csvDocument) {
       const mappedRows = this.csvDocument.map(
