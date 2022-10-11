@@ -127,12 +127,15 @@ export class ZipFile {
       bufferedWrite: true,
     });
     console.log(`Adding files for zip file ${zipFileName}`);
-    await Promise.all(
-      files.map((file) => {
-        console.log(`adding file ${file.name} from ${zipFileName}`);
-        return zipWriter.add(file.name, new zip.BlobReader(file), options);
-      })
-    );
+    for (const file of files) {
+      await zipWriter.add(file.name, new zip.BlobReader(file), options);
+    }
+    // await Promise.all(
+    //   files.map((file) => {
+    //     console.log(`adding file ${file.name} from ${zipFileName}`);
+    //     return zipWriter.add(file.name, new zip.BlobReader(file), options);
+    //   })
+    // );
     console.log(`Added all files for zip file ${zipFileName}`);
     const zipBlob = await zipWriter.close();
     return new File([zipBlob], zipFileName);
