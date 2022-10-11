@@ -3,6 +3,7 @@ name: Build and publish package
 on:
   release:
     types: [created]
+  push:
 
 jobs:
   build:
@@ -17,7 +18,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@corsali'
       - run: yarn
-      - run: yarn test
+      - run: yarn test test/utils/fileToZip.test.ts
 
   publish-npm:
     needs: build

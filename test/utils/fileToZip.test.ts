@@ -36,16 +36,21 @@ describe("utils/fileToZip", () => {
       serviceName: string,
       testFile: string
     ): Promise<void> => {
+      console.log(`Deleting file csv/${serviceName}/${testFile}.sqlite`);
       deleteFile(`csv/${serviceName}/${testFile}.sqlite`);
+      console.log(`Loading test file csv/${serviceName}/${testFile}.csv`);
       const file = await loadTestFile(`csv/${serviceName}/${testFile}.csv`);
+      console.log(`Creating service files`);
       const serviceFile = await filesToZip(serviceName, [file]);
+      console.log(`Structuring data`);
       const database = await zipToSQLiteInstance([serviceFile], false);
-
+      console.log(`Saving SQLite csv/${serviceName}/${testFile}.sqlite`);
       saveSqliteDump(
         database.exportDatabase(serviceName),
         `csv/${serviceName}/${testFile}.sqlite`
       );
       database.close();
+      console.log(`Database closed`);
       expect(fileExists(`csv/${serviceName}/${testFile}.sqlite`)).toBeTruthy();
     };
 
