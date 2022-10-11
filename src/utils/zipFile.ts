@@ -123,15 +123,19 @@ export class ZipFile {
     zipFileName = "data.zip",
     options?: zip.ZipWriterAddDataOptions
   ): Promise<File> {
+    console.log(`Creating zip file ${zipFileName}`);
     const zipWriter = new zip.ZipWriter(new zip.BlobWriter("application/zip"), {
       bufferedWrite: true,
     });
+    console.log(`Adding files for zip file ${zipFileName}`);
     await Promise.all(
       files.map(async (file) => {
         await zipWriter.add(file.name, new zip.BlobReader(file), options);
       })
     );
+    console.log(`Added all files for zip file ${zipFileName}`);
     const zipBlob = await zipWriter.close();
+    console.log(`Got blob`);
     return new File([zipBlob], zipFileName);
   }
 }
