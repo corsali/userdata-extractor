@@ -1,5 +1,6 @@
 import * as zip from "@zip.js/zip.js";
 
+import { FileExtractor } from "../../src/extractor/fileExtractor";
 import { zipToSQLiteInstance } from "../../src/services/zipToSQLite";
 import {
   deleteFile,
@@ -56,14 +57,21 @@ describe("services/zipExporter", () => {
       expect(fileExists(`zip/${serviceName}/${testFile}.sqlite`)).toBeTruthy();
     };
 
-    const testPromises: Promise<void>[] = [];
-    Object.entries(testFiles).forEach((service: [string, string[]]) => {
-      const serviceName = service[0];
-      const testFilesForService = service[1];
-      testFilesForService.forEach((testFile: string) => {
-        testPromises.push(runTestAgainstFile(serviceName, testFile));
-      });
-    });
+    const testPromises = Object.entries(testFiles).map(
+      async (service: [string, string[]]) => {
+        const serviceName = service[0];
+        const testFilesForService = service[1];
+
+        // Extracting data from different zip files of the same service type
+        // needs to be done in sequence. Extractor table data needs to be
+        // cleared before another zip file's data get extracted.
+        // eslint-disable-next-line no-restricted-syntax
+        for (const testFile of testFilesForService) {
+          FileExtractor.dumpExtractorData(serviceName);
+          await runTestAgainstFile(serviceName, testFile);
+        }
+      }
+    );
 
     await Promise.all(testPromises);
   });
