@@ -15,7 +15,7 @@ export class CsvExtractor extends FileExtractor {
     text: string,
     options?: Partial<csvParser.ParseWorkerConfig>
   ) {
-    return new Promise<object[]>((resolve) => {
+    return new Promise<object[]>((resolve, reject) => {
       const csvConfig: csvParser.ParseWorkerConfig = {
         // Default CSV parsing options
         header: true,
@@ -24,11 +24,11 @@ export class CsvExtractor extends FileExtractor {
         complete: (results: csvParser.ParseResult<any>) => {
           if (results.errors?.length > 0) {
             logger.warn(
-              `Error parsing ${this.zipEntry.data.filename}`,
+              `Error parsing ${this.zipEntry?.data?.filename}`,
               results.errors
             );
+            reject(results.errors);
           }
-
           resolve(caseInsensitiveWrapper(results.data) as []);
         },
 
