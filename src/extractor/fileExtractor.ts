@@ -90,4 +90,22 @@ export class FileExtractor {
       database.createTable(this.serviceName, this.table);
     }
   }
+
+  /**
+   * Used mainly for testing. When multiple files for the same service are
+   * processed needs to dump the extractors data between different files.
+   * @param serviceName
+   */
+  static dumpExtractorData(serviceName: string) {
+    if (!FileExtractor.registeredExtractors[serviceName]) {
+      throw new Error(`Extractors for service ${serviceName} do not exist`);
+    }
+
+    // eslint-disable-next-line no-restricted-syntax
+    for (const extractorEntry of FileExtractor.registeredExtractors[
+      serviceName
+    ]) {
+      extractorEntry.extractor.table.rows = [];
+    }
+  }
 }

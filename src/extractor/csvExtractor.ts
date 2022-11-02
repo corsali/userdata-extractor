@@ -24,11 +24,11 @@ export class CsvExtractor extends FileExtractor {
         complete: (results: csvParser.ParseResult<any>) => {
           if (results.errors?.length > 0) {
             logger.warn(
-              `Error parsing ${this.zipEntry.data.filename}`,
+              `Error parsing ${this.zipEntry?.data?.filename}`,
               results.errors
             );
+            resolve([]);
           }
-
           resolve(caseInsensitiveWrapper(results.data) as []);
         },
 
